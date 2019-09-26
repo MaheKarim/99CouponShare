@@ -1,0 +1,28 @@
+language: php
+
+php:
+- 7.0
+- 7.1
+- 7.2
+- 7.3.9
+
+services:
+- mysql
+
+before_script:
+- cp .env.travis .env
+- mysql -e 'create database 99couponshare;'
+- composer self-update
+- composer install --no-interaction
+- php artisan key:generate
+- php artisan migrate --seed
+
+script:
+    - vendor/bin/phpunit
+
+notifications:
+email:
+    recipients:
+        - mahekarim@gmail.com
+    on_success: always
+    on_failure: always
