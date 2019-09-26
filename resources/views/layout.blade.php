@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="{{ asset('/') }}style.css">
 
 	<!-- Cusom css -->
-   <link rel="stylesheet" href="css/custom.css">
+   <link rel="stylesheet" href="{{ asset('/') }}css/custom.css">
 
 	<!-- Modernizer js -->
 <script src="{{ asset('/') }}js/vendor/modernizr-3.5.0.min.js"></script>
@@ -353,7 +353,7 @@
                                 <div class="fact__details">
                                     <div class="funfact__count__inner">
                                         <div class="fact__icon">
-                                            <img src="images/icon/flat-icon/3.png" alt="flat icon">
+                                            <img src="{{ asset('/') }}images/icon/flat-icon/3.png" alt="flat icon">
                                         </div>
                                         <div class="fact__count ">
                                             <span class="count">3000</span>
@@ -693,23 +693,23 @@
         <!-- Start Banner Area -->
         <div class="banner__area d-flex instagram__activation owl-carousel owl-theme">
             <div class="banner">
-                <img src="images/product/ins/1.jpg" alt="images">
+                <img src="{{ asset('/') }}images/product/ins/1.jpg" alt="images">
                 <a href="#"><i class="zmdi zmdi-instagram"></i></a>
             </div>
             <div class="banner">
-                <img src="images/product/ins/2.jpg" alt="images">
+                <img src="{{ asset('/') }}images/product/ins/2.jpg" alt="images">
                 <a href="#"><i class="zmdi zmdi-instagram"></i></a>
             </div>
             <div class="banner">
-                <img src="images/product/ins/3.jpg" alt="images">
+                <img src="{{ asset('/') }}images/product/ins/3.jpg" alt="images">
                 <a href="#"><i class="zmdi zmdi-instagram"></i></a>
             </div>
             <div class="banner">
-                <img src="images/product/ins/4.jpg" alt="images">
+                <img src="{{ asset('/') }}images/product/ins/4.jpg" alt="images">
                 <a href="#"><i class="zmdi zmdi-instagram"></i></a>
             </div>
             <div class="banner">
-                <img src="images/product/ins/5.jpg" alt="images">
+                <img src="{{ asset('/') }}images/product/ins/5.jpg" alt="images">
                 <a href="#"><i class="zmdi zmdi-instagram"></i></a>
             </div>
         </div>
@@ -770,12 +770,12 @@
                                 <h2 class="ftr__title">Our Gallery</h2>
                                 <div class="footer__inner">
                                     <ul class="sm__gallery__list">
-                                        <li><a href="#"><img src="images/gallery/sm-img/1.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="images/gallery/sm-img/2.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="images/gallery/sm-img/3.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="images/gallery/sm-img/4.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="images/gallery/sm-img/5.jpg" alt="gallery images"></a></li>
-                                        <li><a href="#"><img src="images/gallery/sm-img/6.jpg" alt="gallery images"></a></li>
+                                        <li><a href="#"><img src="{{ asset('/') }}images/gallery/sm-img/1.jpg" alt="gallery images"></a></li>
+                                        <li><a href="#"><img src="{{ asset('/') }}images/gallery/sm-img/5.jpg" alt="gallery images"></a></li>
+                                        <li><a href="#"><img src="{{ asset('/') }}images/gallery/sm-img/3.jpg" alt="gallery images"></a></li>
+                                        <li><a href="#"><img src="{{ asset('/') }}images/gallery/sm-img/6.jpg" alt="gallery images"></a></li>
+                                        <li><a href="#"><img src="{{ asset('/') }}images/gallery/sm-img/5.jpg" alt="gallery images"></a></li>
+                                        <li><a href="#"><img src="{{ asset('/') }}images/gallery/sm-img/6.jpg" alt="gallery images"></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -808,7 +808,7 @@
                                         <div class="single__sm__post">
                                             <div class="sin__post__thumb">
                                                 <a href="blog-details,html">
-                                                    <img src="images/blog/sm-img/1.jpg" alt="blog images">
+                                                    <img src="{{ asset('/') }}images/blog/sm-img/1.jpg" alt="blog images">
                                                 </a>
                                             </div>
                                             <div class="sin__post__details">
@@ -819,7 +819,7 @@
                                         <div class="single__sm__post">
                                             <div class="sin__post__thumb">
                                                 <a href="blog-details,html">
-                                                    <img src="images/blog/sm-img/2.jpg" alt="blog images">
+                                                    <img src="{{ asset('/') }}images/blog/sm-img/2.jpg" alt="blog images">
                                                 </a>
                                             </div>
                                             <div class="sin__post__details">
@@ -830,7 +830,7 @@
                                         <div class="single__sm__post">
                                             <div class="sin__post__thumb">
                                                 <a href="blog-details,html">
-                                                    <img src="images/blog/sm-img/3.jpg" alt="blog images">
+                                                    <img src="{{ asset('/') }}images/blog/sm-img/3.jpg" alt="blog images">
                                                 </a>
                                             </div>
                                             <div class="sin__post__details">
