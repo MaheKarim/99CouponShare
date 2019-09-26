@@ -1,6 +1,9 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-CI / CD Status : [![Build Status](https://travis-ci.org/MaheKarim/99CouponShare.svg?branch=master)](https://travis-ci.org/MaheKarim/99CouponShare)
+<p align="center">
+<a href="https://travis-ci.org/MaheKarim/99CouponShare"><img src="https://travis-ci.org/MaheKarim/99CouponShare.svg?branch=master" alt="Build Status"></a>
+
+</p>
 
 ## About Laravel
 
