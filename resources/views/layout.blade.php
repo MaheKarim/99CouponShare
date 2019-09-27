@@ -219,7 +219,7 @@
         </section>
         <!-- End About Area -->
         <!-- Start Our Pizza Area -->
-        <section class="fd__pizza__area bg-image--25 section-padding--lg">
+        <section class="fd__pizza__area bg-image--25 section-padding--lg" style="background-image: url('{{ asset('/') }}images/bg/9.jpg')">
             <div class="bg__cat">
                 <div class="container">
                     <div class="row">
@@ -372,7 +372,7 @@
         </section>
         <!-- End Counter Up Area -->
         <!-- Start Resturant MEnu -->
-        <section class="resturent__food__menu bg-image--8 section-padding--lg">
+    <section class="resturent__food__menu bg-image--8 section-padding--lg" style="background-image: url('{{ asset('/') }}images/bg/8.jpg')">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -585,7 +585,7 @@
         </section>
         <!-- End Clint Demand Area -->
         <!-- Start Testimonial Area -->
-        <section class="fd__testimonial__area testimonial--2 bg-image--9 ptb--150">
+        <section class="fd__testimonial__area testimonial--2 bg-image--9 ptb--150" style="background-image: url('{{ asset('/') }}images/bg/9.jpg')">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
