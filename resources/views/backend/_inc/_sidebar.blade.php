@@ -10,7 +10,7 @@
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                         <span>
-                            Hizrian
+                            {{ Auth::user()->name }}
                             <span class="user-level">Administrator</span>
                             <span class="caret"></span>
                         </span>
@@ -295,9 +295,6 @@
                         </ul>
                     </div>
                 </li>
-                {{-- <li class="mx-4 mt-2">
-                    <a href="http://themekita.com/atlantis-bootstrap-dashboard.html" class="btn btn-primary btn-block"><span class="btn-label mr-2"> <i class="fa fa-heart"></i> </span>Buy Pro</a> 
-                </li> --}}
             </ul>
         </div>
     </div>
