@@ -39,6 +39,29 @@
                             </div>
                         </div>
 
+                        <!-- User Role -->
+                        <div class="form-group row">
+                                <label for="user_role" class="col-md-4 col-form-label text-md-right">{{ __('Select A Role') }}</label>
+    
+                                <div class="col-md-6">
+                                    <select class="form-control" name="user_role">
+                                        <option disabled selected>Select a role</option>
+                                        @php( $user_role = \App\user_role::all())
+                                        @foreach($user_role as $role)
+                                            <option value="{{ $role->id }}">{{ $role->user_role }}</option>
+                                        @endforeach
+                                    </select>
+                                    @error('user_role')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+
+                        <!-- User Role End -->
+
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
