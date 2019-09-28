@@ -40,15 +40,16 @@
                         </div>
 
                         <!-- User Role -->
+                        @admin
                         <div class="form-group row">
                                 <label for="user_role" class="col-md-4 col-form-label text-md-right">{{ __('Select A Role') }}</label>
     
                                 <div class="col-md-6">
                                     <select class="form-control" name="user_role">
                                         <option disabled selected>Select a role</option>
-                                        @php( $user_role = \App\user_role::all())
-                                        @foreach($user_role as $role)
-                                            <option value="{{ $role->id }}">{{ $role->user_role }}</option>
+                                        @php( $userrole = \App\user_role::all())
+                                        @foreach($userrole as $user_role)
+                                            <option value="{{ $user_role->id }}">{{ $user_role->user_role }}</option>
                                         @endforeach
                                     </select>
                                     @error('user_role')
@@ -58,7 +59,7 @@
                                     @enderror
                                 </div>
                             </div>
-
+                        @endadmin
 
                         <!-- User Role End -->
 
