@@ -42,7 +42,7 @@
             </div>
             <ul class="nav nav-primary">
                     <li class="nav-item">
-                            <a href="widgets.html">
+                    <a href="{{ url('/home') }}">
                                 <i class="fas fa-desktop"></i>
                                 <p>Home Button</p>
                             </a>
