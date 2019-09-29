@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
         // Blade Directive Code Start From Here
         
         Blade::if('admin', function () {
-            return auth()->check() && auth()->user()->user_role == 1;
+            return auth()->check() && auth()->user()->user_role_id == 1;
         });
 
     }

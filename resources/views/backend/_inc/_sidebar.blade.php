@@ -12,7 +12,7 @@
                         <span>
                             {{ Auth::user()->name }}
                             <span class="user-level">
-                               {{ Auth::user()->userType->user_role }}
+                               {{ Auth::user()->user_role->user_role }} 
                             </span>
                             <span class="caret"></span>
                         </span>
