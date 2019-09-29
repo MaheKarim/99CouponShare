@@ -27,11 +27,16 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        // Blade Directive Code Start From Here
+        // Blade Directive For Admin - Code Start From Here
         
         Blade::if('admin', function () {
             return auth()->check() && auth()->user()->user_role_id == 1;
         });
+        
+        // Blade Directive For - Agent Start Here
 
+        Blade::if('agent', function(){
+            return auth()->check() && auth()->user()->user_role_id == 2;
+        });
     }
 }

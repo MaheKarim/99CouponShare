@@ -58,8 +58,7 @@
                                     @enderror
                                 </div>
                             </div>
-
-                            @endadmin
+                        @endadmin
                         <!-- User Role End -->
 
                         <div class="form-group row">
