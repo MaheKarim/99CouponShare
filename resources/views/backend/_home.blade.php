@@ -526,13 +526,13 @@
 								<div class="row">
 									<div class="col-5">
 										<div class="icon-big text-center">
-											<i class="flaticon-chart-pie text-warning"></i>
+											<i class="flaticon-user-2 text-success"></i>
 										</div>
 									</div>
 									<div class="col-7 col-stats">
 										<div class="numbers">
-											<p class="card-category">Number</p>
-											<h4 class="card-title">150GB</h4>
+											<p class="card-category">Total Admin</p>
+											<h4 class="card-title"> {{$users = App\User::where('user_role_id','1')->count() }} </h4>
 										</div>
 									</div>
 								</div>
@@ -545,13 +545,13 @@
 								<div class="row">
 									<div class="col-5">
 										<div class="icon-big text-center">
-											<i class="flaticon-coins text-success"></i>
+											<i class="flaticon-user-1 text-success"></i>
 										</div>
 									</div>
 									<div class="col-7 col-stats">
 										<div class="numbers">
-											<p class="card-category">Revenue</p>
-											<h4 class="card-title">$ 1,345</h4>
+											<p class="card-category">Total Agent</p>
+											<h4 class="card-title">{{ \App\User::where(['user_role_id' => 2])->get()->count() }}</h4>
 										</div>
 									</div>
 								</div>
