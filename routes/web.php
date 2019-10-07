@@ -19,3 +19,7 @@ Auth::routes();
 // Logout route
 Route::get('logout','\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Add area
+
+Route::get('/add/area', 'AreaController@index')->name('addArea');
