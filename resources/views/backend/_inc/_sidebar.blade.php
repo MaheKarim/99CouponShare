@@ -42,11 +42,11 @@
             </div>
             <ul class="nav nav-primary">
                     <li class="nav-item">
-                    <a href="{{ url('/home') }}">
+                    {{-- <a href="{{ url('/home') }}">
                                 <i class="fas fa-desktop"></i>
                                 <p>Home Button</p>
                             </a>
-                        </li>
+                        </li> --}}
                 <li class="nav-section">
                     <span class="sidebar-mini-icon">
                         <i class="fa fa-ellipsis-h"></i>
@@ -74,6 +74,8 @@
                         </ul>
                     </div>
                 </li>
+
+               
                   <li class="nav-item">
                     <a data-toggle="collapse" href="#sidebarLayouts">
                         <i class="fas fa-th-list"></i>
@@ -95,6 +97,24 @@
                         </ul>
                     </div>
                 </li>
+
+
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#submenu">
+                        <i class="fas fa-bars"></i>
+                        <p>Category</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="submenu">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a data-toggle="collapse" href="#subnav1">
+                                    <span class="sub-item">Level 1</span>
+                                    
+                                </a>
+                               
+                            </li>
+                
 
                 <!-- New step Add -->
 
