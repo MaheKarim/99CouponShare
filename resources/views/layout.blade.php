@@ -97,12 +97,12 @@
                                 <div class="log__in">
                                     <a class="accountbox-trigger" href="#"><i class="zmdi zmdi-account-o"></i></a>
                                 </div>
-                                <div class="shopping__cart">
+                                {{-- <div class="shopping__cart">
                                     <a class="minicart-trigger" href="#"><i class="zmdi zmdi-shopping-basket"></i></a>
                                     <div class="shop__qun">
                                         <span>03</span>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
