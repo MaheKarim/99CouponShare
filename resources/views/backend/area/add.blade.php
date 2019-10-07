@@ -4,7 +4,9 @@
 
 <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">Forms</h4>
+            <h4 class="page-title">
+                @yield('title','Create Area')
+            </h4>
             <ul class="breadcrumbs">
                 <li class="nav-home">
                     <a href="#">
@@ -64,7 +66,7 @@
                         </div>
                         <div class="card-action">
                                 <button class="btn btn-success">Submit</button>
-                                <button class="btn btn-danger">Cancel</button>
+                        <a href="{{ url('/show/area') }}" class="btn btn-danger">Cancel</a>
                         </div> 
                        </form>
                     </div>

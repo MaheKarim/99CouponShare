@@ -26,7 +26,7 @@ class AreaController extends Controller
 
          // falsh message
          session()->flash('success','Area Created successfully!');
-         return redirect(route('addArea'));
+         return redirect(route('showArea'));
     }
 
     public function show(){
@@ -45,17 +45,17 @@ class AreaController extends Controller
 
     public function update(Request $request){
         // validation
-        // $request->validate([
-        //     'area_name' => 'min:3',
-        //  ]);
+        $request->validate([
+            'area_name' => 'required|min:3',
+         ]);
 
          // update work
-        // $data = [ ];
+   
          $areas = Area::findOrfail($request)->first();
          $areas->area_name = $request->area_name;
          $areas->save();
 
-        // session()->flash('success','Successfully Updated!');
+         session()->flash('success','Successfully Updated!');
          return redirect(route('showArea'));
     }
 }

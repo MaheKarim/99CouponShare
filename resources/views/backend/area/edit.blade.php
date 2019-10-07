@@ -35,21 +35,19 @@
                             <div class="col-md-4 col-lg-8">
 
 
-
-
                                 <form action="{{ route('updateArea') }}" method="POST">
                                  @csrf
                                 <div class="form-group">
                                 <label for="text">Update Area Name</label>
                                 <input type="text" class="form-control" name="area_name" id="area_name" value="{{ $areas->area_name }}" placeholder="Enter Area Name">
-                                <input type="hidden" name="area_name"  value="{{ $areas->id }}">    
+                                <input type="hidden" name="area_name_id"  value="{{ $areas->id }}">    
                                 </div>
                                 </div> 
                             </div>
                         </div>
                         <div class="card-action">
                                 <button class="btn btn-success">Submit</button>
-                                <button class="btn btn-danger">Cancel</button>
+                        <a href="{{ url('/show/area') }}" class="btn btn-danger">Cancel</a>
                         </div> 
                        </form>
                     </div>

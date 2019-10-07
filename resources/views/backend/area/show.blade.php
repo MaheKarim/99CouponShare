@@ -4,42 +4,25 @@
 
 <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">DataTables.Net</h4>
-            <ul class="breadcrumbs">
-                <li class="nav-home">
-                    <a href="#">
-                        <i class="flaticon-home"></i>
-                    </a>
-                </li>
-                <li class="separator">
-                    <i class="flaticon-right-arrow"></i>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Tables</a>
-                </li>
-                <li class="separator">
-                    <i class="flaticon-right-arrow"></i>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Datatables</a>
-                </li>
-            </ul>
+            <h4 class="page-title">
+                @yield('title','Show Area')
+            </h4>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex align-items-center">
-                            <h4 class="card-title">Add Row</h4>
-                            <button class="btn btn-primary btn-round ml-auto" data-toggle="modal" data-target="#addRowModal">
+                          
+                        <a href="{{ url('/add/area') }}" class="btn btn-primary btn-round ml-auto">
                                 <i class="fa fa-plus"></i>
-                                Add Row
-                            </button>
+                                Add Area
+                            </a>
                         </div>
                     </div>
                     <div class="card-body">
                         <!-- Modal -->
-                        <div class="modal fade" id="addRowModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        {{-- <div class="modal fade" id="addRowModal" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header no-bd">
@@ -85,8 +68,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
+                        </div> --}}
+                                       <!-- Notification Start Here -->
+                                       @if (session()->has('success'))
+                                       <div class="alert alert-success">
+                                           {{ session()->get('success') }}
+                                       </div>
+                                          @endif
+                                       <!-- Notification End Here -->
                         <div class="table-responsive">
                             <table id="add-row" class="display table table-striped table-hover" >
                                 <thead>
