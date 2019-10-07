@@ -11,9 +11,10 @@
 99CoupnShare built in Laravel. Laravel is a web application framework with expressive, elegant syntax. 99CouponShare is a multi-level coupon sharing platform built in PHP, Laravel, JS
 
 
-## Learning Laravel
+## Using Application
 
-- [ ] CI/CD
+- [ ] CI - TravisCI
+- [ ] CD - Heroku
 - [ ] Laravel Mix
 
 
