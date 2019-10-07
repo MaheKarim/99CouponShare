@@ -58,4 +58,12 @@ class AreaController extends Controller
          session()->flash('success','Successfully Updated!');
          return redirect(route('showArea'));
     }
+
+    public function deleteMe($id){
+        $areas = Area::find($id);
+        $areas->delete();
+
+        session()->flash('success','Deleted Successfully!');
+        return redirect(route('showArea'));
+    }
 }
