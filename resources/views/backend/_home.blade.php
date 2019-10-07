@@ -50,7 +50,7 @@
 								<div class="row">
 									<div class="col-5">
 										<div class="icon-big text-center">
-											<i class="flaticon-user-1 text-success"></i>
+											<i class="icon-user-following text-success"></i>
 										</div>
 									</div>
 									<div class="col-7 col-stats">
@@ -69,13 +69,13 @@
 								<div class="row">
 									<div class="col-5">
 										<div class="icon-big text-center">
-											<i class="flaticon-error text-danger"></i>
+											<i class="icon-people text-info"></i>
 										</div>
 									</div>
 									<div class="col-7 col-stats">
 										<div class="numbers">
-											<p class="card-category">Errors</p>
-											<h4 class="card-title">23</h4>
+											<p class="card-category">Total User</p>
+										<h4 class="card-title">{{$users = App\User::where('user_role_id','3')->count() }}</h4>
 										</div>
 									</div>
 								</div>
@@ -104,6 +104,7 @@
 						</div>
 					</div>
 				</div>
+				  @include('backend._inc._adminBeautify')
 				@endadmin
 				<!-- Start For Agent Code -->
 				 @agent
@@ -114,31 +115,6 @@
 			</div>
 				<!-- End Static Bar-->
 			</div>
-			<footer class="footer">
-				<div class="container-fluid">
-					<nav class="pull-left">
-						<ul class="nav">
-							<li class="nav-item">
-								<a class="nav-link" href="https://www.themekita.com">
-									ThemeKita
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Help
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Licenses
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="copyright ml-auto">
-						2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a>
-					</div>				
-				</div>
-			</footer>
+			@include('backend._inc._footer')
 		</div> 
 @endsection
