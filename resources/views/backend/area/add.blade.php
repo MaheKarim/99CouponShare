@@ -34,18 +34,30 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4 col-lg-8">
+                                <!-- Notification Start Here -->
+                                @if (session()->has('success'))
+                                <div class="alert alert-success">
+                                    {{ session()->get('success') }}
+                                </div>
+                                   @endif
+                                <!-- Notification End Here -->
+                                <form action="{{ url('store-area') }}" method="POST">
+                                 @csrf
                                 <div class="form-group">
-                                    <label for="email2">Add Area Name</label>
-                                    <input type="text" class="form-control" id="text" placeholder="Enter Area Name">
+                                    <label for="text">Add Area Name</label>
+                                    <input type="text" class="form-control" name="area_name" id="text" placeholder="Enter Area Name">
+                                    </div>
                                 </div> 
                             </div>
                         </div>
+                        <div class="card-action">
+                                <button class="btn btn-success">Submit</button>
+                                <button class="btn btn-danger">Cancel</button>
+                        </div> 
+                       </form>
                     </div>
                 </div>
             </div>
         </div>
    </div>
-        
-       
-  
 @endsection

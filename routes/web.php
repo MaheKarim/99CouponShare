@@ -23,4 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Add area
 
 Route::get('/add/area', 'AreaController@index')->name('addArea');
-// Route::get('/add/area/form','AreaController@show');
+
+Route::post('/store-area','AreaController@store');
+
