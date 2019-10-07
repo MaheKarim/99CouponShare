@@ -34,6 +34,19 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4 col-lg-8">
+
+<!-- error message -->
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+<!-- error message end -->
+
                                 <!-- Notification Start Here -->
                                 @if (session()->has('success'))
                                 <div class="alert alert-success">
