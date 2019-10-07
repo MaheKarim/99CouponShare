@@ -8,4 +8,6 @@ class Area extends Model
 {
     //
     protected $guarded = [' '];
+
+
 }

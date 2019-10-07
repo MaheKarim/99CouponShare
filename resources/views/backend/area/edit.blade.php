@@ -1,11 +1,10 @@
 @extends('backend._layout')
 
 @section('content')
-
 <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">Forms</h4>
-            <ul class="breadcrumbs">
+            <h4 class="page-title">Update Page</h4>
+            {{-- <ul class="breadcrumbs">
                 <li class="nav-home">
                     <a href="#">
                         <i class="flaticon-home"></i>
@@ -23,42 +22,28 @@
                 <li class="nav-item">
                     <a href="#">Basic Form</a>
                 </li>
-            </ul>
+            </ul> --}}
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Add Area Here</div>
+                        <div class="card-title">Update Area Here</div>
                     </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4 col-lg-8">
 
-                            <!-- error message -->
-                            @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                     @foreach ($errors->all() as $error)
-                                       <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                            @endif
-                            <!-- error message end -->
-                            <!-- Notification Start Here -->
-                            @if (session()->has('success'))
-                            <div class="alert alert-success">
-                                {{ session()->get('success') }}
-                            </div>
-                               @endif
-                            <!-- Notification End Here -->
-                                <form action="{{ url('store-area') }}" method="POST">
+
+
+
+                                <form action="{{ route('updateArea') }}" method="POST">
                                  @csrf
                                 <div class="form-group">
-                                    <label for="text">Add Area Name</label>
-                                    <input type="text" class="form-control" name="area_name" id="text" placeholder="Enter Area Name">
-                                    </div>
+                                <label for="text">Update Area Name</label>
+                                <input type="text" class="form-control" name="area_name" id="area_name" value="{{ $areas->area_name }}" placeholder="Enter Area Name">
+                                <input type="hidden" name="area_name"  value="{{ $areas->id }}">    
+                                </div>
                                 </div> 
                             </div>
                         </div>

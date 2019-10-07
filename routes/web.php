@@ -16,5 +16,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/add/area', 'AreaController@index')->name('addArea');
 Route::post('/store-area','AreaController@store');
 Route::get('/show/area','AreaController@show')->name('showArea');
-
+Route::get('/area/edit/{area}','AreaController@edit')->name('editArea');
+Route::post('/update-area','AreaController@update')->name('updateArea');
 

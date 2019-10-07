@@ -35,4 +35,27 @@ class AreaController extends Controller
 
         return view('backend.area.show', $data);
     }
+
+    public function edit($areaid){
+        $data = [ ];
+        $data['areas'] = Area::find($areaid);
+
+        return view('backend.area.edit', $data);
+    }
+
+    public function update(Request $request){
+        // validation
+        // $request->validate([
+        //     'area_name' => 'min:3',
+        //  ]);
+
+         // update work
+        // $data = [ ];
+         $areas = Area::findOrfail($request)->first();
+         $areas->area_name = $request->area_name;
+         $areas->save();
+
+        // session()->flash('success','Successfully Updated!');
+         return redirect(route('showArea'));
+    }
 }
