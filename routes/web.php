@@ -22,3 +22,7 @@ Route::prefix('api/v1.3')->group(function () {
     // Logout Route
     Route::post('/logout','\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 });
+
+    // About category
+
+    Route::get('/add/category','CategoryController@index')->name('addCategory');
