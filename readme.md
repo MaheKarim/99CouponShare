@@ -5,10 +5,10 @@
 
 </p>
 
-## About Laravel
+## About 99CouponShare
 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+99CoupnShare built in Laravel. Laravel is a web application framework with expressive, elegant syntax. 99CouponShare is a multi-level coupon sharing platform built in PHP, Laravel, JS
 
 
 ## Learning Laravel
