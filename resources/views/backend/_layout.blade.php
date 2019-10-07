@@ -38,10 +38,12 @@
         <!-- Start Sidebar -->
 		@include('backend._inc._sidebar')
 		<!-- End Sidebar -->
-
+		<div class="main-panel">
+			<div class="content">
 		@yield('content')
 		
-		
+			</div>
+		</div>
 	</div>
 	@include('backend._inc._coreOtherJS')
 </body>
