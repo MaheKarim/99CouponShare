@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/doctrine/inflector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/fideloper/proxy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/paragonie/random_compat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/psr/container" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/psr/simple-cache" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/service-contracts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/translation-contracts" vcs="Git" />
+  </component>
+</project>

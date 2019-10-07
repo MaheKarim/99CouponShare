@@ -95,6 +95,30 @@
                         </ul>
                     </div>
                 </li>
+
+                <!-- New step Add -->
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#sidebarLayouts">
+                        <i class="fas fa-th-list"></i>
+                        <p>Area</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="sidebarLayouts">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a href="sidebar-style-1.html">
+                                    <span class="sub-item">Add Area</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="static-sidebar.html">
+                                    <span class="sub-item">RUD Area</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
