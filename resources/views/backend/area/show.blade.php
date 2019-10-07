@@ -36,6 +36,7 @@
                                     <tr>
                                         <th>Area Name</th>
                                         <th>Created At</th>
+                                        <th>Updated At</th>
                                         <th style="width: 10%">Action</th>
                                     </tr>
                                 </thead>
@@ -44,6 +45,7 @@
                                     <tr>
                                     <td>{{ $area->area_name }}</td>
                                     <td>{{ $area->created_at }}</td>
+                                    <td>{{ $area->updated_at }}</td>
                                         <td>
                                             <div class="form-button-action">
                                             <a href="{{ route('editArea', $area->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
