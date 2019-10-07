@@ -63,7 +63,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="components/buttons.html">
+                            <a href="{{ route('showArea') }}">
                                     <span class="sub-item">View Area</span>
                                 </a>
                             </li>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Area;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class AreaController extends Controller
 {
@@ -22,8 +23,16 @@ class AreaController extends Controller
          $areas = new Area();
          $areas->area_name = $request->area_name;
          $areas->save();
+
          // falsh message
          session()->flash('success','Area Created successfully!');
          return redirect(route('addArea'));
+    }
+
+    public function show(){
+        $data = [ ];
+        $data['areas'] = Area::all();
+
+        return view('backend.area.show', $data);
     }
 }
