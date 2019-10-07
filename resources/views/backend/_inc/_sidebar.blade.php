@@ -42,11 +42,7 @@
             </div>
             <ul class="nav nav-primary">
                     <li class="nav-item">
-                    {{-- <a href="{{ url('/home') }}">
-                                <i class="fas fa-desktop"></i>
-                                <p>Home Button</p>
-                            </a>
-                        </li> --}}
+                   
                 <li class="nav-section">
                     <span class="sidebar-mini-icon">
                         <i class="fa fa-ellipsis-h"></i>
@@ -114,11 +110,7 @@
                                 </a>
                                
                             </li>
-                
-
-                <!-- New step Add -->
-
-            </ul>
+                       </ul>
+                </div>
         </div>
-    </div>
 </div>
