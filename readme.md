@@ -16,6 +16,7 @@
 - [ ] CI - TravisCI
 - [ ] CD - Heroku
 - [ ] Laravel Mix
+- [ ] CRUD Operation
 
 
 
