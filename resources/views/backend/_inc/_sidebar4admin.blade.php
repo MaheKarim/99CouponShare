@@ -30,8 +30,8 @@
         <div class="collapse" id="submenu">
             <ul class="nav nav-collapse">
                 <li>
-                <a href="{{ route('addCategory') }}">
-                        <span class="sub-item">Level 1</span>  
+                <a href="{{ route('showCategory') }}">
+                        <span class="sub-item">Show Category</span>  
                     </a>
                 </li>
            </ul>
