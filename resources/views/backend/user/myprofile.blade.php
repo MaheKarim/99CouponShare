@@ -21,7 +21,7 @@
           
 
                 <div class="name">{{ Auth::user()->name }}</div>
-                <div class="job">Junior dev</div>
+                <div class="job">Junior Dev</div>
                 <div class="desc">A man who hates loneliness</div>
                 <div class="social-media">
                     <a class="btn btn-info btn-twitter btn-sm btn-link" href="#"> 
@@ -38,7 +38,7 @@
                     </a>
                 </div>
                 <div class="view-profile">
-                    <a href="#" class="btn btn-secondary btn-block">View Full Profile</a>
+                    <a href="#" class="btn btn-secondary btn-block">Update Profile</a>
                 </div>
             </div>
         </div>
