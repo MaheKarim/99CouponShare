@@ -14,40 +14,26 @@
                             <span class="user-level">
                                {{ Auth::user()->user_role->user_role }} 
                             </span>
-                            <span class="caret"></span>
+                          
                         </span>
                     </a>
                     <div class="clearfix"></div>
-
-                    <div class="collapse in" id="collapseExample">
-                        <ul class="nav">
-                            <li>
-                                <a href="#profile">
-                                    <span class="link-collapse">My Profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#edit">
-                                    <span class="link-collapse">Edit Profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#settings">
-                                    <span class="link-collapse">Settings</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             <ul class="nav nav-primary">
                     <li class="nav-item">
                    
-                <li class="nav-section">
-                    <span class="sidebar-mini-icon">
-                        <i class="fa fa-ellipsis-h"></i>
-                    </span>
-                    <h4 class="text-section">Hot Bar</h4>
+                   <li class="nav-section">
+                    
+
+                    <ul class="nav nav-primary">
+						<li class="nav-item active">
+                        <a  href="{{ url('/home')}}" class="collapsed" aria-expanded="false">
+								<i class="fas fa-home"></i>
+								<p>Dashboard</p>	
+                        </a>
+                        </li>
+                    </ul>
 
                     @admin
                     @include('backend._inc._sidebar4admin')

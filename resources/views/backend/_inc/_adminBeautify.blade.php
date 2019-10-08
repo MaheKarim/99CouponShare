@@ -24,13 +24,13 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="icon-big text-center">
-                                <i class="flaticon-interface-6"></i>
+                                <i class="flaticon-list"></i>
                             </div>
                         </div>
                         <div class="col-7 col-stats">
                             <div class="numbers">
-                                <p class="card-category">Subscribers</p>
-                                <h4 class="card-title">1303</h4>
+                                <p class="card-category">Total Category</p>
+                                <h4 class="card-title">{{ \App\Category::count() }}</h4>
                             </div>
                         </div>
                     </div>

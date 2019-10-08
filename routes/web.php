@@ -7,6 +7,9 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+// Password Update
+Route::get('/change/password','HomeController@showChangePasswordForm')->name('passwordupdate');
+Route::post('/changePassword','HomeController@changePassword')->name('changePassword');
 
 
     // Add area

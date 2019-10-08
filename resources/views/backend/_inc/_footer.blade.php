@@ -3,8 +3,8 @@
             <nav class="pull-left">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.themekita.com">
-                            ThemeKita
+                        <a class="nav-link" href="https://about.me/mahekarim">
+                            About Dev
                         </a>
                     </li>
                     <li class="nav-item">
@@ -20,7 +20,7 @@
                 </ul>
             </nav>
             <div class="copyright ml-auto">
-                2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a>
+                2019 | Made <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.google.com/search?q=mahe+karim">Mahe Karim</a>
             </div>				
         </div>
     </footer>
