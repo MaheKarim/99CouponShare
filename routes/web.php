@@ -11,6 +11,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/change/password','HomeController@showChangePasswordForm')->name('passwordupdate');
 Route::post('/changePassword','HomeController@changePassword')->name('changePassword');
 
+ 
+    // User Controller
+    Route::get('/user/profile','UserController@index')->name('viewUserProfile');
+
 
     // Add area
     Route::get('/add/area', 'AreaController@index')->name('addArea');
