@@ -22,10 +22,7 @@
             </div>
             <ul class="nav nav-primary">
                     <li class="nav-item">
-                   
                    <li class="nav-section">
-                    
-
                     <ul class="nav nav-primary">
 						<li class="nav-item active">
                         <a  href="{{ url('/home')}}" class="collapsed" aria-expanded="false">
@@ -34,33 +31,13 @@
                         </a>
                         </li>
                     </ul>
-
+                    <hr>
                     @admin
                     @include('backend._inc._sidebar4admin')
                     @endadmin
-
+                <!-- Dashboard Separate -->
                     @agent
-                    <li class="nav-item">
-                            <a data-toggle="collapse" href="#submenu">
-                                <i class="fas fa-bars"></i>
-                                <p>Coupon</p>
-                                <span class="caret"></span>
-                            </a>
-                            <div class="collapse" id="submenu">
-                                <ul class="nav nav-collapse">
-                                    <li>
-                                        <a data-toggle="collapse" href="#subnav1">
-                                            <span class="sub-item">Level 1</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                         <a href="{{ route('showArea') }}">
-                                            <span class="sub-item">View Area</span>
-                                        </a>
-                                    </li>
-                               </ul>
-                            </div>
-                        </li>
+                    @include('backend._inc._sidebar4agent')
                     @endagent
             </div>
     </div>
