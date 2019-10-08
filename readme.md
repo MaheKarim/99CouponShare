@@ -17,6 +17,7 @@
 - [ ] CD - Heroku
 - [ ] Laravel Mix
 - [ ] CRUD Operation
+- [ ] Intervention Package Added
 
 
 
