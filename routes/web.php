@@ -13,7 +13,8 @@ Route::post('/changePassword','HomeController@changePassword')->name('changePass
 
  
     // User Controller
-    Route::get('/user/profile','UserController@index')->name('viewUserProfile');
+    Route::get('/user/profile','UserController@index')->name('
+    ');
 
 
     // Add area
