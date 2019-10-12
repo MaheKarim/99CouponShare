@@ -7,6 +7,7 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
 // Password Update
 Route::get('/change/password','HomeController@showChangePasswordForm')->name('passwordupdate');
 Route::post('/changePassword','HomeController@changePassword')->name('changePassword');
@@ -31,10 +32,13 @@ Route::prefix('api/v1.3')->group(function () {
     Route::post('/logout','\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 });
 
-    // About category
+    // About Category
     Route::get('/add/category','CategoryController@index')->name('addCategory');
     Route::post('/store-category','CategoryController@store');
     Route::get('/show/category','CategoryController@show')->name('showCategory');
     Route::get('/category/edit/{category}','CategoryController@edit')->name('editCategory');
     Route::post('/update-category','CategoryController@update')->name('updateCategory');
     Route::get('/delete/category/{id}','CategoryController@delete')->name('deleteCategory');
+
+    // About Dokan 
+    Route::get('/show/dokan','DokanController@show')->name('showDokan');
