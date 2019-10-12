@@ -51,4 +51,6 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::get('/delete/dokan/{id}', 'DokanController@delete')->name('deleteDokan');
 
     // Logo Change
+
+    Route::get('/change/logo','LogoChangeController@index')->name('logoChange');
     

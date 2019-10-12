@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9db5b3-7b0e-4147-a4e2-4c751fb78384" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/logo.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LogoChangeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LogoChangeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/_inc/_sidebar4admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/_inc/_sidebar4admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +38,7 @@
     <session id="1848693011">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="3" />
@@ -53,7 +59,7 @@
           <entry key="gitignore" value="1" />
           <entry key="htaccess" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="26" />
+          <entry key="php" value="31" />
           <entry key="sql" value="3" />
           <entry key="travis" value="1" />
         </counts>
@@ -61,9 +67,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="5" />
-          <entry key="Blade" value="16" />
+          <entry key="Blade" value="19" />
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="10" />
+          <entry key="PHP" value="12" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="3" />
           <entry key="htaccess" value="1" />
@@ -73,7 +79,7 @@
         <counts>
           <entry key="env" value="10" />
           <entry key="gitignore" value="6" />
-          <entry key="php" value="1282" />
+          <entry key="php" value="1602" />
           <entry key="sql" value="83" />
           <entry key="txt" value="38" />
         </counts>
@@ -81,8 +87,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="10" />
-          <entry key="Blade" value="523" />
-          <entry key="PHP" value="759" />
+          <entry key="Blade" value="732" />
+          <entry key="PHP" value="870" />
           <entry key="PLAIN_TEXT" value="44" />
           <entry key="Scratch" value="83" />
         </counts>
@@ -106,90 +112,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AreaController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="482">
+              <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LogoChangeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#39#57#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/404.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            <state relative-caret-position="162">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/backend/logo.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/welcome.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-292">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/02eb64b2-e66b-4a61-a270-45c1123368b5/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="72">
+              <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -216,12 +160,16 @@
         <option value="$PROJECT_DIR$/resources/views/backend/area/add.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/404.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/_inc/_sidebar4admin.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LogoChangeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/logo.blade.php" />
       </list>
     </option>
   </component>
@@ -359,13 +307,38 @@
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,7 +348,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="navb&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/frontend/_inc/navbar.blade.php&#10;env&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.env&#10;HomeController&#9;null&#9;null&#10;we&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;Admin&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Middleware/adminRouteOnly.php&#10;ker&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Kernel.php&#10;ide&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/backend/_inc/_sidebar.blade.php&#10;Area&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Controllers/AreaController.php&#10;web&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;.git&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.gitignore&#10;gitigno&#9;null&#9;null&#10;register.b&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/auth/register.blade.php&#10;Con&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="logo&#9;null&#9;null&#10;side&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/backend/_inc/_sidebar4admin.blade.php&#10;footer&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/frontend/footer.blade.php&#10;navb&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/frontend/_inc/navbar.blade.php&#10;env&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.env&#10;HomeController&#9;null&#9;null&#10;we&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;Admin&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Middleware/adminRouteOnly.php&#10;ker&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Kernel.php&#10;ide&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/backend/_inc/_sidebar.blade.php&#10;Area&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Controllers/AreaController.php&#10;web&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;.git&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.gitignore&#10;gitigno&#9;null&#9;null&#10;register.b&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/auth/register.blade.php&#10;Con&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -418,7 +391,7 @@
       <workItem from="1570436738608" duration="1391000" />
       <workItem from="1570447731285" duration="3162000" />
       <workItem from="1570456216163" duration="301000" />
-      <workItem from="1570891655875" duration="5934000" />
+      <workItem from="1570891655875" duration="10678000" />
     </task>
     <task id="LOCAL-00001" summary="some module">
       <created>1570394384749</created>
@@ -438,7 +411,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23150000" />
+    <option name="totallyTimeSpent" value="27894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -451,7 +424,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17782739" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -624,17 +596,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/404.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="360">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="252">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="104" column="36" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="106" column="45" selection-start-line="106" selection-start-column="45" selection-end-line="106" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -648,24 +634,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="54">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/404.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/_inc/_sidebar4admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        <state relative-caret-position="356">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        <state relative-caret-position="482">
+          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LogoChangeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/LogoChange.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/logo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>

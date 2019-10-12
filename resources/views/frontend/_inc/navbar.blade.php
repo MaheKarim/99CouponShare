@@ -104,7 +104,7 @@
                 <div id="header-navbar" class="nav-collapse">
                     <ul class="nav-menu">
                         <li class="active">
-                            <a href="index-3.html">Home</a>
+                            <a href="{{url('/')}}">Home</a>
                         </li>
                         <li class="dropdown-mega-menu">
                             <a href="deals_grid.html">Deals</a>
@@ -211,7 +211,11 @@
                         </li>
                     </ul>
                 </div>
-                
+                @if(Auth::User())
+                    <div class="nav-menu nav-menu-fixed">
+                        <a href="{{ url('/home') }}" target="_blank">Dashboard<i class="fa fa-long-arrow-right ml-10"></i></a>
+                    </div>
+                    @endif
             </nav>
         </div>
     </div>
