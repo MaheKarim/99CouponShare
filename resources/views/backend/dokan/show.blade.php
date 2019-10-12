@@ -4,7 +4,7 @@
 <div class="page-inner">
         <div class="page-header">
             <h4 class="page-title">
-                @yield('title','Show Category')
+                @yield('title','Show Dokan')
             </h4>
         </div>
         <div class="row">
@@ -13,9 +13,9 @@
                     <div class="card-header">
                         <div class="d-flex align-items-center">
                           
-                        <a href="{{ url('/add/category') }}" class="btn btn-primary btn-round ml-auto">
+                        <a href="{{ route('addDokan') }}" class="btn btn-primary btn-round ml-auto">
                                 <i class="fa fa-plus"></i>
-                                Add Category
+                                Add Dokan
                             </a>
                         </div>
                     </div>
@@ -35,29 +35,31 @@
                                 <thead>
                                     <tr>
                                         <th>Category Name</th>
+                                        <th>Description</th>
                                         <th>Created At</th>
-                                        <th>Updated At</th>
                                         <th style="width: 10%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                   @foreach ($categories as $category) 
+                                @foreach ($dokans as $dokan)
+                                    
+                                
                                     <tr>
-                                    <td>{{ $category->category_name }}</td>
-                                    <td>{{ $category->created_at }}</td>
-                                    <td>{{ $category->updated_at }}</td>
+                                    <td>{{ $dokan->dokan_name }}</td>
+                                    <td>{{ $dokan->dokan_description }}</td>
+                                    <td>{{ $dokan->created_at }}</td>
                                         <td>
                                             <div class="form-button-action">
-                                            <a href="" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+                                            <a href="{{ route('editDokan', $dokan->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
-                                                <a href="" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+                                            <a href="{{ route('deleteDokan', $dokan->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                     <i class="fa fa-times"></i>
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
-                                     @endforeach
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

@@ -48,8 +48,8 @@
                         </div>
                         <div class="col-7 col-stats">
                             <div class="numbers">
-                                <p class="card-category">Sales</p>
-                                <h4 class="card-title">$ 1,345</h4>
+                                <p class="card-category">Dokan</p>
+                                <h4 class="card-title"> {{ \App\Category::count() }} </h4>
                             </div>
                         </div>
                     </div>

@@ -3,10 +3,10 @@
                 <div class="col-md-4">
                     <div class="card card-dark bg-info shadow">
                         <div class="card-body skew-shadow">
-                            <h1>3,072</h1>
-                            <h5 class="op-8">Total conversations</h5>
+                            <h1>{{ \App\Category::count() }}</h1>
+                            <h5 class="op-8">Dokan</h5>
                             <div class="pull-right">
-                                <h3 class="fw-bold op-8">88%</h3>
+                                <h3 class="fw-bold op-8"> Special</h3>
                             </div>
                         </div>
                     </div>

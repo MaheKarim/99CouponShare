@@ -42,3 +42,8 @@ Route::prefix('api/v1.3')->group(function () {
 
     // About Dokan 
     Route::get('/show/dokan','DokanController@show')->name('showDokan');
+    Route::get('/add/dokan','DokanController@index')->name('addDokan');
+    Route::post('/store-dokan','DokanController@store');
+    Route::get('/edit/dokan/{dokan}','DokanController@edit')->name('editDokan');
+    Route::post('/update-dokan','DokanController@update')->name('updateDokan');
+    Route::get('/delete/dokan/{id}', 'DokanController@delete')->name('deleteDokan');
