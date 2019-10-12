@@ -1,6 +1,7 @@
 <header id="mainHeader" class="main-header">
 
     <!-- Top Bar -->
+    @if(!Auth::user())
     <div class="top-bar bg-gray">
         <div class="container">
             <div class="row">
@@ -19,7 +20,7 @@
                             <ul>
                                 <li><a href="index-2.html"><i class="fa fa-flag-en"></i>Bangla</a>
                                 </li>
-                                
+
                             </ul>
                         </li>
                         <li>
@@ -35,15 +36,18 @@
                                 </li>
                             </ul>
                         </li>
-                    <li><a href="{{ route('login') }}"><i class="fa fa-lock"></i>Sign In</a>
+                        <li><a href="{{ route('login') }}"><i class="fa fa-lock"></i>Sign In</a>
                         </li>
-                    <li><a href="{{ route('register') }}"><i class="fa fa-user"></i>Sign Up</a>
+                        <li><a href="{{ route('register') }}"><i class="fa fa-user"></i>Sign Up</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    @endif
+
+
     <!-- End Top Bar -->
 
     <!-- Header Header -->

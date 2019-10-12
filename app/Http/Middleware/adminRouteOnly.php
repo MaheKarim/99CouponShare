@@ -18,9 +18,14 @@ class adminRouteOnly
     public function handle($request, Closure $next)
 
     {
-       if(Auth::user()->user_role->id > 1){
-           return redirect ('/home');
-       }
+      if (Auth::guest()){
+          return redirect (route('error404'));
+
+      } else{
+          if(Auth::user()->user_role->id != 1 ) {
+              return redirect (route('error404'));
+          }
+      }
          return $next($request);
 
     }

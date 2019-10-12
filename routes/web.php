@@ -4,19 +4,34 @@
 Route::get('/', function () {
     return view('frontend.welcome');
 });
-
-Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
+// 404 Page
+Route::get('/404','HomeController@error')->name('error404');
+
+
+Auth::routes();
 // Password Update
 Route::get('/change/password','HomeController@showChangePasswordForm')->name('passwordupdate');
 Route::post('/changePassword','HomeController@changePassword')->name('changePassword');
+Route::prefix('api/v1.3')->group(function () {
+    // Logout Route
+    Route::post('/logout','\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+});
 
  
     // User Controller
-    Route::get('/user/profile','UserController@index')->name('
-    ');
+    Route::get('/user/profile','UserController@index')->name('userprofile');
 
+
+Route::middleware(['adminRouteOnly'])->group(function () {
+    // About Category
+    Route::get('/add/category','CategoryController@index')->name('addCategory');
+    Route::post('/store-category','CategoryController@store');
+    Route::get('/show/category','CategoryController@show')->name('showCategory');
+    Route::get('/category/edit/{category}','CategoryController@edit')->name('editCategory');
+    Route::post('/update-category','CategoryController@update')->name('updateCategory');
+    Route::get('/delete/category/{id}','CategoryController@delete')->name('deleteCategory');
 
     // Add area
     Route::get('/add/area', 'AreaController@index')->name('addArea');
@@ -25,22 +40,9 @@ Route::post('/changePassword','HomeController@changePassword')->name('changePass
     Route::get('/area/edit/{area}','AreaController@edit')->name('editArea');
     Route::post('/update-area','AreaController@update')->name('updateArea');
     Route::get('/delete-area/{id}','AreaController@deleteMe')->name('deleteArea');
-
-
-Route::prefix('api/v1.3')->group(function () {
-    // Logout Route
-    Route::post('/logout','\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 });
 
-    // About Category
-    Route::get('/add/category','CategoryController@index')->name('addCategory');
-    Route::post('/store-category','CategoryController@store');
-    Route::get('/show/category','CategoryController@show')->name('showCategory')->middleware(adminRouteOnly::class);
-    Route::get('/category/edit/{category}','CategoryController@edit')->name('editCategory');
-    Route::post('/update-category','CategoryController@update')->name('updateCategory');
-    Route::get('/delete/category/{id}','CategoryController@delete')->name('deleteCategory');
-
-    // About Dokan 
+    // About Dokan
     Route::get('/show/dokan','DokanController@show')->name('showDokan');
     Route::get('/add/dokan','DokanController@index')->name('addDokan');
     Route::post('/store-dokan','DokanController@store');

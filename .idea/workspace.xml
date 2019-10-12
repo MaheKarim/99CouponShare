@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9db5b3-7b0e-4147-a4e2-4c751fb78384" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/99CouponShare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/99CouponShare.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/404.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/_inc/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/_inc/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,21 +54,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="env" value="3" />
+          <entry key="env" value="4" />
           <entry key="gitignore" value="1" />
           <entry key="htaccess" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="21" />
+          <entry key="php" value="25" />
           <entry key="sql" value="3" />
           <entry key="travis" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="4" />
-          <entry key="Blade" value="13" />
+          <entry key=".env file" value="5" />
+          <entry key="Blade" value="16" />
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="8" />
+          <entry key="PHP" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="3" />
           <entry key="htaccess" value="1" />
@@ -76,18 +76,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="env" value="1" />
+          <entry key="env" value="10" />
           <entry key="gitignore" value="6" />
-          <entry key="php" value="743" />
+          <entry key="php" value="1281" />
           <entry key="sql" value="83" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="1" />
-          <entry key="Blade" value="316" />
-          <entry key="PHP" value="427" />
+          <entry key=".env file" value="10" />
+          <entry key="Blade" value="523" />
+          <entry key="PHP" value="758" />
           <entry key="PLAIN_TEXT" value="44" />
           <entry key="Scratch" value="83" />
         </counts>
@@ -119,11 +119,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="37" column="114" selection-start-line="37" selection-start-column="114" selection-end-line="37" selection-end-column="114" />
+            <state relative-caret-position="-184">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -131,13 +140,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="396">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#39#57#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-144">
+              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/404.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/frontend/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -170,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/views/backend/_inc/_sidebar.blade.php" />
@@ -179,9 +210,13 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/02eb64b2-e66b-4a61-a270-45c1123368b5/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/02eb64b2-e66b-4a61-a270-45c1123368b5/console.sql" />
         <option value="$PROJECT_DIR$/resources/views/backend/area/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/404.blade.php" />
       </list>
     </option>
   </component>
@@ -319,20 +354,20 @@
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,7 +377,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="we&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;Admin&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Middleware/adminRouteOnly.php&#10;ker&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Kernel.php&#10;ide&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/backend/_inc/_sidebar.blade.php&#10;Area&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Controllers/AreaController.php&#10;web&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;.git&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.gitignore&#10;gitigno&#9;null&#9;null&#10;register.b&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/auth/register.blade.php&#10;Con&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="navb&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/frontend/_inc/navbar.blade.php&#10;env&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.env&#10;HomeController&#9;null&#9;null&#10;we&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;Admin&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Middleware/adminRouteOnly.php&#10;ker&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Kernel.php&#10;ide&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/backend/_inc/_sidebar.blade.php&#10;Area&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Controllers/AreaController.php&#10;web&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;.git&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.gitignore&#10;gitigno&#9;null&#9;null&#10;register.b&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/auth/register.blade.php&#10;Con&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -385,7 +420,7 @@
       <workItem from="1570436738608" duration="1391000" />
       <workItem from="1570447731285" duration="3162000" />
       <workItem from="1570456216163" duration="301000" />
-      <workItem from="1570891655875" duration="1714000" />
+      <workItem from="1570891655875" duration="5084000" />
     </task>
     <task id="LOCAL-00001" summary="some module">
       <created>1570394384749</created>
@@ -405,7 +440,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18930000" />
+    <option name="totallyTimeSpent" value="22300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,7 +455,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17782739" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17782739" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3291536" />
@@ -493,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.env.travis">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/finder/Gitignore.php">
@@ -584,20 +616,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="396">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#39#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="37" column="114" selection-start-line="37" selection-start-column="114" selection-end-line="37" selection-end-column="114" />
+        <state relative-caret-position="-144">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/404.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
         </state>
       </provider>
     </entry>
