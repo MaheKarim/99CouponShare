@@ -35,9 +35,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="signin.html"><i class="fa fa-lock"></i>Sign In</a>
+                    <li><a href="{{ route('login') }}"><i class="fa fa-lock"></i>Sign In</a>
                         </li>
-                        <li><a href="signup.html"><i class="fa fa-user"></i>Sign Up</a>
+                    <li><a href="{{ route('register') }}"><i class="fa fa-user"></i>Sign Up</a>
                         </li>
                     </ul>
                 </div>
