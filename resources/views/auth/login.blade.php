@@ -39,26 +39,6 @@
                         </form>
                         <span class="or">Or</span>
                     </div>
-                    {{-- <div class="col-sm-6 col-md-5 col-right">
-                        <div class="social-login p-40">
-                            <div class="mb-20">
-                                <button class="btn btn-lg btn-block btn-social btn-facebook"><i class="fa fa-facebook-square"></i>Sign In with Facebook</button>
-                            </div>
-                            <div class="mb-20">
-                                <button class="btn btn-lg btn-block btn-social btn-twitter"><i class="fa fa-twitter"></i>Sign In with Twitter</button>
-                            </div>
-                            <div class="mb-20">
-                                <button class="btn btn-lg btn-block btn-social btn-google-plus"><i class="fa fa-google-plus"></i>Sign In with Google</button>
-                            </div>
-                            <div class="custom-checkbox mb-20">
-                                <input type="checkbox" id="remember_social" checked>
-                                <label class="color-mid" for="remember_social">Keep me signed in on this computer.</label>
-                            </div>
-                            <div class="text-center color-mid">
-                                Need an Account ? <a href="signup.html" class="color-green">Create Account</a>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
             </section>
         </div>
