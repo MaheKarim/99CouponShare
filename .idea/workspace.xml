@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9db5b3-7b0e-4147-a4e2-4c751fb78384" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/404.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +53,7 @@
           <entry key="gitignore" value="1" />
           <entry key="htaccess" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="25" />
+          <entry key="php" value="26" />
           <entry key="sql" value="3" />
           <entry key="travis" value="1" />
         </counts>
@@ -68,7 +63,7 @@
           <entry key=".env file" value="5" />
           <entry key="Blade" value="16" />
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="9" />
+          <entry key="PHP" value="10" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="3" />
           <entry key="htaccess" value="1" />
@@ -78,7 +73,7 @@
         <counts>
           <entry key="env" value="10" />
           <entry key="gitignore" value="6" />
-          <entry key="php" value="1281" />
+          <entry key="php" value="1282" />
           <entry key="sql" value="83" />
           <entry key="txt" value="38" />
         </counts>
@@ -87,7 +82,7 @@
         <counts>
           <entry key=".env file" value="10" />
           <entry key="Blade" value="523" />
-          <entry key="PHP" value="758" />
+          <entry key="PHP" value="759" />
           <entry key="PLAIN_TEXT" value="44" />
           <entry key="Scratch" value="83" />
         </counts>
@@ -158,11 +153,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/404.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -217,6 +221,7 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/_inc/navbar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/404.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php" />
       </list>
     </option>
   </component>
@@ -354,20 +359,13 @@
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,7 +418,7 @@
       <workItem from="1570436738608" duration="1391000" />
       <workItem from="1570447731285" duration="3162000" />
       <workItem from="1570456216163" duration="301000" />
-      <workItem from="1570891655875" duration="5084000" />
+      <workItem from="1570891655875" duration="5934000" />
     </task>
     <task id="LOCAL-00001" summary="some module">
       <created>1570394384749</created>
@@ -440,7 +438,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22300000" />
+    <option name="totallyTimeSpent" value="23150000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,6 +659,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_12_092943_create_dokans_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
         </state>
       </provider>
     </entry>

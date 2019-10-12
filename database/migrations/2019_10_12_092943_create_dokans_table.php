@@ -16,7 +16,7 @@ class CreateDokansTable extends Migration
         Schema::create('dokans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('dokan_name');
-            $table->text('dokan_description')-nullable();
+            $table->text('dokan_description')->nullable();
             $table->timestamps();
         });
     }
