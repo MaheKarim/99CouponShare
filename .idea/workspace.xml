@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/.gitignore" line="12" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="ce9db5b3-7b0e-4147-a4e2-4c751fb78384" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/99CouponShare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/99CouponShare.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/_home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/_home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/area/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/area/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/_inc/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/_inc/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,9 +46,10 @@
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.56" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,7 +58,7 @@
           <entry key="gitignore" value="1" />
           <entry key="htaccess" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="19" />
+          <entry key="php" value="21" />
           <entry key="sql" value="3" />
           <entry key="travis" value="1" />
         </counts>
@@ -67,7 +68,7 @@
           <entry key=".env file" value="4" />
           <entry key="Blade" value="13" />
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="6" />
+          <entry key="PHP" value="8" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="3" />
           <entry key="htaccess" value="1" />
@@ -77,7 +78,7 @@
         <counts>
           <entry key="env" value="1" />
           <entry key="gitignore" value="6" />
-          <entry key="php" value="550" />
+          <entry key="php" value="743" />
           <entry key="sql" value="83" />
           <entry key="txt" value="38" />
         </counts>
@@ -86,7 +87,7 @@
         <counts>
           <entry key=".env file" value="1" />
           <entry key="Blade" value="316" />
-          <entry key="PHP" value="234" />
+          <entry key="PHP" value="427" />
           <entry key="PLAIN_TEXT" value="44" />
           <entry key="Scratch" value="83" />
         </counts>
@@ -112,40 +113,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AreaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/backend/_home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="198">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/backend/area/add.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="428">
+              <caret line="37" column="114" selection-start-line="37" selection-start-column="114" selection-end-line="37" selection-end-column="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="20" />
+              <folding>
+                <element signature="e#39#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-292">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -162,6 +161,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
@@ -176,10 +176,12 @@
         <option value="$PROJECT_DIR$/resources/views/backend/_inc/_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AreaController.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/areaadd.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/02eb64b2-e66b-4a61-a270-45c1123368b5/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/02eb64b2-e66b-4a61-a270-45c1123368b5/console.sql" />
         <option value="$PROJECT_DIR$/resources/views/backend/area/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -194,6 +196,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -283,6 +288,10 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -310,28 +319,20 @@
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
               <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="99CouponShare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="99CouponShare" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="area" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,12 +342,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/backend/_home.blade.php&#10;we&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;ide&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/backend/_inc/_sidebar.blade.php&#10;Area&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Controllers/AreaController.php&#10;web&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;.git&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.gitignore&#10;gitigno&#9;null&#9;null&#10;register.b&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/auth/register.blade.php&#10;Con&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="we&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;Admin&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Middleware/adminRouteOnly.php&#10;ker&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Kernel.php&#10;ide&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/backend/_inc/_sidebar.blade.php&#10;Area&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/app/Http/Controllers/AreaController.php&#10;web&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/routes/web.php&#10;.git&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/.gitignore&#10;gitigno&#9;null&#9;null&#10;register.b&#9;FILE&#9;file://F:/xampp/htdocs/99CouponShare/resources/views/auth/register.blade.php&#10;Con&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Configurable.PHP.Blade" />
   </component>
   <component name="RunDashboard">
@@ -383,6 +385,7 @@
       <workItem from="1570436738608" duration="1391000" />
       <workItem from="1570447731285" duration="3162000" />
       <workItem from="1570456216163" duration="301000" />
+      <workItem from="1570891655875" duration="1714000" />
     </task>
     <task id="LOCAL-00001" summary="some module">
       <created>1570394384749</created>
@@ -402,7 +405,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17216000" />
+    <option name="totallyTimeSpent" value="18930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -415,14 +418,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17782739" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17782739" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3291536" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.53761756" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.29623824" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -544,27 +548,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AreaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="198">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/_home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/02eb64b2-e66b-4a61-a270-45c1123368b5/console.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -573,10 +563,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/_home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backend/area/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="46">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/adminRouteOnly.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#39#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="37" column="114" selection-start-line="37" selection-start-column="114" selection-end-line="37" selection-end-column="114" />
         </state>
       </provider>
     </entry>

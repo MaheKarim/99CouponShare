@@ -35,7 +35,7 @@ Route::prefix('api/v1.3')->group(function () {
     // About Category
     Route::get('/add/category','CategoryController@index')->name('addCategory');
     Route::post('/store-category','CategoryController@store');
-    Route::get('/show/category','CategoryController@show')->name('showCategory');
+    Route::get('/show/category','CategoryController@show')->name('showCategory')->middleware(adminRouteOnly::class);
     Route::get('/category/edit/{category}','CategoryController@edit')->name('editCategory');
     Route::post('/update-category','CategoryController@update')->name('updateCategory');
     Route::get('/delete/category/{id}','CategoryController@delete')->name('deleteCategory');
@@ -47,3 +47,6 @@ Route::prefix('api/v1.3')->group(function () {
     Route::get('/edit/dokan/{dokan}','DokanController@edit')->name('editDokan');
     Route::post('/update-dokan','DokanController@update')->name('updateDokan');
     Route::get('/delete/dokan/{id}', 'DokanController@delete')->name('deleteDokan');
+
+    // Logo Change
+    
