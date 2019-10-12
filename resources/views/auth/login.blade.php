@@ -5,7 +5,7 @@
     <div class="page-container ptb-60">
         <div class="container">
             <section class="sign-area panel p-40">
-                <h3 class="sign-title">Sign In <small>Or <a href="signup.html" class="color-green">Sign Up</a></small></h3>
+            <h3 class="sign-title">Sign In <small>Or <a href="{{ rute('register') }}" class="color-green">Sign Up</a></small></h3>
                 <div class="row row-rl-0">
                     <div class="col-sm-6 col-md-7 col-left">
                         <form class="p-40" action="{{ route('login') }}" method="post">
@@ -29,7 +29,7 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <a href="#" class="forgot-pass-link color-green">Forget Youe Password ?</a>
+                                <a href="#" class="forgot-pass-link color-green">Forget Your Password ?</a>
                             </div>
                             <div class="custom-checkbox mb-20">
                                 <input type="checkbox" id="remember_account" checked>
@@ -37,7 +37,7 @@
                             </div>
                             <button type="submit" class="btn btn-block btn-lg">Sign In</button>
                         </form>
-                        <span class="or">Or</span>
+                       
                     </div>
                 </div>
             </section>
