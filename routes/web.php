@@ -53,4 +53,4 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     // Logo Change
 
     Route::get('/change/logo','LogoChangeController@index')->name('logoChange');
-    
+    Route::put('/update/logo/{id}','LogoChangeController@update')->name('logoupdate');

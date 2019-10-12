@@ -15,7 +15,7 @@ class CreateLogoChangesTable extends Migration
     {
         Schema::create('logo_changes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('logo');
+            $table->string('logo')->nullable();
             $table->timestamps();
         });
     }

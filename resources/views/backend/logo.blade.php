@@ -14,7 +14,7 @@
             <li class="nav-home">
             <a href="{{ url('/home') }}">
                     <i class="flaticon-home"></i>
-                </a>
+            </a>
             </li>
             <li class="separator">
                 <i class="flaticon-right-arrow"></i>
@@ -32,44 +32,43 @@
     </div>
     <hr>
     <div class="col-md-12 col-lg-8">
+    <form class="form-group" method="POST" action="{{ route('logoupdate', $logochange->id) }}" enctype="multipart/form-data">
+        @csrf
+        <input name="_method" type="hidden" value="PUT">
         <div class="form-group">
             <label for="exampleFormControlFile1">Select a picture for logo</label>
             <small>( Ideal ressolation 440 x 100 ) </small>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <input type="file" name="logo" class="form-control-file" id="exampleFormControlFile1">
         </div>
     </div>
-    <br>
+        <br>
     <div class="card-action">
         <button class="btn btn-success">Submit</button>
     <a href="{{ url('/home') }}" class="btn btn-danger">Cancel</a>
     </div>
-    <hr>
+</form>
+        <hr>
     <!-- Table  Start -->
     <div class="card">
         <div class="card-header">
             <div class="card-title">Responsive Table</div>
         </div>
         <div class="card-body">
-            
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Table heading</th>
-                            <th>Table heading</th>
-                           
+                            <th>Logo Image</th>
+                            <th>Created At</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
-                            
-                            
+                            <th scope="row">---</th>
+                            <td>---</td>
+                            <td>---</td>
                         </tr>
-                        
                     </tbody>
                 </table>
             </div>
