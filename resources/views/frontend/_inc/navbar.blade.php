@@ -17,10 +17,9 @@
                         <li>
                             <a href="#"><i class="fa fa-flag-en"></i>English <i class="fa fa-caret-down"></i></a>
                             <ul>
-                                <li><a href="index-2.html"><i class="fa fa-flag-en"></i>English</a>
+                                <li><a href="index-2.html"><i class="fa fa-flag-en"></i>Bangla</a>
                                 </li>
-                                <li><a href="ar/index.html"><i class="fa fa-flag-ar"></i>العربية</a>
-                                </li>
+                                
                             </ul>
                         </li>
                         <li>
@@ -79,22 +78,6 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
-                        <div class="col-sm-4 t-xs-center t-md-right">
-                            <div class="header-cart">
-                                <a href="cart.html">
-                                    <span class="icon lnr lnr-cart"></span>
-                                    <div><span class="cart-number">0</span>
-                                    </div>
-                                    <span class="title">Cart</span>
-                                </a>
-                            </div>
-                            <div class="header-wishlist ml-20">
-                                <a href="wishlist.html">
-                                    <span class="icon lnr lnr-heart font-30"></span>
-                                    <span class="title">Wish List</span>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -221,129 +204,6 @@
                         </li>
                         <li>
                             <a href="contact_us_01.html">Contact Us</a>
-                            <ul>
-                                <li><a href="contact_us_01.html">Contact Us 1</a>
-                                </li>
-                                <li><a href="contact_us_02.html">Contact Us 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                            <ul>
-                                <li>
-                                    <a href="#">Classic View</a>
-                                    <ul>
-                                        <li><a href="blog_classic_right_sidebar.html">Right Sidenar</a>
-                                        </li>
-                                        <li><a href="blog_classic_left_sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li><a href="blog_classic_fullwidth.html">Full Width</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Grid View</a>
-                                    <ul>
-                                        <li><a href="blog_grid_3col.html">3 Columns</a>
-                                        </li>
-                                        <li><a href="blog_grid_2col.html">2 Columns</a>
-                                        </li>
-                                        <li><a href="blog_grid_right_sidebar.html">Right Sidebar</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">List View</a>
-                                    <ul>
-                                        <li><a href="blog_list_right_sidebar.html">Right Sidenar</a>
-                                        </li>
-                                        <li><a href="blog_list_left_sidebar.html">Left Sidebar</a>
-                                        </li>
-                                        <li><a href="blog_list_fullwidth.html">Full Width</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Blog Single</a>
-                                    <ul>
-                                        <li><a href="blog_single_standard.html">Standard Post</a>
-                                        </li>
-                                        <li><a href="blog_single_gallery.html">Gallery Post</a>
-                                        </li>
-                                        <li><a href="blog_single_youtube.html">Youtube Video</a>
-                                        </li>
-                                        <li><a href="blog_single_vimeo.html">Vimeo Video</a>
-                                        </li>
-                                        <li><a href="blog_single_map.html">Google Map</a>
-                                        </li>
-                                        <li><a href="blog_single_quote.html">Quote Post</a>
-                                        </li>
-                                        <li><a href="blog_single_audio.html">Audio Post</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li><a href="index-3.html">Home Default</a>
-                                </li>
-                                <li><a href="signin.html">Sign In</a>
-                                </li>
-                                <li><a href="signup.html">Sign Up</a>
-                                </li>
-                                <li><a href="404.html">404 Page</a>
-                                </li>
-                                <li><a href="faq.html">FAQ Page</a>
-                                </li>
-                                <li><a href="cart.html">Cart Page</a>
-                                </li>
-                                <li>
-                                    <a href="checkout_method.html">Checkout</a>
-                                    <ul>
-                                        <li><a href="checkout_method.html">Checkout method</a>
-                                        </li>
-                                        <li><a href="checkout_billing.html">Billing Information</a>
-                                        </li>
-                                        <li><a href="checkout_payment.html">Payment Information</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                    <ul>
-                                        <li><a href="contact_us_01.html">Contact Us 1</a>
-                                        </li>
-                                        
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Deals Pages</a>
-                                    <ul>
-                                        <li><a href="deals_grid.html">Grid View</a>
-                                        </li>
-                                        <li><a href="deals_list.html">List View</a>
-                                        </li>
-                                        <li><a href="deal_single.html">Deal Single</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Coupons Pages</a>
-                                    <ul>
-                                        <li><a href="coupons_grid.html">Grid View</a>
-                                        </li>
-                                        <li><a href="coupons_grid_sidebar.html">Grid With Sidebar</a>
-                                        </li>
-                                        <li><a href="coupons_list.html">List View</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="terms_conditions.html">Terms &amp; conditions</a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
