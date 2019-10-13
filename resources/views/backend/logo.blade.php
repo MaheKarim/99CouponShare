@@ -32,7 +32,7 @@
     </div>
     <hr>
     <div class="col-md-12 col-lg-8">
-    <form class="form-group" method="POST" action="{{ route('logoupdate', $logochange->id) }}" enctype="multipart/form-data">
+    <form class="form-group" method="post" action="#"  enctype="multipart/form-data">
         @csrf
         <input name="_method" type="hidden" value="PUT">
         <div class="form-group">

@@ -8,25 +8,28 @@ use Illuminate\Http\Request;
 class LogoChangeController extends Controller
 {
     public  function  index(){
-        $data = [ ];
-        $data['logochanges'] = LogoChange::all();
-        $data['logochange'] = LogoChange::first();
-        return view('backend.logo', $data);
+        // $data = [ ];
+        // $data['logochanges'] = LogoChange::all();
+        // $data['logochange'] = LogoChange::first();
+        return view('backend.logo');
     }
 
-    public function update(Request $request, $id){
+    public function update(Request $request){
 
-        $logochange = LogoChange::find($id);
+        // $logochange = LogoChange::find($id);
 
-        $requestData = $request->except(['logo']);
-        $logo = $request->logo;
+        // $requestData = $request->except(['logo']);
+        // $logo = $request->logo;
 
-        if ($logo){
-            $imageName = time().'.'.$logo->getClientOriginalName();
-            $logo->move('logo', $imageName);
-            $requestData['logo'] = $imageName;
-        }
-        $logochange->update($requestData);
-        return redirect()->back();
+        // if ($logo){
+        //     $imageName = time().'.'.$logo->getClientOriginalName();
+        //     $logo->move('logo', $imageName);
+        //     $requestData['logo'] = $imageName;
+        // }
+        // $logochange->update($requestData);
+        // return redirect()->back();
+
+      //  $path = $request->file('image')->store('images');
+      //  dd($path);
     }
 }
