@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/869e0dec-0ad7-42a9-a928-c22fe5adecfc/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/99CouponShare",
+    "appService.deploySubpath": ""
+}
