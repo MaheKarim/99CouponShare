@@ -18,6 +18,7 @@
 - [ ] Laravel Mix
 - [ ] CRUD Operation
 - [ ] Intervention Package Added
+- [ ] Sentry
 
 
 
