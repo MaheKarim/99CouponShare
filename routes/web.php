@@ -46,6 +46,10 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::post('emailSubscriber','NewsLaterController@sent');
     Route::get('/show/subscriber/mail','NewsLaterController@show')->name('showMailSubscribe');
     Route::get('/delete/subcriber/mail/{id}','NewsLaterController@delete')->name('deleteMail');
+
+        // Logo **Change Not Working Here**
+        Route::get('/change/logo','LogoChangeController@index')->name('logoChange');
+        Route::post('/change/logo','LogoChangeController@update')->name('logoupdate');
 });
 
     // About Dokan
@@ -56,6 +60,8 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::post('/update-dokan','DokanController@update')->name('updateDokan');
     Route::get('/delete/dokan/{id}', 'DokanController@delete')->name('deleteDokan');
 
-    // Logo **Change Not Working Here**
-    Route::get('/change/logo','LogoChangeController@index')->name('logoChange');
-    Route::post('/change/logo','LogoChangeController@update')->name('logoupdate');
+
+    // Add Products
+
+    Route::get('/show/product','ProductController@show')->name('showProduct');
+    
