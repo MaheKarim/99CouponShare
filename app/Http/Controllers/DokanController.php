@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Dokan;
+use Auth;
 
 class DokanController extends Controller
 {
     public function show(){
-        $data = [ ];
-        $data['dokans'] = Dokan::all();
+        if(Auth::user()->user_role_id == 1 ){
+            $data['dokans'] = Dokan::all();
+        }else{
+            $data['dokans'] = Dokan::where('user_id', Auth::id())->get();
+        } 
+        
         return view('backend.dokan.show',$data);
     }
 
@@ -25,6 +30,7 @@ class DokanController extends Controller
          $dokans = new Dokan();
          $dokans->dokan_name = $request->dokan_name;
          $dokans->dokan_description = $request->dokan_description;
+         $dokans->user_id = Auth::id();
          $dokans->save();
          // flash message 
          session()->flash('success','Dokan Created successfully!');
