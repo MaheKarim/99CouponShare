@@ -22,6 +22,13 @@
      <span class="badge badge-success">{{ \App\Dokan::count() }} </span>
     </a>
 </li>
+<li class="nav-item">
+<a href="{{ route('showMailSubscribe') }}">
+        <i class="fab fa-mailchimp"></i>
+        <p>Email Subscriber List</p>
+     <span class="badge badge-success">{{ \App\NewsLater::count() }} </span>
+    </a>
+</li>
 
 <li class="nav-item">
     <a data-toggle="collapse" href="#sidebarLayouts">

@@ -14,14 +14,15 @@ Auth::routes();
 // Password Update
 Route::get('/change/password','HomeController@showChangePasswordForm')->name('passwordupdate');
 Route::post('/changePassword','HomeController@changePassword')->name('changePassword');
+
+
 Route::prefix('api/v1.3')->group(function () {
     // Logout Route
     Route::post('/logout','\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 });
 
- 
-    // User Controller
-    Route::get('/user/profile','UserController@index')->name('userprofile');
+// User Controller
+Route::get('/user/profile','UserController@index')->name('userprofile');
 
 
 Route::middleware(['adminRouteOnly'])->group(function () {
@@ -40,6 +41,11 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::get('/area/edit/{area}','AreaController@edit')->name('editArea');
     Route::post('/update-area','AreaController@update')->name('updateArea');
     Route::get('/delete-area/{id}','AreaController@deleteMe')->name('deleteArea');
+
+    // Email Subscriber
+    Route::post('emailSubscriber','NewsLaterController@sent');
+    Route::get('/show/subscriber/mail','NewsLaterController@show')->name('showMailSubscribe');
+    Route::get('/delete/subcriber/mail/{id}','NewsLaterController@delete')->name('deleteMail');
 });
 
     // About Dokan
@@ -50,9 +56,6 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::post('/update-dokan','DokanController@update')->name('updateDokan');
     Route::get('/delete/dokan/{id}', 'DokanController@delete')->name('deleteDokan');
 
-    // Logo Change
-
+    // Logo **Change Not Working Here**
     Route::get('/change/logo','LogoChangeController@index')->name('logoChange');
     Route::post('/change/logo','LogoChangeController@update')->name('logoupdate');
-
-   
