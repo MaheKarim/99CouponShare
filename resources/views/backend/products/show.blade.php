@@ -16,7 +16,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex align-items-center">      
-                    @if (Auth::user()->user_role->user_role == 2)
+                    @if (Auth::user()->user_role_id == 2)
                     <a href="{{ route('addProduct') }}" class="btn btn-primary btn-round ml-auto">
                             <i class="fa fa-plus"></i>
                             Add Product
@@ -62,6 +62,9 @@
                                 <td>{{ $product->availability_date }}</td>
                                     <td>
                                         <div class="form-button-action">
+                                        <a href="{{ route('editProduct', $product->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+                                                 <i class="fa fa-edit"></i>
+                                        </a>
                                         <a href="#" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                         <i class="fa fa-times"></i>
                                         </a>

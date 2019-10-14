@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->text('product_description');
             $table->string('product_prize');
             $table->string('product_disscount_prize');
-            $table->string('product_disscount_rate');
+            $table->string('product_disscount_rate')->nullable();
             $table->date('availability_date');
             $table->integer('user_id');
             $table->timestamps();

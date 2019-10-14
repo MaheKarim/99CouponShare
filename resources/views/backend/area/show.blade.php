@@ -50,7 +50,7 @@
                                             <div class="form-button-action">
                                             <a href="{{ route('editArea', $area->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
                                                     <i class="fa fa-edit"></i>
-                                                </a>
+                                            </a>
                                                 <a href="{{ route('deleteArea', $area->id ) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                     <i class="fa fa-times"></i>
                                                 </a>
