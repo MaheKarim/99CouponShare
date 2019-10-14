@@ -17,12 +17,17 @@ class ProductController extends Controller
         return view('backend.products.add');
     }
     public function store(Request $request){
-        // validation pore
+        // Validation
+        $request->validate([
+            'product_name' => 'required',
+            ''
+         ]);
+        
 
         $products = new Product();
         $products->product_name = $request->product_name;
         $products->product_description = $request->product_description;
-        $products->product_prize = $request->product_prize;
+        
         $products->product_prize = $request->product_prize;
         $products->product_disscount_prize = $request->product_disscount_prize;
         $products->availability_date = $request->availability_date;
