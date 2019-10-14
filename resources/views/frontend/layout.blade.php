@@ -93,18 +93,6 @@
         <main id="mainContent" class="main-content">
             <div class="page-container ptb-10">
                 <div class="container">
-
-                    <!-- Notification Start Here -->
-                    @if (session()->has('success'))
-                    <div class="alert alert-success">
-                        {{ session()->get('success') }}
-                    </div>
-                       @endif
-                    <!-- Notification End Here -->
-
-                     
-
-
                  @yield('content')
                 </div>
             </div>

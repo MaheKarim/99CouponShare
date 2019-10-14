@@ -14,7 +14,6 @@
                             <span class="user-level">
                                {{ Auth::user()->user_role->user_role }} 
                             </span>
-                          
                         </span>
                     </a>
                     <div class="clearfix"></div>

@@ -76,13 +76,13 @@
                                                 <span><i class="fa fa-share-alt"></i></span>
                                             </li>
                                             <li>
-                                                <span>
+                            <span>
                                 <i class="fa fa-camera"></i>
                             </span>
                                             </li>
                                         </ul>
                                         <div class="time-left bottom-15 right-20 font-md-14">
-                                            <span>
+                            <span>
                             <i class="ico fa fa-clock-o mr-10"></i>
                             <span class="t-uppercase" data-countdown="2019/09/01 01:30:00"></span>
                         </span>
@@ -860,6 +860,7 @@
                         <div class="newsletter-form">
                             <h4 class="mb-20"><i class="fa fa-envelope-o color-green mr-10"></i>Sign up for our weekly email newsletter</h4>
                             <p class="mb-20 color-mid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi magni accusantium architecto possimus.</p>
+
                     <!-- error message -->
                     @if ($errors->any())
                             <div class="alert alert-danger">
@@ -871,6 +872,13 @@
                             </div>
                     @endif
                     <!-- error message end -->
+                    <!-- Notification Start Here -->
+                    @if (session()->has('success'))
+                    <div class="alert alert-success">
+                        {{ session()->get('success') }}
+                    </div>
+                       @endif
+                    <!-- Notification End Here -->
                             <form method="post" action="{{ url('emailSubscriber') }}">
                             @csrf
                                 <div class="input-group mb-10">
@@ -879,7 +887,7 @@
                                         <button class="btn" type="submit">Subscribe</button>
                                     </span>
                                 </div>
-                        </form>
+                            </form>
                             <p class="color-muted"><small>We’ll never share your email address with a third-party.</small> </p>
                         </div>
                     </section>  
