@@ -16,10 +16,16 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex align-items-center">      
+                    @if (Auth::user()->user_role->user_role == 2)
                     <a href="{{ route('addProduct') }}" class="btn btn-primary btn-round ml-auto">
                             <i class="fa fa-plus"></i>
                             Add Product
-                        </a>
+                    </a>
+                    @else
+                    <a class="btn btn-primary btn-round ml-auto text-white">
+                        Sorry! <b>{{Auth::user()->user_role->user_role}}</b> Don't Have Permission
+                    </a>
+                    @endif
                     </div>
                 </div>
                 <div class="card-body">

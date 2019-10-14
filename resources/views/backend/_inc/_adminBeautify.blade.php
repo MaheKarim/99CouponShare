@@ -48,8 +48,8 @@
                         </div>
                         <div class="col-7 col-stats">
                             <div class="numbers">
-                                <p class="card-category">Dokan</p>
-                                <h4 class="card-title"> {{ \App\Category::count() }} </h4>
+                                <p class="card-category">Total Dokan</p>
+                                <h4 class="card-title"> {{ \App\Dokan::count() }} </h4>
                             </div>
                         </div>
                     </div>
@@ -67,8 +67,8 @@
                         </div>
                         <div class="col-7 col-stats">
                             <div class="numbers">
-                                <p class="card-category">Order</p>
-                                <h4 class="card-title">576</h4>
+                                <p class="card-category">Total Product</p>
+                            <h4 class="card-title">{{ \App\Product::count() }}</h4>
                             </div>
                         </div>
                     </div>

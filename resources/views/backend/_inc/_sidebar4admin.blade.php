@@ -18,14 +18,14 @@
 <li class="nav-item">
 <a href="{{ route('showDokan') }}">
         <i class="fa fa-store"></i>
-        <p>Show Dokan</p>
+        <p> Dokan</p>
      <span class="badge badge-success">{{ \App\Dokan::count() }} </span>
     </a>
 </li>
 <li class="nav-item">
         <a href="{{ route('showProduct') }}">
             <i class="fab fa-product-hunt"></i>
-            <p>Show Product</p>
+            <p> Product</p>
             <span class="badge badge-success">{{ \App\Product::count() }} </span>
         </a>
     </li>
