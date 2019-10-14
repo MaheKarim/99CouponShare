@@ -19,15 +19,16 @@ class ProductController extends Controller
     public function store(Request $request){
         // Validation
         $request->validate([
-            'product_name' => 'required',
-            ''
+            'product_name' => 'required|min:3',
+            'product_prize' => 'required',
+            'product_disscount_prize' => 'required',
+            'availability_date' => 'required'
          ]);
         
 
         $products = new Product();
         $products->product_name = $request->product_name;
         $products->product_description = $request->product_description;
-        
         $products->product_prize = $request->product_prize;
         $products->product_disscount_prize = $request->product_disscount_prize;
         $products->availability_date = $request->availability_date;
