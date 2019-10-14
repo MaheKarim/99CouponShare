@@ -18,10 +18,17 @@
 <li class="nav-item">
 <a href="{{ route('showDokan') }}">
         <i class="fa fa-store"></i>
-        <p>Dokan</p>
+        <p>Show Dokan</p>
      <span class="badge badge-success">{{ \App\Dokan::count() }} </span>
     </a>
 </li>
+<li class="nav-item">
+        <a href="{{ route('showProduct') }}">
+            <i class="fab fa-mailchimp"></i>
+            <p>Show Product</p>
+            <span class="badge badge-success">{{ \App\Product::count() }} </span>
+        </a>
+    </li>
 <li class="nav-item">
 <a href="{{ route('showMailSubscribe') }}">
         <i class="fab fa-mailchimp"></i>

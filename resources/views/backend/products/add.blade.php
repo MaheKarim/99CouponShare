@@ -69,6 +69,8 @@
                                 <input type="text" class="form-control" name="product_prize" id="text" placeholder="Previous Prize">
                                 <label for="text">After Disscount Prize</label>
                                 <input type="text" class="form-control" name="product_disscount_prize" id="text" placeholder="Disscount Prize">
+                                <label for="text">Disscount %</label>
+                                <input type="text" class="form-control" name="product_disscount_rate" id="text" placeholder="Disscount %">
                                 <label for="date">Availibility Date</label>
                                 <input type="date" class="form-control" name="availability_date" id="text">    
                             </div>

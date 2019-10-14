@@ -40,6 +40,7 @@
                                     <th>Product Description</th>
                                     <th>Product Prize</th>
                                     <th>Disscount Prize</th>
+                                    <th>Disscount Rate(%)</th>
                                     <th>Availity Date</th>
                                     <th style="width: 10%">Action</th>
                                 </tr>
@@ -51,6 +52,7 @@
                                 <td>{{ $product->product_description }}</td>
                                 <td>{{ $product->product_prize }}</td>
                                 <td>{{ $product->product_disscount_prize }}</td>
+                                <td>{{ $product->product_disscount_rate }}</td>
                                 <td>{{ $product->availability_date }}</td>
                                     <td>
                                         <div class="form-button-action">

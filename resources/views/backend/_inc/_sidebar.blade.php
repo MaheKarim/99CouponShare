@@ -38,14 +38,6 @@
                     @agent
                     @include('backend._inc._sidebar4agent')
                     @endagent
-
-                    <li class="nav-item">
-                        <a href="{{ route('showProduct') }}">
-                            <i class="fab fa-mailchimp"></i>
-                            <p>Disscount List</p>
-                            <span class="badge badge-success">{{ \App\Product::count() }} </span>
-                        </a>
-                    </li>
             </div>
     </div>
 </div>

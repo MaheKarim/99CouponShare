@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
+use Auth;
 
 class ProductController extends Controller
 {
     //
     public function show(){
-        $data = [ ];
-        $data['products'] = Product::all();
+        if(Auth::user()->user_role_id == 1 ){
+            $data['products'] = Product::all();
+        }else{
+            $data['products'] = Product::where('user_id', Auth::id())->get();
+        } 
         return view('backend.products.show', $data);
     }
     public function add(){
@@ -31,6 +35,8 @@ class ProductController extends Controller
         $products->product_description = $request->product_description;
         $products->product_prize = $request->product_prize;
         $products->product_disscount_prize = $request->product_disscount_prize;
+        $products->product_disscount_rate = $request->product_disscount_rate;
+        $products->user_id = Auth::id();
         $products->availability_date = $request->availability_date;
         $products->save();
 
