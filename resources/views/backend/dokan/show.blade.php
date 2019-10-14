@@ -11,13 +11,22 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <div class="d-flex align-items-center">
-                          
-                        <a href="{{ route('addDokan') }}" class="btn btn-primary btn-round ml-auto">
-                                <i class="fa fa-plus"></i>
-                                Add Dokan
+                       @if (Auth::user()->user_role_id == 2)
+                       <div class="d-flex align-items-center">
+                            <a href="{{ route('addDokan') }}" class="btn btn-primary btn-round ml-auto">
+                                    <i class="fa fa-plus"></i>
+                                    Add Dokan
                             </a>
-                        </div>
+                    </div>
+                       @else
+                           <div class="d-flex align-items-center">
+                               
+                                <a  class="btn btn-primary btn-round ml-auto text-white">
+                                        
+                                        Sorry! <b> {{Auth::User()->user_role->user_role}} </b> Don't Have Permission Here!
+                                </a>
+                           </div>
+                       @endif
                     </div>
                     <div class="card-body">
                     <!-- Modal -->
