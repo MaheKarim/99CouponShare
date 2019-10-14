@@ -24,7 +24,7 @@
 </li>
 <li class="nav-item">
         <a href="{{ route('showProduct') }}">
-            <i class="fab fa-mailchimp"></i>
+            <i class="fab fa-product-hunt"></i>
             <p>Show Product</p>
             <span class="badge badge-success">{{ \App\Product::count() }} </span>
         </a>

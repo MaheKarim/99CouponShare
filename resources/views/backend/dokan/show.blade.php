@@ -50,12 +50,21 @@
                                     <td>{{ $dokan->created_at }}</td>
                                         <td>
                                             <div class="form-button-action">
-                                            <a href="{{ route('editDokan', $dokan->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+
+                                             
+                                             @if (Auth::user()->user_role_id == 2)
+                                             <a href="{{ route('editDokan', $dokan->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                             <a href="{{ route('deleteDokan', $dokan->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                     <i class="fa fa-times"></i>
                                                 </a>
+                                             @else
+                                             <a href="{{ route('deleteDokan', $dokan->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                             @endif      
+                                            
                                             </div>
                                         </td>
                                     </tr>
