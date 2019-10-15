@@ -58,7 +58,7 @@
                         </div>
                            @endif
                         <!-- Notification End Here -->
-                    <form action="{{ url('store-products') }}" method="POST">
+                    <form action="{{ url('store-products') }}" method="POST" enctype="multipart/form-data">
                              @csrf
                             <label for="category_name_id">Select Your Category</label>
                             <div class="form-group">
@@ -93,6 +93,8 @@
                                 <input type="text" class="form-control" name="product_disscount_rate" id="text" placeholder="Disscount %">
                                 <label for="date">Availibility Date</label>
                                 <input type="date" class="form-control" name="availability_date" id="text">    
+                                <label for="text">Choose product Image</label>
+                                <input type="file" class="form-control" name="product_image">
                             </div>
                             </div> 
                         </div>

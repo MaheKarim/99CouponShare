@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Dokan;
+use App\Policies\DokanPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -14,6 +16,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         'App\Model' => 'App\Policies\ModelPolicy',
+        Dokan::class => DokanPolicy::class,
     ];
 
     /**
@@ -26,5 +29,6 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
 
         //
+        // Gate::define('store-dokan', 'DokanController@store');
     }
 }

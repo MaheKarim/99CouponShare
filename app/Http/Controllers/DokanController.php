@@ -26,6 +26,19 @@ class DokanController extends Controller
          $request->validate([
             'dokan_name' => 'required|min:3|max:120',
          ]);
+         
+
+
+         // exists validation
+        //  if(Dokan::where('user_id', auth::id())->exists()){
+        //     session()->flash('success','Sorry! You have already created a Doakn.');
+        //     return redirect(route('showDokan')); 
+        //  }
+         if(Dokan::where('user_id', auth::id())->count() > 4 ){ 
+            session()->flash('success','Sorry! You have already created a Doakn.');
+            return redirect(route('showDokan')); 
+         } 
+
          //  data insert
          $dokans = new Dokan();
          $dokans->dokan_name = $request->dokan_name;

@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('product_name');
             $table->text('product_description')->nullable();
             $table->string('product_prize')->nullable();
+            $table->string('product_image');
             $table->string('product_disscount_prize')->nullable();
             $table->string('product_disscount_rate')->nullable();
             $table->date('availability_date')->nullable();
