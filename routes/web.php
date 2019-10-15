@@ -68,5 +68,6 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::post('/store-products','ProductController@store');
     Route::get('/edit/products/{product}','ProductController@edit')->name('editProduct');
     Route::post('/update-product','ProductController@update')->name('updateProduct');
+    Route::get('/delete-product/{id}','ProductController@delete')->name('deleteProduct');
 
     

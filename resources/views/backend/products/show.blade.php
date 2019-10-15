@@ -1,14 +1,14 @@
 @extends('backend._layout')
 
 @section('title')
-    Add Product
+    Show Product
 @endsection
 
 @section('content')
 <div class="page-inner">
     <div class="page-header">
         <h4 class="page-title">
-            @yield('title','Show Email Subscriiber List')
+            @yield('title','Show Product')
         </h4>
     </div>
     <div class="row">
@@ -62,10 +62,14 @@
                                 <td>{{ $product->availability_date }}</td>
                                     <td>
                                         <div class="form-button-action">
-                                        <a href="{{ route('editProduct', $product->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-                                                 <i class="fa fa-edit"></i>
-                                        </a>
-                                        <a href="#" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+                                        @if (Auth::User()->user_role_id == 2)
+                                    <a href="{{ route('editProduct', $product->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+                                        <i class="fa fa-edit"></i>
+                                   </a>
+                                        @else
+                                            
+                                        @endif
+                                        <a href="{{ route('deleteProduct', $product->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                         <i class="fa fa-times"></i>
                                         </a>
                                         </div>
