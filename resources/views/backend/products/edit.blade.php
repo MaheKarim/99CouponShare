@@ -30,7 +30,7 @@
                                 <label for="text">Update Product Prize</label>
                                 <input type="text" class="form-control" name="product_prize" id="product_prize" value="{{ $products->product_prize }}" placeholder="Enter Product Prize">
                                 <label for="text">Update Product Disscount Prize</label>
-                                <input type="text" class="form-control" name="product_disscount_prize " id="product_disscount_prize " value="{{ $products->product_disscount_prize  }}" placeholder="Enter Product Disscount Prize">
+                                <input type="text" class="form-control" name="product_disscount_prize" id="product_disscount_prize" value="{{ $products->product_disscount_prize }}" placeholder="Enter Product Disscount Prize">
                                 <label for="text">Update Product Disscount Rate</label>
                                 <input type="text" class="form-control" name="product_disscount_rate" id="product_disscount_rate" value="{{ $products->product_disscount_rate }}" placeholder="Enter Product Disscount Rate">
                                 <label for="text">Update Product Date</label>
@@ -42,7 +42,7 @@
                           </div>
                               <div class="card-action">
                                       <button class="btn btn-success">Submit</button>
-                              <a href="{{ url('/show/product') }}" class="btn btn-danger">Cancel</a>
+                              <a href="{{ route('showProduct') }}" class="btn btn-danger">Cancel</a>
                         </div> 
                        </form>
                     </div>
