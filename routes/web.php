@@ -62,7 +62,6 @@ Route::middleware(['adminRouteOnly'])->group(function () {
 
 
     // Add Products
-
     Route::get('/show/product','ProductController@show')->name('showProduct');
     Route::get('/add/product','ProductController@add')->name('addProduct');
     Route::post('/store-products','ProductController@store');
@@ -71,3 +70,4 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::get('/delete-product/{id}','ProductController@delete')->name('deleteProduct');
 
     
+Route::get('index','SearchController@search');
