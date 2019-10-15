@@ -34,6 +34,7 @@ class ProductController extends Controller
         
         $products = new Product();
         $products->category_name_id = $request->category_name_id;
+        $products->dokan_name_id = $request->dokan_name_id;
         $products->product_name = $request->product_name;
         $products->product_description = $request->product_description;
         $products->product_prize = $request->product_prize;

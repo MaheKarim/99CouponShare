@@ -43,7 +43,7 @@
                             <table id="add-row" class="display table table-striped table-hover" >
                                 <thead>
                                     <tr>
-                                        <th>Category Name</th>
+                                        <th>Dokan Name</th>
                                         <th>Description</th>
                                         <th>Created At</th>
                                         <th style="width: 10%">Action</th>
@@ -51,16 +51,12 @@
                                 </thead>
                                 <tbody>
                                 @foreach ($dokans as $dokan)
-                                    
-                                
                                     <tr>
                                     <td>{{ $dokan->dokan_name }}</td>
                                     <td>{{ $dokan->dokan_description }}</td>
                                     <td>{{ $dokan->created_at }}</td>
                                         <td>
-                                            <div class="form-button-action">
-
-                                             
+                                            <div class="form-button-action">   
                                              @if (Auth::user()->user_role_id == 2)
                                              <a href="{{ route('editDokan', $dokan->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
                                                     <i class="fa fa-edit"></i>

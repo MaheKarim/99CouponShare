@@ -43,6 +43,9 @@
                             <thead>
                                 <tr>
                                     <th>Category Name</th>
+                                    @admin
+                                    <th>Dokan </th>
+                                    @endadmin
                                     <th>Product Name</th>
                                     <th>Product Description</th>
                                     <th>Product Prize</th>
@@ -56,7 +59,11 @@
                             @foreach ($products as $product)
                                 <tr>
                                 {{-- <td>{{ $product->Category()->first()->category_name }} --}}
-                                <td>{{ $product->Category->category_name }}
+                                <td>{{ $product->Category->category_name }}</td>
+                                @admin
+                                <td>{{ $product->Dokan->dokan_name}} </td>
+                                @endadmin
+                                {{-- <td>{{ $product->Dokan()->first()->dokan_name }} </td> --}}
                                 <td>{{ $product->product_name }}</td>
                                 <td>{{ $product->product_description }}</td>
                                 <td>{{ $product->product_prize }}</td>

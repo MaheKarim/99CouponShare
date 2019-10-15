@@ -70,6 +70,17 @@
                                             @endforeach
                                         </select>
                             <div>
+                            <label for="dokan_name_id">Select Your Dokan</label>
+                            <div class="form-group">
+                                    <select class="form-control" name="dokan_name_id">
+                                            <option disabled selected>Select a role</option>
+                                            @php( $dokans = \App\Dokan::all())
+                                            @foreach($dokans as $dokan)
+                                                <option value="{{ $dokan->id }}">{{ $dokan->dokan_name }}</option>
+                                            @endforeach
+                                        </select>
+                                        
+                            <div>
                                 <label for="text">Add Products Name</label>
                                 <input type="text" class="form-control" name="product_name" id="text" placeholder="Enter Product Name">
                                 <label for="text">Add Products Description</label>
