@@ -35,8 +35,8 @@ class DokanController extends Controller
         //     session()->flash('success','Sorry! You have already created a Doakn.');
         //     return redirect(route('showDokan')); 
         //  }
-         if(Dokan::where('user_id', auth::id())->count() > 4 ){ 
-            session()->flash('success','Sorry! You have already created a Doakn.');
+         if(Dokan::where('user_id', auth::id())->count() > 3 ){ 
+            session()->flash('error','Sorry! You have already created a Doakn.');
             return redirect(route('showDokan')); 
          } 
          // image insert

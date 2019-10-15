@@ -43,6 +43,16 @@
                                        </div>
                                           @endif
                                        <!-- Notification End Here -->
+                                       @if ($errors->any())
+                                       <div class="alert alert-danger">
+                                         <ul>
+                                             @foreach ($errors->all() as $error)
+                                               <li>{{ $error }}</li>
+                                             @endforeach
+                                         </ul>
+                                       </div><br />
+                                 @endif
+                                       
 
                          <div class="table-responsive">
                             <table id="add-row" class="display table table-striped table-hover" >

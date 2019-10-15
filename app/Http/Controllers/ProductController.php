@@ -28,7 +28,7 @@ class ProductController extends Controller
         // Validation
         $request->validate([
             'product_name' => 'required|min:3',
-            'product_prize' => 'required',
+            'product_prize' => 'required|numeric',
             'product_disscount_prize' => 'required',
             'availability_date' => 'required',
             'product_image' => 'required|image'
@@ -66,6 +66,7 @@ class ProductController extends Controller
     public function update(Request $request){
         $request->validate([
             'product_name' => 'required',
+            
          ]);
          // update work
          $products = Product::findOrfail($request)->first();
