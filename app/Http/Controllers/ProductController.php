@@ -6,6 +6,7 @@ use App\Product;
 use Illuminate\Http\Request;
 use Auth;
 use App\Category;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -29,8 +30,13 @@ class ProductController extends Controller
             'product_name' => 'required|min:3',
             'product_prize' => 'required',
             'product_disscount_prize' => 'required',
-            'availability_date' => 'required'
+            'availability_date' => 'required',
+            'product_image' => 'required|image'
          ]);
+        $image = '';
+        if($request->has('product_image')){
+            $image = $request->file('product_image')->store('product_images');
+         }
         
         $products = new Product();
         $products->category_name_id = $request->category_name_id;
@@ -42,6 +48,7 @@ class ProductController extends Controller
         $products->product_disscount_rate = $request->product_disscount_rate;
         $products->user_id = Auth::id();
         $products->availability_date = $request->availability_date;
+        $products->product_image = $image;
         $products->save();
 
         // return view('backend.products.add');
@@ -76,6 +83,7 @@ class ProductController extends Controller
 
     public function delete($id){
         $products = Product::find($id);
+        Storage::delete($products->product_image); 
         $products->delete();
 
         \session()->flash('success','Products Delete Successfully');
