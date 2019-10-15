@@ -61,11 +61,11 @@
                                 <td>{{ $product->product_disscount_rate }}</td>
                                 <td>{{ $product->availability_date }}</td>
                                     <td>
-                                        <div class="form-button-action">
+                                      <div class="form-button-action">
                                         @if (Auth::User()->user_role_id == 2)
-                                    <a href="{{ route('editProduct', $product->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-                                        <i class="fa fa-edit"></i>
-                                   </a>
+                                           <a href="{{ route('editProduct', $product->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+                                             <i class="fa fa-edit"></i>
+                                            </a>
                                         @else
                                             
                                         @endif
