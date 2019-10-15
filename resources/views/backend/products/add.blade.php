@@ -60,7 +60,16 @@
                         <!-- Notification End Here -->
                     <form action="{{ url('store-products') }}" method="POST">
                              @csrf
+                            <label for="category_name_id">Select Your Category</label>
                             <div class="form-group">
+                                    <select class="form-control" name="category_name_id">
+                                            <option disabled selected>Select a role</option>
+                                            @php( $categories = \App\Category::all())
+                                            @foreach($categories as $category)
+                                                <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                            @endforeach
+                                        </select>
+                            <div>
                                 <label for="text">Add Products Name</label>
                                 <input type="text" class="form-control" name="product_name" id="text" placeholder="Enter Product Name">
                                 <label for="text">Add Products Description</label>

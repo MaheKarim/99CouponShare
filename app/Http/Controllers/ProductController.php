@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use Illuminate\Http\Request;
 use Auth;
+use App\Category;
 
 class ProductController extends Controller
 {
@@ -32,6 +33,7 @@ class ProductController extends Controller
          ]);
         
         $products = new Product();
+        $products->category_name_id = $request->category_name_id;
         $products->product_name = $request->product_name;
         $products->product_description = $request->product_description;
         $products->product_prize = $request->product_prize;

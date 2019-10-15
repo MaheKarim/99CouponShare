@@ -42,6 +42,7 @@
                         <table id="add-row" class="display table table-striped table-hover" >
                             <thead>
                                 <tr>
+                                    <th>Category Name</th>
                                     <th>Product Name</th>
                                     <th>Product Description</th>
                                     <th>Product Prize</th>
@@ -54,6 +55,8 @@
                             <tbody>
                             @foreach ($products as $product)
                                 <tr>
+                                {{-- <td>{{ $product->Category()->first()->category_name }} --}}
+                                <td>{{ $product->Category->category_name }}
                                 <td>{{ $product->product_name }}</td>
                                 <td>{{ $product->product_description }}</td>
                                 <td>{{ $product->product_prize }}</td>

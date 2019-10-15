@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('product_disscount_prize')->nullable();
             $table->string('product_disscount_rate')->nullable();
             $table->date('availability_date')->nullable();
+            $table->integer('category_name_id')->nullable();
             $table->integer('user_id')->nullable();
             $table->timestamps();
         });
