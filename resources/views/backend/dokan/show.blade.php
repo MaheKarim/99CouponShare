@@ -1,6 +1,11 @@
 @extends('backend._layout')
 
 @section('content')
+<style>
+    td.tdCSS{
+        /* background-color: aqua; */
+    }
+    </style>
 <div class="page-inner">
         <div class="page-header">
             <h4 class="page-title">
@@ -45,6 +50,7 @@
                                     <tr>
                                         <th>Dokan Name</th>
                                         <th>Description</th>
+                                        <th>Dokan Image</th>
                                         <th>Created At</th>
                                         <th style="width: 10%">Action</th>
                                     </tr>
@@ -54,7 +60,9 @@
                                     <tr>
                                     <td>{{ $dokan->dokan_name }}</td>
                                     <td>{{ $dokan->dokan_description }}</td>
+                                    <td> <img src="{{ asset('dokan_images'.$dokan->dokan_image) }}" /> </td>
                                     <td>{{ $dokan->created_at }}</td>
+
                                         <td>
                                             <div class="form-button-action">   
                                              @if (Auth::user()->user_role_id == 2)

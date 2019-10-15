@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Dokan;
 use Auth;
+use Illuminate\Support\Facades\Storage;
 
 class DokanController extends Controller
 {
@@ -38,12 +39,19 @@ class DokanController extends Controller
             session()->flash('success','Sorry! You have already created a Doakn.');
             return redirect(route('showDokan')); 
          } 
+         // image insert
+
+         $image = '';
+         if($request->has('dokan_image')){
+             $image = $request->file('dokan_image')->store('dokan_images');
+         }
 
          //  data insert
          $dokans = new Dokan();
          $dokans->dokan_name = $request->dokan_name;
          $dokans->dokan_description = $request->dokan_description;
          $dokans->user_id = Auth::id();
+         $dokans->dokan_image = $image;
          $dokans->save();
          // flash message 
          session()->flash('success','Dokan Created successfully!');
@@ -74,6 +82,7 @@ class DokanController extends Controller
 
     public function delete($id){
         $dokans = Dokan::find($id);
+        Storage::delete($dokans->dokan_image);
         $dokans->delete();
 
         session()->flash('success','Dokan Deleted Successfully!');

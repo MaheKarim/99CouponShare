@@ -58,14 +58,16 @@
                             </div>
                                @endif
                             <!-- Notification End Here -->
-                        <form action="{{ url('store-dokan') }}" method="POST">
+                        <form action="{{ url('store-dokan') }}" method="POST" enctype="multipart/form-data">
                                  @csrf
                                 <div class="form-group">
                                     <label for="text">Add Dokan Name</label>
                                     <input type="text" class="form-control" name="dokan_name" id="text" placeholder="Enter Dokan Name">
                                     <label for="text">Add Dokan Description</label>
                                     <input type="text" class="form-control" name="dokan_description" id="text" placeholder="Enter  Dokan Description">
-                                    </div>
+                                    <label for="text">Choose product Image</label>
+                                   <input type="file" class="form-control" name="dokan_image">    
+                                </div>
                                 </div> 
                             </div>
                         </div>

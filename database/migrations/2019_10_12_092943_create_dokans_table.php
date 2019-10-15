@@ -17,6 +17,7 @@ class CreateDokansTable extends Migration
             $table->bigIncrements('id');
             $table->string('dokan_name');
             $table->text('dokan_description')->nullable();
+            $table->string('dokan_image')->nullable();
             $table->integer('user_id');
             $table->timestamps();
         });
