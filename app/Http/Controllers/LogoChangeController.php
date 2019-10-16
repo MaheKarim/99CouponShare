@@ -31,4 +31,12 @@ class LogoChangeController extends Controller
          return redirect(route('logoChange'));
 
         }
+        public function delete($id){
+            $logochange = LogoChange::find($id);
+            Storage::delete($logochange->logo);
+            $logochange->delete();
+    
+            session()->flash('success','Image Deleted Successfully!');
+            return redirect(route('logoChange'));
+        }
 }

@@ -64,17 +64,20 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>Logo Image</th>
-                            <th>Created AJJJJt</th>
+                            <th>Logo</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($logochanges as $logochange)
                         <tr>
-                            <th scope="row">---</th>
-                            <td> <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $logochange->logo }}" /></td> 
-                            <td>---</td> 
+                            {{-- <th scope="row">---</th> --}}
+                            <td> <img style="width:100%;max-width:100px" src="{{ asset('storage') }}/{{ $logochange->logo }}" /></td> 
+                            <td>
+                                    <a href="{{ route('deleteLogo', $logochange->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+                                            <i class="fa fa-times"></i>
+                                    </a>
+                            </td> 
                         </tr>
                         @endforeach
                     </tbody>
