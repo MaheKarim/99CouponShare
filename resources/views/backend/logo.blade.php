@@ -31,10 +31,16 @@
         </ul>
     </div>
     <hr>
+     <!-- Notification Start Here -->
+     @if (session()->has('success'))
+     <div class="alert alert-success">
+         {{ session()->get('success') }}
+     </div>
+        @endif
+     <!-- Notification End Here -->
     <div class="col-md-12 col-lg-8">
-    <form class="form-group" method="post" action="#"  enctype="multipart/form-data">
+    <form class="form-group" method="post" action="{{ route('logoupdate') }}"  enctype="multipart/form-data">
         @csrf
-        <input name="_method" type="hidden" value="PUT">
         <div class="form-group">
             <label for="exampleFormControlFile1">Select a picture for logo</label>
             <small>( Ideal ressolation 440 x 100 ) </small>
@@ -59,16 +65,18 @@
                     <thead>
                         <tr>
                             <th>Logo Image</th>
-                            <th>Created At</th>
+                            <th>Created AJJJJt</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($logochanges as $logochange)
                         <tr>
                             <th scope="row">---</th>
-                            <td>---</td>
-                            <td>---</td>
+                            <td> <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $logochange->logo }}" /></td> 
+                            <td>---</td> 
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

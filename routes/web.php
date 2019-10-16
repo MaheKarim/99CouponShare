@@ -49,7 +49,7 @@ Route::middleware(['adminRouteOnly'])->group(function () {
 
         // Logo **Change Not Working Here**
         Route::get('/change/logo','LogoChangeController@index')->name('logoChange');
-        Route::post('/change/logo','LogoChangeController@update')->name('logoupdate');
+        Route::post('/change/logo','LogoChangeController@imageUploadPost')->name('logoupdate');
 });
 
     // About Dokan
