@@ -1,10 +1,13 @@
 <?php
- use App\LogoChange;
+
+use App\Dokan;
+use App\LogoChange;
 
 Route::get('/', function () {
    
     $data = [ ];
     $data['logochange'] = LogoChange::all();
+    $data['dokans'] = Dokan::where('dokan_image')->get();
     return view('frontend.welcome', $data);
 });
 Route::get('/home', 'HomeController@index')->name('home');
