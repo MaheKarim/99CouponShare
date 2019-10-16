@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\NewsLater;
+use App\LogoChange;
 use Illuminate\Http\Request;
 
 class NewsLaterController extends Controller
@@ -10,6 +11,7 @@ class NewsLaterController extends Controller
     public function show(){
         $data= [ ];
         $data['newslaters'] = NewsLater::all();
+        $data['logochange'] = LogoChange::all();
         return view('backend.newslater.show',$data);
     }
     public function sent(Request $request){

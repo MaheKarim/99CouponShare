@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use App\Area;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use App\LogoChange;
 
 class AreaController extends Controller
 {
     public function index(){
-        return view ('backend.area.add');
+        $data = [ ];
+        $data['logochange'] = LogoChange::all();
+
+        return view ('backend.area.add', $data);
     }
 
     public function store(Request $request){
@@ -32,6 +36,7 @@ class AreaController extends Controller
     public function show(){
         $data = [ ];
         $data['areas'] = Area::all();
+        $data['logochange'] = LogoChange::all();
 
         return view('backend.area.show', $data);
     }

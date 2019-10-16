@@ -1,8 +1,11 @@
 <?php
-
+ use App\LogoChange;
 
 Route::get('/', function () {
-    return view('frontend.welcome');
+   
+    $data = [ ];
+    $data['logochange'] = LogoChange::all();
+    return view('frontend.welcome', $data);
 });
 Route::get('/home', 'HomeController@index')->name('home');
 

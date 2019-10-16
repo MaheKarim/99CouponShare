@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Dokan;
 use Auth;
+use App\LogoChange;
 use Illuminate\Support\Facades\Storage;
 
 class DokanController extends Controller
@@ -15,12 +16,14 @@ class DokanController extends Controller
         }else{
             $data['dokans'] = Dokan::where('user_id', Auth::id())->get();
         } 
-        
+        $data['logochange'] = LogoChange::all();
         return view('backend.dokan.show',$data);
     }
 
     public function index(){
-        return view('backend.dokan.add');
+        $data = [ ];
+        $data['logochange'] = LogoChange::all();
+        return view('backend.dokan.add', $data);
     }
     public function store(Request $request){
          //  validation start here

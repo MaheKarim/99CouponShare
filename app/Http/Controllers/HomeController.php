@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Auth;
+use App\LogoChange;
 
 class HomeController extends Controller
 {
@@ -25,7 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('backend._home');
+        $data = [ ];
+    $data['logochange'] = LogoChange::all();
+        return view('backend._home', $data);
     }
 
     public function showChangePasswordForm(){

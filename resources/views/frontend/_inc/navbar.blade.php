@@ -56,7 +56,7 @@
             <div class="row row-rl-0 row-tb-20 row-md-cell">
                 <div class="brand col-md-3 t-xs-center t-md-left valign-middle">
                     <a href="#" class="logo">
-                        <img src="{{asset('/frontend')}}/assets/images/logo.png" alt="" width="250">
+                        <img src="{{ asset('storage') }}/{{ $logochange[0]->logo }}" alt="" width="250">
                     </a>
                 </div>
                 <div class="header-search col-md-9">

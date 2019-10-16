@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use Illuminate\Http\Request;
+use App\LogoChange;
 
 class CategoryController extends Controller
 {
     public function index(){
-        return view('backend.category.add');
+        $data = [ ];
+        $data['logochange'] = LogoChange::all();
+        return view('backend.category.add', $data);
     }
 
     public function store(Request $request){
@@ -28,6 +31,7 @@ class CategoryController extends Controller
     public function show(){
         $data = [ ];
         $data['categories'] = Category::all();
+        $data['logochange'] = LogoChange::all();
 
         return view('backend.category.show', $data);
     }

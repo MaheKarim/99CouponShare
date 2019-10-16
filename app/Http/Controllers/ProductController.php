@@ -6,6 +6,7 @@ use App\Product;
 use Illuminate\Http\Request;
 use Auth;
 use App\Category;
+use App\LogoChange;
 use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
@@ -17,11 +18,13 @@ class ProductController extends Controller
         }else{
             $data['products'] = Product::where('user_id', Auth::id())->get();
         } 
+        $data['logochange'] = LogoChange::all();
         return view('backend.products.show', $data);
     }
 
     public function add(){
-        return view('backend.products.add');
+        $data['logochange'] = LogoChange::all();
+        return view('backend.products.add', $data);
     }
 
     public function store(Request $request){
