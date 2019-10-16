@@ -4,6 +4,8 @@
 <style>
     td.tdCSS{
         /* background-color: aqua; */
+        width: 22px;
+        height: 20px;
     }
     </style>
 <div class="page-inner">
@@ -52,8 +54,6 @@
                                          </ul>
                                        </div><br />
                                  @endif
-                                       
-
                          <div class="table-responsive">
                             <table id="add-row" class="display table table-striped table-hover" >
                                 <thead>
@@ -70,9 +70,8 @@
                                     <tr>
                                     <td>{{ $dokan->dokan_name }}</td>
                                     <td>{{ $dokan->dokan_description }}</td>
-                                    <td> <img src="{{ asset('dokan_images'.$dokan->dokan_image) }}" /> </td>
+                                    <td class="tdCSS"> <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $dokan->dokan_image }}" /> </td>
                                     <td>{{ $dokan->created_at }}</td>
-
                                         <td>
                                             <div class="form-button-action">   
                                              @if (Auth::user()->user_role_id == 2)
@@ -87,7 +86,6 @@
                                                     <i class="fa fa-times"></i>
                                                 </a>
                                              @endif      
-                                            
                                             </div>
                                         </td>
                                     </tr>
