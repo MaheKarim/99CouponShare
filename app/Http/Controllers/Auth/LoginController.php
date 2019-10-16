@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
 use Illuminate\Http\Request;
+use App\LogoChange;
 
 class LoginController extends Controller
 {
@@ -39,8 +40,17 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
     public function logout(Request $request) {
+       
         Auth::logout();
         return redirect('/home');
+    }
+
+    public function showLoginForm()
+    {
+        $data = [ ];
+        $data['logochange'] = LogoChange::all();
+
+        return view('auth.login', $data);
     }
    
 }
