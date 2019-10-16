@@ -1,26 +1,19 @@
 <?php
 
-use App\Dokan;
-use App\LogoChange;
 
-Route::get('/', function () {
-   
-    $data = [ ];
-    $data['logochange'] = LogoChange::all();
-    $data['dokans'] = Dokan::where('dokan_image')->get();
-    return view('frontend.welcome', $data);
-});
+Route::get('/','FrontEndController@index')->name('frontendHome');
+Route::get('/contact','FrontEndController@contactus')->name('contact');
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 // 404 Page
 Route::get('/404','HomeController@error')->name('error404');
 
-
 Auth::routes();
 // Password Update
 Route::get('/change/password','HomeController@showChangePasswordForm')->name('passwordupdate');
 Route::post('/changePassword','HomeController@changePassword')->name('changePassword');
-
 
 Route::prefix('api/v1.3')->group(function () {
     // Logout Route

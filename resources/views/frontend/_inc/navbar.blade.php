@@ -100,82 +100,7 @@
                         <li class="active">
                             <a href="{{url('/')}}">Home</a>
                         </li>
-                        <li class="dropdown-mega-menu">
-                            <a href="deals_grid.html">Deals</a>
-                            <div class="mega-menu">
-                                <div class="row row-v-10">
-                                    <div class="col-md-3">
-                                        <ul>
-                                            <li><a href="deals_grid.html">Grid View</a>
-                                            </li>
-                                            <li><a href="deals_grid_sidebar.html">Grid With Sidebar</a>
-                                            </li>
-                                            <li><a href="deals_list.html">List View</a>
-                                            </li>
-                                            <li><a href="deal_single.html">Deal Single</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <figure class="deal-thumbnail embed-responsive embed-responsive-4by3" data-bg-img="assets/images/deals/deal_03.jpg">
-                                            <div class="label-discount top-10 right-10">-15%</div>
-                                            <div class="deal-about p-10 pos-a bottom-0 left-0">
-                                                <div class="rating mb-10">
-                                                    <span class="rating-stars rate-allow" data-rating="2">
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </span>
-                                                </div>
-                                                <h6 class="deal-title mb-10">
-                                                    <a href="deal_single.html" class="color-lighter">Aenean ut orci vel massa</a>
-                                                </h6>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <figure class="deal-thumbnail embed-responsive embed-responsive-4by3" data-bg-img="assets/images/deals/deal_04.jpg">
-                                            <div class="label-discount top-10 right-10">-60%</div>
-                                            <div class="deal-about p-10 pos-a bottom-0 left-0">
-                                                <div class="rating mb-10">
-                                                    <span class="rating-stars rate-allow" data-rating="3">
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </span>
-                                                </div>
-                                                <h6 class="deal-title mb-10">
-                                                    <a href="deal_single.html" class="color-lighter">Aenean ut orci vel massa</a>
-                                                </h6>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <figure class="deal-thumbnail embed-responsive embed-responsive-4by3" data-bg-img="assets/images/deals/deal_05.jpg">
-                                            <div class="label-discount top-10 right-10">-60%</div>
-                                            <div class="deal-about p-10 pos-a bottom-0 left-0">
-                                                <div class="rating mb-10">
-                                                    <span class="rating-stars rate-allow" data-rating="5">
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </span>
-                                                </div>
-                                                <h6 class="deal-title mb-10">
-                                                    <a href="deal_single.html" class="color-lighter">Aenean ut orci vel massa</a>
-                                                </h6>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        
                         <li>
                             <a href="coupons_grid.html">Coupons</a>
                             <ul>
@@ -201,7 +126,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="contact_us_01.html">Contact Us</a>
+                        <a href="{{  url('/contact') }}">Contact Us</a>
                         </li>
                     </ul>
                 </div>
