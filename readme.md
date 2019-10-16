@@ -18,7 +18,8 @@
 - [ ] Laravel Mix
 - [ ] CRUD Operation
 - [ ] Intervention Package Added
-- [ ] Sentry
+- [ ] Sentry for Issue Tracker
+- [ ] Algolia for Search Option (User Model Work Only)
 
 
 
