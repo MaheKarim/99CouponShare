@@ -50,6 +50,8 @@ Route::middleware(['adminRouteOnly'])->group(function () {
         Route::get('/change/logo','LogoChangeController@index')->name('logoChange');
         Route::post('/change/logo','LogoChangeController@imageUploadPost')->name('logoupdate');
         Route::get('/delete/logo/{id}', 'LogoChangeController@delete')->name('deleteLogo');
+
+        Route::get('/see/contact','ContactUsController@index');
 });
 
     // About Dokan

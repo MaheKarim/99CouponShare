@@ -11,6 +11,7 @@ class LogoChangeController extends Controller
     public  function  index(){
         $data = [ ];
         $data['logochanges'] = LogoChange::all();
+        $data['logochange'] = LogoChange::get();
         // $data['logochange'] = LogoChange::first();
         return view('backend.logo', $data);
     }
