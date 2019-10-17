@@ -33,4 +33,13 @@ class ContactUsController extends Controller
         $data['contactsubmits'] = ContactUs::all();
         return view('backend.contact.show',$data);
     }
+
+    public function delete($id){
+
+        $contactsubmit = ContactUs::find($id);
+        $contactsubmit->delete();
+        session()->flash('success','Contact deleted successfully!');
+
+        return redirect(route('showcontact'));
+    }
 }

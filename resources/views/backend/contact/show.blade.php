@@ -36,30 +36,25 @@
                             <table id="add-row" class="display table table-striped table-hover" >
                                 <thead>
                                     <tr>
-
                                         <th>Contact Namee</th>
                                         <th>Contact Mail</th>
                                         <th>Contact Web</th>
                                         <th>Contact MSG</th>
-                                       
                                         <th style="width: 10%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach ($contactsubmits as $contactsubmit)
-                                    
-                                
                                     <tr>
                                     <td>{{ $contactsubmit->contact_name }}</td>
                                     <td>{{ $contactsubmit->contact_mail }}</td>
                                     <td>{{ $contactsubmit->contact_web }}</td>
                                     <td>{{ $contactsubmit->contact_msg }}</td>
-                                    
                                         <td>
                                             <div class="form-button-action">
-                                            {{-- <a href="{{ route('deleteMail', $newslater->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-                                            <i class="fa fa-times">X</i>
-                                            </a> --}}
+                                            <a href="{{ route('deleteContact', $contactsubmit->id) }}" type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+                                            <i class="fa fa-times"></i>
+                                            </a>
                                             </div>
                                         </td>
                                     </tr>
