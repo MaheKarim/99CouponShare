@@ -63,7 +63,7 @@
                             <label for="category_name_id">Select Your Category</label>
                             <div class="form-group">
                                     <select class="form-control" name="category_name_id">
-                                            <option disabled selected>Select a role</option>
+                                            <option disabled selected>Select a Category</option>
                                             @php( $categories = \App\Category::all())
                                             @foreach($categories as $category)
                                                 <option value="{{ $category->id }}">{{ $category->category_name }}</option>
@@ -73,8 +73,8 @@
                             <label for="dokan_name_id">Select Your Dokan</label>
                             <div class="form-group">
                                     <select class="form-control" name="dokan_name_id">
-                                            <option disabled selected>Select a role</option>
-                                            @php( $dokans = \App\Dokan::all())
+                                            <option disabled selected>Select Your Dokan</option>
+                                            @php( $dokans = \App\Dokan::where('user_id', Auth::id())->get())
                                             @foreach($dokans as $dokan)
                                                 <option value="{{ $dokan->id }}">{{ $dokan->dokan_name }}</option>
                                             @endforeach
