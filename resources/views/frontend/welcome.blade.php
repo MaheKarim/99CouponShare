@@ -7,6 +7,13 @@
                      {{-- @include('frontend.slider-content') --}}
                      <div class="section explain-process-area ptb-30">
                         <div class="row row-rl-10">
+                                 <!-- Notification Start Here -->
+                            @if (session()->has('success'))
+                            <div class="alert alert-success">
+                                {{ session()->get('success') }}
+                            </div>
+                               @endif
+                            <!-- Notification End Here -->
                             <div class="col-md-4">
                                 <div class="item panel prl-15 ptb-20">
                                     <div class="row row-rl-5 row-xs-cell">

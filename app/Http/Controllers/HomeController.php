@@ -27,7 +27,8 @@ class HomeController extends Controller
     public function index()
     {
         $data = [ ];
-    $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::all();
+        $data['logochanges'] = LogoChange::all();
         return view('backend._home', $data);
     }
 

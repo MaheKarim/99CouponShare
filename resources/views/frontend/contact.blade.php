@@ -64,22 +64,23 @@
                         <div class="col-xs-12 col-md-6">
                             <div class="contact-area-col contact-form">
                                 <h3 class="t-uppercase h-title mb-20">Get in touch</h3>
-                                <form action="#" method="post">
+                            <form action="{{ url('contact-form') }}" method="post">
+                                @csrf
                                     <div class="form-group">
                                         <label>Name</label>
-                                        <input type="text" class="form-control" required="required">
+                                        <input type="text" name="contact_name" class="form-control" required="required">
                                     </div>
                                     <div class="form-group">
                                         <label>Email Address</label>
-                                        <input type="text" class="form-control" required="required">
+                                        <input type="text" name="contact_mail" class="form-control" required="required">
                                     </div>
                                     <div class="form-group">
                                         <label>Website</label>
-                                        <input type="text" class="form-control" required="required">
+                                        <input type="text" name="contact_web" class="form-control" required="required">
                                     </div>
                                     <div class="form-group">
                                         <label>Message</label>
-                                        <textarea rows="5" class="form-control" required="required"></textarea>
+                                        <textarea rows="5" name="contact_msg" class="form-control" required="required"></textarea>
                                     </div>
                                     <button class="btn">Send Message</button>
                                 </form>

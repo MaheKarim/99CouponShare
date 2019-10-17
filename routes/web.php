@@ -51,7 +51,7 @@ Route::middleware(['adminRouteOnly'])->group(function () {
         Route::post('/change/logo','LogoChangeController@imageUploadPost')->name('logoupdate');
         Route::get('/delete/logo/{id}', 'LogoChangeController@delete')->name('deleteLogo');
 
-        Route::get('/see/contact','ContactUsController@index');
+       
 });
 
     // About Dokan
@@ -73,3 +73,6 @@ Route::middleware(['adminRouteOnly'])->group(function () {
 
     
 Route::get('index','SearchController@search');
+
+Route::get('/contact','ContactUsController@index');
+Route::post('contact-form','ContactUsController@create');
