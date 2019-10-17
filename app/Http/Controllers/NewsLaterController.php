@@ -11,7 +11,7 @@ class NewsLaterController extends Controller
     public function show(){
         $data= [ ];
         $data['newslaters'] = NewsLater::all();
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
         return view('backend.newslater.show',$data);
     }
     public function sent(Request $request){

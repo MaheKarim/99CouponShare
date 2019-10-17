@@ -16,13 +16,13 @@ class DokanController extends Controller
         }else{
             $data['dokans'] = Dokan::where('user_id', Auth::id())->get();
         } 
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
         return view('backend.dokan.show',$data);
     }
 
     public function index(){
         $data = [ ];
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
         return view('backend.dokan.add', $data);
     }
     public function store(Request $request){

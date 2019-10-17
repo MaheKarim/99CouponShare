@@ -11,7 +11,7 @@ class AreaController extends Controller
 {
     public function index(){
         $data = [ ];
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
 
         return view ('backend.area.add', $data);
     }
@@ -36,7 +36,7 @@ class AreaController extends Controller
     public function show(){
         $data = [ ];
         $data['areas'] = Area::all();
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
 
         return view('backend.area.show', $data);
     }

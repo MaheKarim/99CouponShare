@@ -59,6 +59,9 @@
                                 </div>
                             </div>
                    @endadmin
+                   @if(!auth::check())
+                   <input type="hidden" name="user_role_id" value="3">
+                   @endif
                    {{-- <input type="hidden" name="user_rolee_id"  value="{{ $user_role_id == 3 }}"> --}}
                         <!-- User Role End -->
 

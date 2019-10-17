@@ -27,13 +27,15 @@ class HomeController extends Controller
     public function index()
     {
         $data = [ ];
-        $data['logochange'] = LogoChange::all();
-        $data['logochanges'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
+//$data['logochanges'] = LogoChange::all();
         return view('backend._home', $data);
     }
 
     public function showChangePasswordForm(){
-        return view('auth.changepassword');
+        $data = [ ];
+        $data['logochange'] = LogoChange::find(6);
+        return view('auth.changepassword',$data);
     }
 
     public function changePassword(Request $request){

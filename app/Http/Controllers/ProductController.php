@@ -18,12 +18,12 @@ class ProductController extends Controller
         }else{
             $data['products'] = Product::where('user_id', Auth::id())->get();
         } 
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
         return view('backend.products.show', $data);
     }
 
     public function add(){
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
         return view('backend.products.add', $data);
     }
 

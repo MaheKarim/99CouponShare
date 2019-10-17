@@ -10,7 +10,7 @@ class CategoryController extends Controller
 {
     public function index(){
         $data = [ ];
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
         return view('backend.category.add', $data);
     }
 
@@ -31,7 +31,7 @@ class CategoryController extends Controller
     public function show(){
         $data = [ ];
         $data['categories'] = Category::all();
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
 
         return view('backend.category.show', $data);
     }

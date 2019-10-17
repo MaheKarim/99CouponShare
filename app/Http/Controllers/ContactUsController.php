@@ -10,7 +10,7 @@ class ContactUsController extends Controller
 {
     public function index(){
         $data = [ ];
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
         $data['contactsubmits'] = ContactUs::all();
         //$data['dokans'] = Dokan::where('dokan_image')->get();
         return view('frontend.contact', $data);
@@ -29,7 +29,7 @@ class ContactUsController extends Controller
     }
     public function show(){
         $data = [ ];
-        $data['logochange'] = LogoChange::all();
+        $data['logochange'] = LogoChange::find(6);
         $data['contactsubmits'] = ContactUs::all();
         return view('backend.contact.show',$data);
     }
