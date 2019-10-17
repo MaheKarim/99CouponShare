@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 class LogoChangeController extends Controller
 {
-    public  function  index(){
+    public function index(){
         $data = [ ];
         $data['logochanges'] = LogoChange::all();
         $data['logochange'] = LogoChange::get();
