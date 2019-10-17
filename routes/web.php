@@ -76,3 +76,4 @@ Route::get('index','SearchController@search');
 
 Route::get('/contact','ContactUsController@index');
 Route::post('contact-form','ContactUsController@create');
+Route::get('/see/contact','ContactUsController@show')->name('showcontact');

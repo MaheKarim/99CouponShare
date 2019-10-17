@@ -11,6 +11,7 @@ class ContactUsController extends Controller
     public function index(){
         $data = [ ];
         $data['logochange'] = LogoChange::all();
+        $data['contactsubmits'] = ContactUs::all();
         //$data['dokans'] = Dokan::where('dokan_image')->get();
         return view('frontend.contact', $data);
     }
@@ -25,5 +26,11 @@ class ContactUsController extends Controller
         
         session()->flash('success','Thank you for contact with us!  We will reply back soon.');
         return redirect('/');
+    }
+    public function show(){
+        $data = [ ];
+        $data['logochange'] = LogoChange::all();
+        $data['contactsubmits'] = ContactUs::all();
+        return view('backend.contact.show',$data);
     }
 }

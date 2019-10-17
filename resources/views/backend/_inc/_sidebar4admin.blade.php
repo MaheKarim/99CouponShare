@@ -46,9 +46,13 @@
     <div class="collapse" id="sidebarLayouts">
         <ul class="nav nav-collapse">
             <li>
+                <a href="{{ route('showcontact') }}">
+                    <span class="sub-item">Show Contact</span>
+                </a>
                 <a href="{{ route('logoChange') }}">
                     <span class="sub-item">Logo Change</span>
                 </a>
+                
             </li>
 
         </ul>
