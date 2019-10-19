@@ -111,14 +111,6 @@
                                  @endforeach
                             </ul>
 
-
-                            {{-- <select class="form-control" name="category_name_id">
-                                <option disabled selected>Select a Category</option>
-                                @php( $categories = \App\Category::all())
-                                @foreach($categories as $category)
-                                    <option value="{{ $category->id }}">{{ $category->category_name }}</option>
-                                @endforeach
-                            </select> --}}
                         </li>
                         <li>
                                 <a href="coupons_grid.html">Area We Covered</a>
@@ -129,7 +121,6 @@
                                     </li>
                                      @endforeach
                                 </ul>
-                            
                         </li>
                         <li>
                         <a href="{{  url('/contact') }}">Contact Us</a>
