@@ -8,6 +8,7 @@ use Auth;
 use App\Category;
 use App\LogoChange;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {

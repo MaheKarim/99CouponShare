@@ -75,11 +75,13 @@
                                 @endadmin
                                 {{-- <td>{{ $product->Dokan()->first()->dokan_name }} </td> --}}
                                 <td>{{ $product->product_name }}</td>
-                                <td>{{ $product->product_description }}</td>
+                                <td>{{ str_limit($product->product_description, 20) }}</td>
                                 <td>{{ $product->product_prize }}</td>
+                                <td><img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->product_image }}" /> </td>
                                 <td>{{ $product->product_disscount_prize }}</td>
                                 <td>{{ $product->product_disscount_rate }}</td>
                                 <td>{{ $product->availability_date }}</td>
+                               
                                     <td>
                                       <div class="form-button-action">
                                         @if (Auth::User()->user_role_id == 2)

@@ -61,7 +61,7 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::get('/edit/dokan/{dokan}','DokanController@edit')->name('editDokan');
     Route::post('/update-dokan','DokanController@update')->name('updateDokan');
     Route::get('/delete/dokan/{id}', 'DokanController@delete')->name('deleteDokan');
-
+    
 
     // Add Products
     Route::get('/show/product','ProductController@show')->name('showProduct');

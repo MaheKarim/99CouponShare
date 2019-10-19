@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Dokan;
 use App\LogoChange;
+use App\Product;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
@@ -13,7 +14,9 @@ class FrontEndController extends Controller
 
         $data = [ ];
         $data['logochange'] = LogoChange::all();
-        $data['dokans'] = Dokan::where('dokan_image')->get();
+        $data['dokans'] = Dokan::all();
+        $data['products'] = Product::all();
+
         return view('frontend.welcome', $data);
     }
 
