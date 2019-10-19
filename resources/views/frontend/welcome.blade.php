@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                   @include('backend._inc.coupon')
+                   @include('frontend.coupon')
 
 
                     <section class="section latest-coupons-area ptb-30">

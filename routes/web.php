@@ -3,6 +3,8 @@
 
 Route::get('/','FrontEndController@index')->name('frontendHome');
 Route::get('/contact','FrontEndController@contactus')->name('contact');
+Route::get('/view/all/coupon','FrontEndController@allcoupon')->name('allcoupon');
+
 
 
 Route::get('/home', 'HomeController@index')->name('home');

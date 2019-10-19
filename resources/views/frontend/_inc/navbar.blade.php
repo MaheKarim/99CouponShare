@@ -102,7 +102,7 @@
                         </li>
                         
                         <li>
-                            <a href="coupons_grid.html">Product Type</a>
+                        <a href="#">Choose Category</a>
                             <ul name="category_name_id">
                                 @php( $categories = \App\Category::all())
                                  @foreach($categories as $category)

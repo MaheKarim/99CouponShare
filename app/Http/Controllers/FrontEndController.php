@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Dokan;
 use App\LogoChange;
 use App\Product;
@@ -16,6 +17,7 @@ class FrontEndController extends Controller
         $data['logochange'] = LogoChange::all();
         $data['dokans'] = Dokan::all();
         $data['products'] = Product::all();
+        $data['categories'] = Category::all();
 
         return view('frontend.welcome', $data);
     }
@@ -24,5 +26,14 @@ class FrontEndController extends Controller
         $data = [ ];
         $data['logochange'] = LogoChange::all();
         return view('frontend.contact',$data);
+    }
+
+    public function allcoupon(){
+        $data = [ ];
+        $data['logochange'] = LogoChange::all();
+        $data['dokans'] = Dokan::all();
+        $data['products'] = Product::all();
+
+        return view('frontend.alldelas', $data);  
     }
 }
