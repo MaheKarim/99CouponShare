@@ -48,6 +48,7 @@ class ProductController extends Controller
         $products->product_name = $request->product_name;
         $products->product_description = $request->product_description;
         $products->product_prize = $request->product_prize;
+        $products->product_coupon = $request->product_coupon;
         $products->product_disscount_prize = $request->product_disscount_prize;
         $products->product_disscount_rate = $request->product_disscount_rate;
         $products->user_id = Auth::id();

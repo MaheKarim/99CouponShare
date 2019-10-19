@@ -91,6 +91,8 @@
                                 <input type="text" class="form-control" name="product_disscount_prize" id="text" placeholder="Disscount Prize">
                                 <label for="text">Disscount %</label>
                                 <input type="text" class="form-control" name="product_disscount_rate" id="text" placeholder="Disscount %">
+                                <label for="text">Coupon Code</label>
+                                <input type="text" class="form-control" name="product_coupon" id="text" placeholder="Coupon Code if available">
                                 <label for="date">Availibility Date</label>
                                 <input type="date" class="form-control" name="availability_date" id="text">    
                                 <label for="text">Choose product Image</label>

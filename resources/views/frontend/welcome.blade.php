@@ -124,8 +124,12 @@
                                                     <li><i class="ico fa fa-shopping-basket mr-10"></i>120 Bought</li>
                                                 </ul>
                                                 <p class="text-muted mb-20">
-                                                {{ str_limit($product->product_description, 100) }}
-                                            </p>
+                                                {{ str_limit($product->product_description, 50) }}
+                                                </p>
+                                            </div>
+                                            <div class="showcode" data-toggle-class="coupon-showen" data-toggle-event="click">
+                                                    <button class="show-code btn btn-sm btn-block" data-toggle="modal" data-target="#coupon_03"> Get Coupon</button>
+                                            <div class="coupon-hide"> {{$product->product_coupon}} </div>
                                             </div>
                                             <div class="deal-price pos-r mb-15">
                                             <h3 class="price ptb-5 text-right"><span class="price-sale">${{ $product->product_prize }}</span>${{ $product->product_disscount_prize }}</h3>
