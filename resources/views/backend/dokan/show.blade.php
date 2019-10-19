@@ -59,7 +59,7 @@
                                 <thead>
                                     <tr>
                                         <th>Dokan Name</th>
-                                        <th>Description</th>
+                                        <th>Address</th>
                                         <th>Dokan Image</th>
                                         <th>Created At</th>
                                         <th style="width: 10%">Action</th>
