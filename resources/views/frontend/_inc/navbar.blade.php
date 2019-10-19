@@ -102,28 +102,34 @@
                         </li>
                         
                         <li>
-                            <a href="coupons_grid.html">Coupons</a>
-                            <ul>
-                                <li><a href="coupons_grid.html">Grid View</a>
+                            <a href="coupons_grid.html">Product Type</a>
+                            <ul name="category_name_id">
+                                @php( $categories = \App\Category::all())
+                                 @foreach($categories as $category)
+                                <li><a value="{{ $category->id }}">{{ $category->category_name }}</a>
                                 </li>
-                                <li><a href="coupons_grid_sidebar.html">Grid With Sidebar</a>
-                                </li>
-                                <li><a href="coupons_list.html">List View</a>
-                                </li>
+                                 @endforeach
                             </ul>
+
+
+                            {{-- <select class="form-control" name="category_name_id">
+                                <option disabled selected>Select a Category</option>
+                                @php( $categories = \App\Category::all())
+                                @foreach($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                @endforeach
+                            </select> --}}
                         </li>
                         <li>
-                            <a href="stores_01.html">Stores</a>
-                            <ul>
-                                <li><a href="stores_01.html">Stores Search</a>
-                                </li>
-                                <li><a href="stores_02.html">Stores Categories</a>
-                                </li>
-                                <li><a href="store_single_01.html">Store Single 1</a>
-                                </li>
-                                <li><a href="store_single_02.html">Store Single 2</a>
-                                </li>
-                            </ul>
+                                <a href="coupons_grid.html">Area We Covered</a>
+                                <ul name="area_name_id">
+                                    @php( $areas = \App\Area::all())
+                                     @foreach($areas as $area)
+                                    <li><a value="{{ $area->id }}">{{ $area->area_name }}</a>
+                                    </li>
+                                     @endforeach
+                                </ul>
+                            
                         </li>
                         <li>
                         <a href="{{  url('/contact') }}">Contact Us</a>

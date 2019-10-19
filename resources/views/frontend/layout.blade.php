@@ -107,9 +107,9 @@
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
 
     <!-- ========== BUY THEME ========== -->
-    <a href="https://google.com/" class="buy-theme" data-href="https://themeforest.net/item/friday-coupons-deals-discounts-promo-codes-template/19577226?ref=CODASTROID" target="_blank" id="buy_theme">
+    {{-- <a href="https://google.com/" class="buy-theme" data-href="https://themeforest.net/item/friday-coupons-deals-discounts-promo-codes-template/19577226?ref=CODASTROID" target="_blank" id="buy_theme">
         <i class="fa fa-credit-card"></i>
-    </a>
+    </a> --}}
 
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
     <!-- BACK TO TOP                               -->

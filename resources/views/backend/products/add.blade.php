@@ -78,7 +78,7 @@
                                             @foreach($dokans as $dokan)
                                                 <option value="{{ $dokan->id }}">{{ $dokan->dokan_name }}</option>
                                             @endforeach
-                                        </select>
+                                    </select>
                                         
                             <div>
                                 <label for="text">Add Products Name</label>
