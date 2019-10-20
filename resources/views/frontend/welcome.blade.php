@@ -59,7 +59,7 @@
                    @include('frontend.coupon')
 
 
-                    <section class="section latest-coupons-area ptb-30">
+                    {{-- <section class="section latest-coupons-area ptb-30">
                         <header class="panel ptb-15 prl-20 pos-r mb-30">
                             <h3 class="section-title font-18">Latest Deals</h3>
                             <a class="btn btn-o btn-xs pos-a right-10 pos-tb-center">View All</a>
@@ -271,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> --}}
                    {{-- @include('frontend.store') --}}
                    <section class="section stores-area stores-area-v1 ptb-30">
                         <header class="panel ptb-15 prl-20 pos-r mb-30">
