@@ -55,10 +55,7 @@
                             </div>
                         </div>
                     </div>
-
                    @include('frontend.coupon')
-
-
                     {{-- <section class="section latest-coupons-area ptb-30">
                         <header class="panel ptb-15 prl-20 pos-r mb-30">
                             <h3 class="section-title font-18">Latest Deals</h3>
