@@ -8,11 +8,11 @@
                      <div class="section explain-process-area ptb-30">
                         <div class="row row-rl-10">
                                  <!-- Notification Start Here -->
-                            @if (session()->has('success'))
+                            {{-- @if (session()->has('success'))
                             <div class="alert alert-success">
                                 {{ session()->get('success') }}
                             </div>
-                               @endif
+                               @endif --}}
                             <!-- Notification End Here -->
                             <div class="col-md-4">
                                 <div class="item panel prl-15 ptb-20">
@@ -411,7 +411,7 @@
                             <p class="mb-20 color-mid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi magni accusantium architecto possimus.</p>
 
                     <!-- error message -->
-                    @if ($errors->any())
+                    {{-- @if ($errors->any())
                             <div class="alert alert-danger">
                                     <ul>
                                        @foreach ($errors->all() as $error)
@@ -419,14 +419,20 @@
                                         @endforeach
                                   </ul>
                             </div>
-                    @endif
+                    @endif --}}
                     <!-- error message end -->
                     <!-- Notification Start Here -->
-                    @if (session()->has('success'))
+
+
+
+                    {{-- @if (session()->has('success'))
                     <div class="alert alert-success">
                         {{ session()->get('success') }}
                     </div>
-                       @endif
+                       @endif --}}
+
+
+
                     <!-- Notification End Here -->
                             <form method="post" action="{{ url('emailSubscriber') }}">
                             @csrf

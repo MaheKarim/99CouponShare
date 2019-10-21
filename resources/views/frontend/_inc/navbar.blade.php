@@ -1,7 +1,7 @@
 <header id="mainHeader" class="main-header">
 
     <!-- Top Bar -->
-    @if(!Auth::user())
+    {{-- @if(!Auth::user()) --}}
     <div class="top-bar bg-gray">
         <div class="container">
             <div class="row">
@@ -45,7 +45,7 @@
             </div>
         </div>
     </div>
-    @endif
+    {{-- @endif --}}
 
 
     <!-- End Top Bar -->
