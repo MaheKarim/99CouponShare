@@ -1,7 +1,7 @@
 <header id="mainHeader" class="main-header">
 
     <!-- Top Bar -->
-    {{-- @if(!Auth::user()) --}}
+    @if(!Auth::user())
     <div class="top-bar bg-gray">
         <div class="container">
             <div class="row">
@@ -45,7 +45,7 @@
             </div>
         </div>
     </div>
-    {{-- @endif --}}
+    @endif
 
 
     <!-- End Top Bar -->
@@ -131,7 +131,7 @@
                     <div class="nav-menu nav-menu-fixed">
                         <a href="{{ url('/home') }}" target="_blank">Dashboard<i class="fa fa-long-arrow-right ml-10"></i></a>
                     </div>
-                    @endif
+                @endif
             </nav>
         </div>
     </div>
