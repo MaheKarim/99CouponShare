@@ -35,3 +35,24 @@
     <!-- Custom Template JavaScript                   -->
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript" src="{{asset('/frontend')}}/assets/js/main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
+    <script>
+      $.validate({
+        modules : 'security',
+        onModulesLoaded : function() {
+          var optionalConfig = {
+            fontSize: '12pt',
+            padding: '4px',
+            bad : 'Very bad',
+            weak : 'Weak',
+            good : 'Good',
+            strong : 'Strong'
+          };
+      
+          $('input[name="pass"]').displayPasswordStrength(optionalConfig);
+        }
+      });
+      </script>

@@ -1,5 +1,11 @@
 @extends('layouts.app')
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+  <style>
+   .error{ color:red; } 
+  </style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -18,7 +24,8 @@
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="invalid-feedback text-danger" role="alert">
+                                        {{ $errors->first('name') }}
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -29,7 +36,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email"  data-validation="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -69,7 +76,7 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                <input id="password" data-validation="length" data-validation-length="min6"  type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -83,7 +90,7 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" data-validation="confirmation" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
 
@@ -100,4 +107,40 @@
         </div>
     </div>
 </div>
+
+
+<script>
+        if ($("#customerform").length > 0) {
+         $("#customerform").validate({
+          
+         rules: {
+           name: {
+             required: true,
+             maxlength: 50,
+             minlength: 3,
+           },
+      
+             email: {
+                     required: true,
+                     maxlength: 50,
+                     email: true,
+                 },    
+         },
+         messages: {
+            
+           name: {
+             required: "Please enter name",
+             maxlength: "Your last name maxlength should be 50 characters long."
+           },
+           
+           email: {
+               required: "Please enter valid email",
+               email: "Please enter valid email",
+               maxlength: "The email name should less than or equal to 50 characters",
+             },
+             
+         },
+         })
+       }
+     </script>
 @endsection
