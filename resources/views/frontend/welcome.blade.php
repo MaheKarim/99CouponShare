@@ -281,14 +281,10 @@
                                     </div>
                                 <h6 class="store-name ptb-10">{{ $dokans->first()->dokan_name }}</h6>
                                 </a>
-                              
                             </div>
                             @endforeach
-                            
                         </div>
                     </section>
-
-
                     {{-- <section class="section latest-news-area blog-area blog-grid blog-3-col ptb-30">
                             <header class="panel ptb-15 prl-20 pos-r mb-30">
                                 <h3 class="section-title font-18">Latest News</h3>
@@ -396,9 +392,6 @@
                                 <!-- End Blog Post -->
                             </div>
                     </section> --}}
-                         
-                                             
-                    
                         <section class="section subscribe-area ptb-40 t-center">
                         <div class="newsletter-form">
                             <h4 class="mb-20"><i class="fa fa-envelope-o color-green mr-10"></i>Sign up for our weekly email newsletter</h4>
@@ -416,17 +409,11 @@
                     @endif
                     <!-- error message end -->
                     <!-- Notification Start Here -->
-
-
-
                     @if (session()->has('success'))
                     <div class="alert alert-success">
                         {{ session()->get('success') }}
                     </div>
                        @endif
-
-
-
                     <!-- Notification End Here -->
                             <form method="post" action="{{ url('emailSubscriber') }}">
                             @csrf

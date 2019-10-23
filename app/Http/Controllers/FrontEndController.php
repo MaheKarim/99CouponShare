@@ -36,4 +36,12 @@ class FrontEndController extends Controller
 
         return view('frontend.alldelas', $data);  
     }
+
+    public function showHome($id){
+        $data = [' '];
+        $data['products_cat'] = Product::where('category_name_id', $id)->get();
+
+         return view('frontend._inc.allproducts', $data);
+    }
+
 }

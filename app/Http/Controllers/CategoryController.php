@@ -63,4 +63,5 @@ class CategoryController extends Controller
         session()->flash('success','Category Deleted Successfully!');
         return redirect(route('showCategory'));
     }
+    
 }

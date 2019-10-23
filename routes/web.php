@@ -4,7 +4,7 @@
 Route::get('/','FrontEndController@index')->name('frontendHome');
 Route::get('/contact','FrontEndController@contactus')->name('contact');
 Route::get('/view/all/coupon','FrontEndController@allcoupon')->name('allcoupon');
-
+Route::get('/category/{id}','FrontEndController@showHome');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -72,7 +72,8 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::get('/edit/products/{product}','ProductController@edit')->name('editProduct');
     Route::post('/update-product','ProductController@update')->name('updateProduct');
     Route::get('/delete-product/{id}','ProductController@delete')->name('deleteProduct');
-
+// Route::view('products','frontend/_inc/allproducts',['data'=>App\Product::all(), 'logochanges'=>App\LogoChange::all(),
+// 'catByUser' =>'All Products']);
     
 Route::get('index','SearchController@search');
 
