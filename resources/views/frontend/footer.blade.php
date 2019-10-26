@@ -51,11 +51,7 @@
                         <div class="footer-top-instagram instagram-widget">
                             <h2>Map Widget</h2>
                             <div class="row row-tb-5 row-rl-5">
-
-
-                               
                                 <div class="mapouter"><div class="gmap_canvas"><iframe width="295" height="238" id="gmap_canvas" src="https://maps.google.com/maps?q=Daffodil%20International%20university&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/20-off-discount-for-elegant-themes-divi-sale-coupon-code-2019/"></a></div><style>.mapouter{position:relative;text-align:right;height:238px;width:295px;}.gmap_canvas {overflow:hidden;background:none!important;height:238px;width:295px;}</style></div>
-
 
                             </div>
                         </div>
