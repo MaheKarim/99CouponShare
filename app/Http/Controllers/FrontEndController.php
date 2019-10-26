@@ -6,6 +6,7 @@ use App\Category;
 use App\Dokan;
 use App\LogoChange;
 use App\Product;
+use App\ContactUs;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
@@ -24,7 +25,8 @@ class FrontEndController extends Controller
 
     public function contactus(){
         $data = [ ];
-        $data['logochange'] = LogoChange::all();
+        // $data['logochange'] = LogoChange::all();
+        // $data['logochanges'] = LogoChange::all();
         return view('frontend.contact',$data);
     }
 

@@ -36,7 +36,7 @@
                                 </li>
                                 <li><a href="coupons_grid.html">Newest Coupons</a>
                                 </li>
-                                <li><a href="contact_us_02.html">Contact Us</a>
+                            <li><a href="{{ url('contact') }}">Contact Us</a>
                                 </li>
                                 <li><a href="{{route('error404')}}">Error 404</a>
                                 </li>

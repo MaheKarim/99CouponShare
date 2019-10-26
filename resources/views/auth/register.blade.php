@@ -66,6 +66,7 @@
                                 </div>
                             </div>
                    @endadmin
+                   
                    @if(!auth::check())
                    <input type="hidden" name="user_role_id" value="3">
                    @endif
@@ -109,7 +110,7 @@
 </div>
 
 
-<script>
+{{-- <script>
         if ($("#customerform").length > 0) {
          $("#customerform").validate({
           
@@ -142,5 +143,6 @@
          },
          })
        }
-     </script>
+</script> --}}
+
 @endsection

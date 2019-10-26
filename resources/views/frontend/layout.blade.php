@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr" class="no-js">
@@ -36,6 +34,7 @@
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
     <!-- GOOGLE FONTS                              -->
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
 
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
@@ -106,14 +105,12 @@
     <!-- END WRAPPER                               -->
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
 
-    <!-- ========== BUY THEME ========== -->
-    {{-- <a href="https://google.com/" class="buy-theme" data-href="https://themeforest.net/item/friday-coupons-deals-discounts-promo-codes-template/19577226?ref=CODASTROID" target="_blank" id="buy_theme">
-        <i class="fa fa-credit-card"></i>
-    </a> --}}
+    
 
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
     <!-- BACK TO TOP                               -->
     <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+
     <div id="backTop" class="back-top is-hidden-sm-down">
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
