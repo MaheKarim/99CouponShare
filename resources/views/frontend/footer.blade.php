@@ -32,11 +32,11 @@
                         <div class="footer-links">
                             <h2 class="color-lighter">Quick Links</h2>
                             <ul>
-                                <li><a href="deals_grid.html">Latest Deals</a>
+                            <li><a href="{{ route('aboutus') }}">About Us</a>
                                 </li>
                                 <li><a href="coupons_grid.html">Newest Coupons</a>
                                 </li>
-                            <li><a href="{{ url('contact') }}">Contact Us</a>
+                                <li><a href="{{ route('contactwithus') }}">Contact Us</a>
                                 </li>
                                 <li><a href="{{route('error404')}}">Error 404</a>
                                 </li>

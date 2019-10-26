@@ -5,6 +5,13 @@
 
 @section('content')
                      {{-- @include('frontend.slider-content') --}}
+                      <!-- Notification Start -->
+                      @if (session()->has('success'))
+                      <div class="alert alert-success">
+                          {{ session()->get('success') }}
+                      </div>
+                   @endif
+                   <!-- Notification End -->
                      <div class="section explain-process-area ptb-30">
                         <div class="row row-rl-10">
                                 

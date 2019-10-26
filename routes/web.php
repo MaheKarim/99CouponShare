@@ -2,9 +2,11 @@
 
 
 Route::get('/','FrontEndController@index')->name('frontendHome');
-Route::get('/contact','FrontEndController@contactus')->name('contact');
+
 Route::get('/view/all/coupon','FrontEndController@allcoupon')->name('allcoupon');
 Route::get('/category/{id}','FrontEndController@showHome');
+Route::get('/about-us','FrontEndController@aboutus')->name('aboutus');
+Route::get('/contact/with/us','FrontEndController@contactwithus')->name('contactwithus');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

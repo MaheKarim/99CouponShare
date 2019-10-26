@@ -1,14 +1,16 @@
-{{-- @extends('frontend.layout') --}}
-
-@section('title')
-    Contact
-@endsection
+@extends('frontend.layout')
 
 @section('content')
 <div class="page-container ptb-60">
         <div class="container">
-
             <!-- Contact Us Area -->
+             <!-- Notification Start -->
+             @if (session()->has('success'))
+             <div class="alert alert-success">
+                 {{ session()->get('success') }}
+             </div>
+          @endif
+<!-- Notification End -->
             <div class="contact-area contact-area-v1 panel">
                 <div class="row row-tb-20">
                     <div class="col-xs-12">
@@ -90,7 +92,6 @@
                 </div>
             </div>
             <!-- End Contact Us Area -->
-
         </div>
     </div>
 @endsection

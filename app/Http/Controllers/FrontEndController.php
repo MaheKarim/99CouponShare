@@ -25,7 +25,7 @@ class FrontEndController extends Controller
 
     public function contactus(){
         $data = [ ];
-        // $data['logochange'] = LogoChange::all();
+         $data['logochange'] = LogoChange::all();
         // $data['logochanges'] = LogoChange::all();
         return view('frontend.contact',$data);
     }
@@ -44,6 +44,22 @@ class FrontEndController extends Controller
         $data['products_cat'] = Product::where('category_name_id', $id)->get();
 
          return view('frontend._inc.allproducts', $data);
+    }
+
+    public function aboutus(){
+
+        $data=[' '];
+        $data['logochange'] = LogoChange::all();
+        
+        return view('frontend.about-us', $data);
+    }
+
+    public function contactwithus(){
+
+        $data = [' '];
+        $data['logochange'] = LogoChange::all();
+        
+        return view('frontend.contactwith', $data);
     }
 
 }
