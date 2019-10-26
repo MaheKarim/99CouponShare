@@ -70,6 +70,16 @@
                                             @endforeach
                                         </select>
                             <div>
+                            <label for="area_name_id">Select Your Area</label>
+                            <div class="form-group">
+                                    <select class="form-control" name="area_name_id">
+                                            <option disabled selected>Select a Area</option>
+                                            @php( $areas = \App\Area::all())
+                                            @foreach($areas as $area)
+                                                <option value="{{ $area->id }}">{{ $area->area_name }}</option>
+                                            @endforeach
+                                        </select>
+                            <div>
                             <label for="dokan_name_id">Select Your Dokan</label>
                             <div class="form-group">
                                     <select class="form-control" name="dokan_name_id">
@@ -78,8 +88,7 @@
                                             @foreach($dokans as $dokan)
                                                 <option value="{{ $dokan->id }}">{{ $dokan->dokan_name }}</option>
                                             @endforeach
-                                    </select>
-                                        
+                                    </select>   
                             <div>
                                 <label for="text">Add Products Name</label>
                                 <input type="text" class="form-control" name="product_name" id="text" placeholder="Enter Product Name">

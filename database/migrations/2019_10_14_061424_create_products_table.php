@@ -26,6 +26,7 @@ class CreateProductsTable extends Migration
             $table->integer('category_name_id')->nullable();
             $table->integer('dokan_name_id')->nullable();
             $table->integer('user_id')->nullable();
+            $table->integer('area_name_id')->nullable();
             $table->timestamps();
         });
     }

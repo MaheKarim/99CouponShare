@@ -63,7 +63,7 @@
                     <a href="deal_single.html">{{ $product->product_name }}</a>
                 </h3>
                                     <ul class="deal-meta list-inline mb-10 color-mid">
-                                    <li><i class="ico fa fa-map-marker mr-10">{{ $product->Dokan->dokan_description }}</i></li>
+                                    <li><i class="ico fa fa-map-marker mr-10"> <span> </span>          {{ $product->Area->area_name }}</i></li>
                                     <li><i class="ico fa fa-folder-open mr-10"></i>{{ $product->Category->category_name }}</li>
                                     </ul>
                                     <p class="text-muted mb-20">{!! str_limit($product->product_description, 50) !!}</p>
