@@ -9,6 +9,7 @@ use App\Category;
 use App\LogoChange;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use App\Area;
 
 class ProductController extends Controller
 {
@@ -54,6 +55,7 @@ class ProductController extends Controller
         $products->user_id = Auth::id();
         $products->availability_date = $request->availability_date;
         $products->product_image = $image;
+        $products->area_name_id = $request->area_name_id;
         $products->save();
 
         // return view('backend.products.add');

@@ -18,7 +18,7 @@ class Product extends Model
         return $this->belongsTo('App\Dokan','dokan_name_id' ,'id');
     }
     public function Area(){
-        return $this->belongsTo('App\Area');
+        return $this->belongsTo('App\Area','area_name_id','id');
     }
 }
 
