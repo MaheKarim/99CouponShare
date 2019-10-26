@@ -66,7 +66,7 @@
                                     <li><i class="ico fa fa-map-marker mr-10">{{ $product->Dokan->dokan_description }}</i></li>
                                     <li><i class="ico fa fa-folder-open mr-10"></i>{{ $product->Category->category_name }}</li>
                                     </ul>
-                                    <p class="text-muted mb-20">{{ str_limit($product->product_description, 50) }}</p>
+                                    <p class="text-muted mb-20">{!! str_limit($product->product_description, 50) !!}</p>
                                 </div>
                                 <div class="showcode" data-toggle-class="coupon-showen" data-toggle-event="click">
                                         <button class="show-code btn btn-sm btn-block" data-toggle="modal" data-target="#coupon_03"> Get Coupon</button>

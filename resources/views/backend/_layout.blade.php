@@ -9,7 +9,7 @@
 	<link rel="icon" href="{{ asset('/') }}assets/img/icon.ico" type="image/x-icon"/>
 
 
-
+    <script src="https://cdn.ckeditor.com/ckeditor5/15.0.0/classic/ckeditor.js"></script>
 	<!-- Fonts and icons -->
 	<script src="{{ asset('/') }}assets/js/plugin/webfont/webfont.min.js"></script>
 	<script>

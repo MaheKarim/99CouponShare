@@ -12,7 +12,7 @@
 
 
 <!-- Chart JS -->
-<script src="{{ asset('/') }}assets/js/plugin/chart.js/chart.min.js"></script>
+{{-- <script src="{{ asset('/') }}assets/js/plugin/chart.js/chart.min.js"></script> --}}
 
 <!-- jQuery Sparkline -->
 <script src="{{ asset('/') }}assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
@@ -31,7 +31,7 @@
 <script src="{{ asset('/') }}assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
 
 <!-- Sweet Alert -->
-<script src="{{ asset('/') }}assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+{{-- <script src="{{ asset('/') }}assets/js/plugin/sweetalert/sweetalert.min.js"></script> --}}
 
 <!-- Atlantis JS -->
 <script src="{{ asset('/') }}assets/js/atlantis.min.js"></script>

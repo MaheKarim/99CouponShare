@@ -84,7 +84,7 @@
                                 <label for="text">Add Products Name</label>
                                 <input type="text" class="form-control" name="product_name" id="text" placeholder="Enter Product Name">
                                 <label for="text">Add Products Description</label>
-                                <input type="text" class="form-control" name="product_description" id="text" placeholder="Enter Product Description">
+                                <textarea type="text" class="form-control" name="product_description" id="editor" placeholder="Enter Product Description"> </textarea>
                                 <label for="text">Product Prize</label>
                                 <input type="text" class="form-control" name="product_prize" id="text" placeholder="Previous Prize">
                                 <label for="text">After Disscount Prize</label>
@@ -111,4 +111,12 @@
         </div>
     </div>
 </div>
+
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 @endsection

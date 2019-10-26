@@ -75,7 +75,7 @@
                                 @endadmin
                                 {{-- <td>{{ $product->Dokan()->first()->dokan_name }} </td> --}}
                                 <td>{{ $product->product_name }}</td>
-                                <td>{{ str_limit($product->product_description, 20) }}</td>
+                                <td>{!! str_limit($product->product_description, 20) !!}</td>
                                 <td>{{ $product->product_prize }}</td>
                                 <td><img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->product_image }}" /> </td>
                                 <td>{{ $product->product_disscount_prize }}</td>
