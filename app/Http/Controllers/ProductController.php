@@ -15,12 +15,15 @@ class ProductController extends Controller
 {
     //
     public function show(){
+       
         if(Auth::user()->user_role_id == 1 ){
             $data['products'] = Product::all();
         }else{
             $data['products'] = Product::where('user_id', Auth::id())->get();
         } 
+       // print_r($id); die;
         $data['logochange'] = LogoChange::find(6);
+       
         return view('backend.products.show', $data);
     }
 
@@ -42,7 +45,7 @@ class ProductController extends Controller
         if($request->has('product_image')){
             $image = $request->file('product_image')->store('product_images');
          }
-        
+         
         $products = new Product();
         $products->category_name_id = $request->category_name_id;
         $products->dokan_name_id = $request->dokan_name_id;
