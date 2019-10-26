@@ -15,7 +15,7 @@
                 <div class="row row-tb-20">
                     <div class="col-xs-12">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="google-map-iframe embed-responsive-item" src="http://maps.google.com/maps?q=56.7638955,-120.0681474&amp;z=4&amp;output=embed"></iframe>
+                            <iframe class="google-map-iframe embed-responsive-item" src="https://maps.google.com/maps?q=Daffodil%20International%20university&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                                         <li>
                                             <span class="icon lnr lnr-map-marker"></span>
                                             <h5>Address</h5>
-                                            <p class="color-mid">Comre, 404 Design Street, Melbourne, Australia</p>
+                                            <p class="color-mid">Sobhanbag, Dhanmondi - 1207</p>
                                         </li>
                                         <li>
                                             <span class="icon lnr lnr-envelope"></span>
@@ -40,7 +40,7 @@
                                         <li>
                                             <span class="icon lnr lnr-phone-handset"></span>
                                             <h5>Our phone</h5>
-                                            <p class="color-mid">(+212) 584-241-654</p>
+                                            <p class="color-mid">(+880) 177 8966 356</p>
                                         </li>
                                     </ul>
                                     <ul class="social-icons social-icons--colored list-inline">
