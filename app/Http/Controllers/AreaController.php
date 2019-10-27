@@ -44,11 +44,16 @@ class AreaController extends Controller
     public function edit($areaid){
         $data = [ ];
         $data['areas'] = Area::find($areaid);
+        $data['logochnage'] = LogoChange::find(6);
+        $data['logochnages'] = LogoChange::find(6);
 
         return view('backend.area.edit', $data);
     }
 
     public function update(Request $request){
+        $data = [ ];
+        $data['logochnage'] = LogoChange::find(6);
+        $data['logochnages'] = LogoChange::find(6);
         // validation
         $request->validate([
             'area_name' => 'required|min:3',
@@ -61,7 +66,7 @@ class AreaController extends Controller
          $areas->save();
 
          session()->flash('success','Successfully Updated!');
-         return redirect(route('showArea'));
+         return redirect(route('showArea', $data));
     }
 
     public function deleteMe($id){
