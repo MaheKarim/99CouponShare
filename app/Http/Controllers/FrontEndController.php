@@ -8,10 +8,17 @@ use App\LogoChange;
 use App\Product;
 use App\ContactUs;
 use Illuminate\Http\Request;
+use Artisan;
 
 class FrontEndController extends Controller
 {
-    //
+    // artisan command
+
+    public function install(){
+        Artisan::call('storage:link');
+        return 'Storage Link Storage Succssfully!';
+    }
+
     public function index(){
 
         $data = [ ];
@@ -60,6 +67,14 @@ class FrontEndController extends Controller
         $data['logochange'] = LogoChange::all();
         
         return view('frontend.contactwith', $data);
+    }
+
+    public function allcategoryshow($id){
+        $data = [' '];
+        $data['logochange'] = LogoChange::all();
+        $data['products'] = Product::where('category_name_id', $id)->get();
+        
+        return view('frontend.categorywise', $data);
     }
 
 }

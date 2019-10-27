@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 @section('title')
-    99CouponShare
+    MyOfferBD - Get Your Offer
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
                       </div>
                    @endif
                    <!-- Notification End -->
-                     <div class="section explain-process-area ptb-30">
+                     {{-- <div class="section explain-process-area ptb-30">
                         <div class="row row-rl-10">
                                 
                             <div class="col-md-4">
@@ -23,7 +23,7 @@
                                         </div>
                                         <div class="col-xs-8">
                                             <h5 class="mb-10 pt-5">Deals & Coupons</h5>
-                                            <p class="color-mid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aspernatur.</p>
+                                            <p class="color-mid">We share various Coupon and Deals with Our Valuable Customer</p>
                                         </div>
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                    @include('frontend.coupon')
                    
                    {{-- @include('frontend.store') --}}

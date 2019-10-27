@@ -15,15 +15,15 @@
                 </div>
                 <div class="col-sm-12 col-md-8">
                     <ul class="nav-top nav-top-right list-inline t-xs-center t-md-right">
-                        <li>
+                        {{-- <li>
                             <a href="#"><i class="fa fa-flag-en"></i>English <i class="fa fa-caret-down"></i></a>
                             <ul>
                                 <li><a href="index-2.html"><i class="fa fa-flag-en"></i>Bangla</a>
                                 </li>
 
                             </ul>
-                        </li>
-                        <li>
+                        </li> --}}
+                        {{-- <li>
                             <a href="#"><i class="fa fa-usd"></i>USD <i class="fa fa-caret-down"></i></a>
                             <ul>
                                 <li><a href="#">USD - US Dollar</a>
@@ -35,7 +35,7 @@
                                 <li><a href="#">RUB - Russian Ruble</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
                         <li><a href="{{ route('login') }}"><i class="fa fa-lock"></i>Sign In</a>
                         </li>
                         <li><a href="{{ route('register') }}"><i class="fa fa-user"></i>Sign Up</a>
@@ -104,14 +104,16 @@
                         <li>
                         <a href="#">Choose Category</a>
                             <ul name="category_name_id">
-                                @php( $categories = \App\Category::all())
+                                 @php( $categories = \App\Category::all())
+                                 
                                  @foreach($categories as $category)
-                                <li><a value="{{ $category->id }}">{{ $category->category_name }}</a>
+                                <li><a href="{{ route('allCategoryshow' , $category->id) }}">{{ $category->category_name }}</a>
                                 </li>
                                  @endforeach
                             </ul>
-
                         </li>
+
+
                         <li>
                                 <a href="coupons_grid.html">Area We Covered</a>
                                 <ul name="area_name_id">

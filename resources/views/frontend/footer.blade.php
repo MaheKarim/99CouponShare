@@ -34,13 +34,13 @@
                             <ul>
                             <li><a href="{{ route('aboutus') }}">About Us</a>
                                 </li>
-                                <li><a href="coupons_grid.html">Newest Coupons</a>
+                                <li><a href="{{route('error404')}}">Error 404</a>
                                 </li>
                                 <li><a href="{{ route('contactwithus') }}">Contact Us</a>
                                 </li>
-                                <li><a href="{{route('error404')}}">Error 404</a>
+                                <li><a href="{{ route('login') }}">Sign In</a>
                                 </li>
-                                <li><a href="terms_conditions.html">Terms of Use</a>
+                            <li><a href="{{ route('register') }}">Sign Up</a>
                                 </li>
                                 <li><a href="faq.html">FAQs</a>
                                 </li>

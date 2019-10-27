@@ -1,5 +1,7 @@
 <?php
-
+    // Storage Link
+    Route::get('/install', 'FrontEndController@install');
+   // don't touch here
 
 Route::get('/','FrontEndController@index')->name('frontendHome');
 
@@ -32,7 +34,9 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     // About Category
     Route::get('/add/category','CategoryController@index')->name('addCategory');
     Route::post('/store-category','CategoryController@store');
+
     Route::get('/show/category','CategoryController@show')->name('showCategory');
+
     Route::get('/category/edit/{category}','CategoryController@edit')->name('editCategory');
     Route::post('/update-category','CategoryController@update')->name('updateCategory');
     Route::get('/delete/category/{id}','CategoryController@delete')->name('deleteCategory');
@@ -83,3 +87,5 @@ Route::get('/contact','ContactUsController@index');
 Route::post('contact-form','ContactUsController@create');
 Route::get('/see/contact','ContactUsController@show')->name('showcontact');
 Route::get('/delete/contact/{id}','ContactUsController@delete')->name('deleteContact');
+
+Route::get('category/{id}','FrontEndController@allcategoryshow')->name('allCategoryshow');
