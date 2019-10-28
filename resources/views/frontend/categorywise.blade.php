@@ -57,7 +57,7 @@
                             </div>
                           
                             <h3 class="deal-title mb-10">
-            <a href="deal_single.html">{{ $product->product_name }}</a>
+            <a href="#">{{ $product->product_name }}</a>
         </h3>
                             <ul class="deal-meta list-inline mb-10 color-mid">
                             <li><i class="ico fa fa-map-marker mr-10"> <span> </span>          {{ $product->Area->area_name }}</i></li>

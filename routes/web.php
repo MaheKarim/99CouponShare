@@ -90,3 +90,4 @@ Route::get('/see/contact','ContactUsController@show')->name('showcontact');
 Route::get('/delete/contact/{id}','ContactUsController@delete')->name('deleteContact');
 
 Route::get('category/{id}','FrontEndController@allcategoryshow')->name('allCategoryshow');
+Route::get('/show/all/products','FrontEndController@allProductsShow')->name('showAllProducts');

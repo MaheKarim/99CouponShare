@@ -85,4 +85,12 @@ class FrontEndController extends Controller
         return view('frontend.areawise', $data);
     }
 
+    public function allProductsShow(){
+        $data = [' '];
+        $data['logochange'] = LogoChange::all();
+        $data['products'] = Product::all();
+
+        return view('frontend.view_all_products', $data);
+    }
+
 }

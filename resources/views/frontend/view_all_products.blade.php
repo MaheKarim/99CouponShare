@@ -1,7 +1,14 @@
-<section class="section latest-deals-area ptb-30">
+@extends('frontend.layout')
+
+@section('title')
+    Show All Products
+@endsection
+
+@section('content')
+ <section class="section latest-deals-area ptb-30">
         <header class="panel ptb-15 prl-20 pos-r mb-30">
-            <h3 class="section-title font-18">Latest Deals</h3>
-        <a href="{{ route('showAllProducts') }}" class="btn btn-o btn-xs pos-a right-10 pos-tb-center">View All</a>
+            <h3 class="section-title font-18">View All Deals</h3>
+        {{-- <a href="{{ route('showAllProducts') }}" class="btn btn-o btn-xs pos-a right-10 pos-tb-center">View All</a> --}}
         </header>
 
         <div class="row row-masnory row-tb-20">
@@ -84,3 +91,5 @@
                  @endforeach
         </div>
     </section>
+
+@endsection
