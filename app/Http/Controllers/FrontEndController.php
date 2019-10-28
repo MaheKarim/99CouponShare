@@ -77,4 +77,12 @@ class FrontEndController extends Controller
         return view('frontend.categorywise', $data);
     }
 
+    public function showAreaProducts($id){
+        $data = [' '];
+        $data['logochange'] = LogoChange::all();
+        $data['products'] = Product::where('area_name_id', $id)->get();
+
+        return view('frontend.areawise', $data);
+    }
+
 }

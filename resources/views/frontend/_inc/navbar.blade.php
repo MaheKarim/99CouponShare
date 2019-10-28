@@ -119,7 +119,7 @@
                                 <ul name="area_name_id">
                                     @php( $areas = \App\Area::all())
                                      @foreach($areas as $area)
-                                    <li><a value="{{ $area->id }}">{{ $area->area_name }}</a>
+                                    <li><a href="{{route('allAreayShow' , $area->id) }}">{{ $area->area_name }}</a>
                                     </li>
                                      @endforeach
                                 </ul>
