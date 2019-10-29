@@ -1,6 +1,8 @@
 <?php
     // Storage Link
     Route::get('/install', 'FrontEndController@install');
+    Route::get('/down', 'FrontEndController@up');
+    Route::get('/up', 'FrontEndController@down');
    // don't touch here
 
 Route::get('/','FrontEndController@index')->name('frontendHome');
@@ -91,3 +93,8 @@ Route::get('/delete/contact/{id}','ContactUsController@delete')->name('deleteCon
 
 Route::get('category/{id}','FrontEndController@allcategoryshow')->name('allCategoryshow');
 Route::get('/show/all/products','FrontEndController@allProductsShow')->name('showAllProducts');
+
+// Footer Part
+Route::get('/seetings/footer/change','SettingsController@footerPartUpdate')->name('footerPartUpdatehere');
+Route::post('/seetings/change','SettingsController@update')->name('updatehere');
+Route::post('/seetings/update/{id}', 'SettingsController@updatetext')->name('textupdate');

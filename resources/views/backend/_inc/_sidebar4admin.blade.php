@@ -52,6 +52,9 @@
                 <a href="{{ route('logoChange') }}">
                     <span class="sub-item">Logo Change</span>
                 </a>
+                <a href="{{ route('footerPartUpdatehere') }}">
+                    <span class="sub-item">Footer Text</span>
+                </a>
                 
             </li>
 

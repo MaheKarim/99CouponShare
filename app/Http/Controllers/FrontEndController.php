@@ -18,6 +18,14 @@ class FrontEndController extends Controller
         Artisan::call('storage:link');
         return 'Storage Link Storage Succssfully!';
     }
+    public function up(){
+        Artisan::call('down');
+        return 'Site Has Been Down Succssfully!';
+    }
+    public function down(){
+        Artisan::call('up');
+        return 'Site Has Been Up Succssfully!';
+    }
 
     public function index(){
 
