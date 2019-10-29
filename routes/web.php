@@ -2,7 +2,7 @@
     // Storage Link
     Route::get('/install', 'FrontEndController@install');
     Route::get('/down', 'FrontEndController@up');
-    Route::get('/up', 'FrontEndController@down');
+//  Route::get('/up', 'FrontEndController@down');
    // don't touch here
 
 Route::get('/','FrontEndController@index')->name('frontendHome');
