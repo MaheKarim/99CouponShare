@@ -7,8 +7,6 @@
         <div class="row row-masnory row-tb-20">
             <!-- Step Foreach For Product-->
             @foreach ($products as $product)
-                
-    
                 <div class="col-sm-6 col-lg-4">
                         <div class="deal-single panel">
                         <figure class="deal-thumbnail embed-responsive embed-responsive-16by9" data-bg-img="{{ asset('storage') }}/{{ $product->product_image }}">
@@ -16,8 +14,8 @@
                                 <ul class="deal-actions top-15 right-20">
                                     <li class="like-deal">
                                         <span>
-                        <i class="fa fa-heart"></i>
-                    </span>
+                                              <i class="fa fa-heart"></i>
+                                        </span>
                                     </li>
                                     <li class="share-btn">
                                         <div class="share-tooltip fade">
@@ -42,17 +40,13 @@
                                 </div>
                                  {{-- @foreach ($dokans as $dokan) --}}
                                 <div class="deal-store-logo">
-                                        <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->Dokan->dokan_image }}" />
+                                        {{-- <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->Dokan->dokan_image }}" /> --}}
                                 </div>
                                   {{-- @endforeach --}}
                             </figure>
                             <div class="bg-white pt-20 pl-20 pr-15">
                                 <div class="pr-md-10">
-                                   
-                                        
-                                    
                                     <div class="rating mb-10">
-                                       
                                         <span class="rating-reviews">
                                             <span class="rating-count">From  ➤  </span> 
                                             {{ $product->Dokan->dokan_name }} 

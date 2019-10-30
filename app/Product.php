@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use App\Category;
 use Laravel\Scout\Searchable;
+use App\Dokan;
 
 class Product extends Model
 {

@@ -10,7 +10,7 @@
                       <div class="alert alert-success">
                           {{ session()->get('success') }}
                       </div>
-                   @endif
+                      @endif
                    <!-- Notification End -->
                      
                    @include('frontend.coupon')
@@ -23,19 +23,19 @@
                         </header>
                         <div class="popular-stores-slider owl-slider" data-loop="true" data-autoplay="true" data-smart-speed="1000" data-autoplay-timeout="10000" data-margin="20" data-items="2" data-xxs-items="2" data-xs-items="2" data-sm-items="3" data-md-items="5" data-lg-items="6">
                             
-                            @php( $dokans = \App\Dokan::all())  
-                            @foreach ($dokans as $dokan)     
+                            {{-- @php( $dokans = \App\Dokan::all())   --}}
+                            {{-- @foreach ($dokans as $dokan)      --}}
                                 <div class="store-item t-center">
-                                <a href="store_single_01.html" class="panel is-block">
+                                <a href="#" class="panel is-block">
                                     <div class="embed-responsive embed-responsive-4by3">
                                         <div class="store-logo">
-                                            <img src="{{ asset('storage') }}/{{ $dokan->first()->dokan_image }}" alt="">
+                                            {{-- <img src="{{ asset('storage') }}/{{  $dokans->first()->dokan_image  }}" alt=""> --}}
                                         </div>
                                     </div>
-                                <h6 class="store-name ptb-10">{{ $dokans->first()->dokan_name }}</h6>
+                                <h6 class="store-name ptb-10"> dokan name</h6>
                                 </a>
                             </div>
-                            @endforeach
+                            {{-- @endforeach --}}
                         </div>
                     </section>
 
