@@ -6,7 +6,7 @@
                     <div class="footer-col col-sm-6">
                         <div class="footer-about">
                             {{-- @foreach ($logochanges as $logochange) --}}
-                            <img class="mb-40" src="{{ asset('storage') }}/{{ $logochange[0]->logo }}" width="250" alt="">
+                            <img class="mb-40" src="{{ asset('storage') }}/{{ $logochange->logo }}" width="250" alt="">
                             {{-- @endforeach --}}
                             <p class="color-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolores quidem mollitia id ipsa nisi necessitatibus iure repudiandae aperiam, odit ipsam dolor fugiat corporis nesciunt illo nemo minus.</p>
                         </div>

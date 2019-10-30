@@ -16,7 +16,7 @@ class Product extends Model
         return $this->belongsTo('App\Category','category_name_id' ,'id');
     }
     public function Dokan(){
-        return $this->belongsTo('App\Dokan','dokan_name_id' ,'id');
+        return $this->hasOne('App\Dokan','id' ,'dokan_name_id');
     }
     public function Area(){
         return $this->belongsTo('App\Area','area_name_id','id');

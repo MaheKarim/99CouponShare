@@ -56,18 +56,18 @@
             <div class="row row-rl-0 row-tb-20 row-md-cell">
                 <div class="brand col-md-3 t-xs-center t-md-left valign-middle">
                     <a href="#" class="logo">
-                        <img src="{{ asset('storage') }}/{{ $logochange[0]->logo }}" alt="" width="250">
+                        <img src="{{ asset('storage') }}/{{ $logochange->logo }}" alt="" width="250">
                     </a>
                 </div>
                 <div class="header-search col-md-9">
                     <div class="row row-tb-10 ">
                         <div class="col-sm-8">
-                        <form class="search-form" method="GET" action="{{url('index')}}">
+                        <form class="search-form" method="GET" action="{{ route('search_product') }}">
                                 <div class="input-group">
                                     <input type="text" name="search" class="form-control input-lg search-input" placeholder="Enter Keywork Here ..." required="required">
                                     <div class="input-group-btn">
                                         <div class="input-group">
-                                            <div class="input-group-btn">
+                                            <div class="input-group-btn">search
                                                 <button type="submit" class="btn btn-lg btn-search btn-block">
                                                     <i class="fa fa-search font-16"></i>
                                                 </button>

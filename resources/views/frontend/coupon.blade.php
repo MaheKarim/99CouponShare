@@ -38,18 +38,18 @@
                     <span class="t-uppercase" data-countdown="{{ $product->availability_date }}"> </span>
                 </span>
                                 </div>
-                                 {{-- @foreach ($dokans as $dokan) --}}
+                                 @foreach ($dokans as $dokan)
                                 <div class="deal-store-logo">
-                                        {{-- <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->Dokan->dokan_image }}" /> --}}
+                                        <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->Dokan->dokan_image }}" />
                                 </div>
-                                  {{-- @endforeach --}}
+                                  @endforeach
                             </figure>
                             <div class="bg-white pt-20 pl-20 pr-15">
                                 <div class="pr-md-10">
                                     <div class="rating mb-10">
                                         <span class="rating-reviews">
                                             <span class="rating-count">From  ➤  </span> 
-                                            {{ $product->Dokan->dokan_name }} 
+                                            {{ ($product->Dokan->dokan_name) ? "" : "" }} 
                                         </span>
                                     </div>
                                   

@@ -98,3 +98,6 @@ Route::get('/show/all/products','FrontEndController@allProductsShow')->name('sho
 Route::get('/seetings/footer/change','SettingsController@footerPartUpdate')->name('footerPartUpdatehere');
 Route::post('/seetings/change','SettingsController@update')->name('updatehere');
 Route::post('/seetings/update/{id}', 'SettingsController@updatetext')->name('textupdate');
+
+// search route
+Route::get('/search', 'SearchController@product_search')->name('search_product');

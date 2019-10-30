@@ -19,7 +19,7 @@ class SettingsController extends Controller
 
     public function update(Request $request){
 
-        $settinga = new Settings();
+        $settinga = Settings::find(1);
         $settinga->footer_text = $request->footer_text;
         $settinga->save();
         session()->flash('success','Create Created successfully!');
@@ -27,12 +27,12 @@ class SettingsController extends Controller
         return back();
     }
 
-    public function updatetext(Request $request, $id){
-        $settinga = Settings::findOrfail($request)->first();
-        $settinga->save();
+    // public function updatetext(Request $request, $id){
+    //     $settinga = Settings::findOrfail($request)->first();
+    //     $settinga->save();
 
-        session()->flash('success','Successfully Updated!');
+    //     session()->flash('success','Successfully Updated!');
         
-        return redirect()->back();
-    }
+    //     return redirect()->back();
+    // }
 }

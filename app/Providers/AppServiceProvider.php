@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use App\LogoChange;
 use Illuminate\Support\Facades\Auth;    // Must Must use
 use Illuminate\Support\Facades\Blade;   // Must Must use
 
@@ -37,6 +38,11 @@ class AppServiceProvider extends ServiceProvider
 
         Blade::if('agent', function(){
             return auth()->check() && auth()->user()->user_role_id == 2;
+        });
+ 
+        view()->composer('*', function ($view){
+            $logo_change = LogoChange::find(6); 
+            $view->with('logochange', $logo_change);
         });
     }
 }

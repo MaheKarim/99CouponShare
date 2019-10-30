@@ -19,4 +19,10 @@ class SearchController extends Controller
     	}
         return view('frontend.search', compact('users'));
     }
+
+    // product search
+    public function product_search(Request $request){
+        $products = Product::where('product_name', 'like', "%" . $request->search . "%")->get();
+        return view('frontend._inc.search_product', compact('products'));
+    }
 }
