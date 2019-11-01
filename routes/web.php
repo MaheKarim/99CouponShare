@@ -12,7 +12,7 @@ Route::get('/category/{id}','FrontEndController@showHome');
 Route::get('/area/{id}','FrontEndController@showAreaProducts')->name('allAreayShow');
 Route::get('/about-us','FrontEndController@aboutus')->name('aboutus');
 Route::get('/contact/with/us','FrontEndController@contactwithus')->name('contactwithus');
-
+Route::get('/dokan/{id}','FrontEndController@dokanSeeProduct')->name('dokanHasProduct');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

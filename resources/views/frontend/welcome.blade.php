@@ -26,7 +26,7 @@
                             @php( $dokans = \App\Dokan::all())  
                             @foreach ($dokans as $dokan)     
                                 <div class="store-item t-center">
-                                <a href="#" class="panel is-block">
+                                <a href="{{ route('dokanHasProduct' , $dokan->id) }}" class="panel is-block">
                                     <div class="embed-responsive embed-responsive-4by3">
                                         <div class="store-logo">
                                             <img src="{{ asset('storage') }}/{{  $dokan->dokan_image  }}" alt="">

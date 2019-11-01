@@ -101,4 +101,11 @@ class FrontEndController extends Controller
         return view('frontend.view_all_products', $data);
     }
 
+    public function dokanSeeProduct($id){
+        $data = [' '];
+        $data['logochange'] = LogoChange::all();
+        $data['products'] = Product::where('dokan_name_id', $id)->get();
+        return view('frontend.dokanHaveProduct', $data);
+    }
+
 }
