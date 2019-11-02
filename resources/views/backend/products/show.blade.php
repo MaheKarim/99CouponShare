@@ -37,29 +37,32 @@
                                    </div>
                                       @endif
 
-@if ($errors->any())
-      <div class="alert alert-danger">
+         @if ($errors->any())
+         <div class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
               <li>{{ $error }}</li>
             @endforeach
         </ul>
-      </div><br />
-@endif
+        </div>
+        <br/>
+      @endif
                                    <!-- Notification End Here -->
 
                      <div class="table-responsive">
                         <table id="add-row" class="display table table-striped table-hover" >
                             <thead>
                                 <tr>
-                                    <th>Category Name</th>
+                                   
                                     @admin
                                     <th>Shop Name </th>
                                     @endadmin
+                                    <th>Product Image </th>
+                                    <th>Category Name</th>
                                     <th>Product Name</th>
                                     <th>Product Description</th>
-                                    <th>Product Prize</th>
-                                    <th>Disscount Prize</th>
+                                    <th>Product Price</th>
+                                    <th>Disscount Price</th>
                                     <th>Disscount Rate(%)</th>
                                     <th>Availity Date</th>
                                     <th style="width: 10%">Action</th>
@@ -69,15 +72,15 @@
                             @foreach ($products as $product)
                                 <tr>
                                 {{-- <td>{{ $product->Category()->first()->category_name }} --}}
-                                <td>{{ $product->Category->category_name }}</td>
                                 @admin
                                 <td>{{ $product->Dokan->dokan_name}} </td>
                                 @endadmin
+                                <td><img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->product_image }}" /> </td>
+                                <td>{{ $product->Category->category_name }}</td>
                                 {{-- <td>{{ $product->Dokan()->first()->dokan_name }} </td> --}}
                                 <td>{{ $product->product_name }}</td>
                                 <td>{!! str_limit($product->product_description, 20) !!}</td>
                                 <td>{{ $product->product_prize }}</td>
-                                <td><img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->product_image }}" /> </td>
                                 <td>{{ $product->product_disscount_prize }}</td>
                                 <td>{{ $product->product_disscount_rate }}</td>
                                 <td>{{ $product->availability_date }}</td>
