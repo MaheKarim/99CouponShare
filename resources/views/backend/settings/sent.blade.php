@@ -19,22 +19,14 @@
             <li class="separator">
                 <i class="flaticon-right-arrow"></i>
             </li>
-            <li class="nav-item">
-                <a href="#">Forms</a>
-            </li>
-            <li class="separator">
-                <i class="flaticon-right-arrow"></i>
-            </li>
-            <li class="nav-item">
-                <a href="#">Basic Form</a>
-            </li>
+            
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header text-center">
-                    <div class="card-title">Add Footer Text</div>
+                    <div class="card-title">Site Core Seetings</div>
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -63,7 +55,11 @@
                              <input name="_method" type="hidden" value="post">
                             <div class="form-group">
                                 <label for="text">Add Footer Text</label>
-                                <input type="text" class="form-control" name="footer_text" id="text" placeholder="Enter Footer">
+                                <input type="text" value="{{ old('footer_text') }}" class="form-control" name="footer_text" id="text" placeholder="Enter Footer">
+                                <label for="text">Site Email</label>
+                                <input type="text" value="{{ old('site_mail') }}" class="form-control" name="site_mail" id="text" placeholder="Enter Mail">
+                                <label for="text">Site PHN Number</label>
+                                <input type="text" class="form-control" name="site_phn_number" id="text" placeholder="Enter Site PHN Number">
                                 </div>
                             </div> 
                         </div>
@@ -75,6 +71,31 @@
                    </form>
                 </div>
             </div>
+
+
+            <table class="table table-dark">
+                    <thead>
+                      <tr>
+                     
+                        <th scope="col">Site Footer Text</th>
+                        <th scope="col">Site Mail</th>
+                        <th scope="col">Site PHN Number</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                       
+                      @foreach ($settinga as $setting)
+                      <tr>
+                        <td>{{ $setting->footer_text }}</td>
+                        <td>{{ $setting->site_mail }}</td>
+                        <td>{{ $setting->site_phn_number }}</td>
+                      </tr>
+                      @endforeach
+                    </tbody>
+                  </table>
+
+
+
         </div>
     </div>
 </div>

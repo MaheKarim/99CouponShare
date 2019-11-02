@@ -14,6 +14,7 @@ class SettingsController extends Controller
 
         $data = [' '];
         $data['logochange'] = LogoChange::find(6);
+        $data['settinga'] = Settings::all();
         return \view('backend.settings.sent', $data);
     }
 
@@ -21,18 +22,12 @@ class SettingsController extends Controller
 
         $settinga = Settings::find(1);
         $settinga->footer_text = $request->footer_text;
+        $settinga->site_mail = $request->site_mail;
+        $settinga->site_phn_number = $request->site_phn_number;
         $settinga->save();
-        session()->flash('success','Create Created successfully!');
+        session()->flash('success','Settings Updated Successfully! ');
 
         return back();
     }
 
-    // public function updatetext(Request $request, $id){
-    //     $settinga = Settings::findOrfail($request)->first();
-    //     $settinga->save();
-
-    //     session()->flash('success','Successfully Updated!');
-        
-    //     return redirect()->back();
-    // }
 }
