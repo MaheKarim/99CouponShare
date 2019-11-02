@@ -8,7 +8,7 @@
 <div class="page-inner">
         <div class="page-header">
             <h4 class="page-title">
-                @yield('title','Dokan')
+                @yield('title','Shop')
             </h4>
             <ul class="breadcrumbs">
                 <li class="nav-home">
@@ -34,7 +34,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header text-center">
-                        <div class="card-title">Add Dokan Here</div>
+                        <div class="card-title">Add Shop Here</div>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -61,11 +61,11 @@
                         <form action="{{ url('store-dokan') }}" method="POST" enctype="multipart/form-data">
                                  @csrf
                                 <div class="form-group">
-                                    <label for="text">Add Dokan Name</label>
+                                    <label for="text">Add Shop Name</label>
                                     <input type="text" class="form-control" name="dokan_name" id="text" placeholder="Enter Dokan Name">
-                                    <label for="text">Add Dokan Description</label>
+                                    <label for="text">Add Shop Description</label>
                                     <input type="text" class="form-control" name="dokan_description" id="text" placeholder="Enter  Dokan Description">
-                                    <label for="text">Choose product Image</label>
+                                    <label for="text">Choose Shop Image</label>
                                    <input type="file" class="form-control" name="dokan_image">    
                                 </div>
                                 </div> 

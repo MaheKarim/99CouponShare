@@ -80,7 +80,7 @@
                                             @endforeach
                                         </select>
                             <div>
-                            <label for="dokan_name_id">Select Your Dokan</label>
+                            <label for="dokan_name_id">Select Your Shop</label>
                             <div class="form-group">
                                     <select class="form-control" name="dokan_name_id">
                                             <option disabled selected>Select Your Dokan</option>
@@ -94,9 +94,9 @@
                                 <input type="text" class="form-control" name="product_name" id="text" placeholder="Enter Product Name">
                                 <label for="text">Add Products Description</label>
                                 <textarea type="text" class="form-control" name="product_description" id="editor" placeholder="Enter Product Description"> </textarea>
-                                <label for="text">Product Prize</label>
+                                <label for="text">Product Price</label>
                                 <input type="text" class="form-control" name="product_prize" id="text" placeholder="Previous Prize">
-                                <label for="text">After Disscount Prize</label>
+                                <label for="text">After Disscount Price</label>
                                 <input type="text" class="form-control" name="product_disscount_prize" id="text" placeholder="Disscount Prize">
                                 <label for="text">Disscount %</label>
                                 <input type="text" class="form-control" name="product_disscount_rate" id="text" placeholder="Disscount %">
@@ -104,7 +104,7 @@
                                 <input type="text" class="form-control" name="product_coupon" id="text" placeholder="Coupon Code if available">
                                 <label for="date">Availibility Date</label>
                                 <input type="date" class="form-control" name="availability_date" id="text">    
-                                <label for="text">Choose product Image</label>
+                                <label for="text">Choose Product Image</label>
                                 <input type="file" class="form-control" name="product_image">
                             </div>
                             </div> 

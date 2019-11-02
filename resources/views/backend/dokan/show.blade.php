@@ -11,7 +11,7 @@
 <div class="page-inner">
         <div class="page-header">
             <h4 class="page-title">
-                @yield('title','Show Dokan')
+                @yield('title','Show Shop')
             </h4>
         </div>
         <div class="row">
@@ -22,7 +22,7 @@
                        <div class="d-flex align-items-center">
                             <a href="{{ route('addDokan') }}" class="btn btn-primary btn-round ml-auto">
                                     <i class="fa fa-plus"></i>
-                                    Add Dokan
+                                    Add Shop
                             </a>
                     </div>
                        @else
@@ -58,9 +58,9 @@
                             <table id="add-row" class="display table table-striped table-hover" >
                                 <thead>
                                     <tr>
-                                        <th>Dokan Name</th>
+                                        <th>Shop Name</th>
                                         <th>Address</th>
-                                        <th>Dokan Image</th>
+                                        <th>Shop Image</th>
                                         <th>Created At</th>
                                         <th style="width: 10%">Action</th>
                                     </tr>

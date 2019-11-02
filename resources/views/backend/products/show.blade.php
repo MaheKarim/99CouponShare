@@ -54,7 +54,7 @@
                                 <tr>
                                     <th>Category Name</th>
                                     @admin
-                                    <th>Dokan </th>
+                                    <th>Shop Name </th>
                                     @endadmin
                                     <th>Product Name</th>
                                     <th>Product Description</th>
