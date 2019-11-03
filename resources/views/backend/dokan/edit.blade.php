@@ -3,8 +3,7 @@
 @section('content')
 <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">Update Page</h4>
-           
+            <h4 class="page-title">Update Page</h4>     
         </div>
         <div class="row">
             <div class="col-md-12">

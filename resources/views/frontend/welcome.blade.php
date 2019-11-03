@@ -42,7 +42,7 @@
                         <section class="section subscribe-area ptb-40 t-center">
                         <div class="newsletter-form">
                             <h4 class="mb-20"><i class="fa fa-envelope-o color-green mr-10"></i>Sign up for our weekly email newsletter</h4>
-                            <p class="mb-20 color-mid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi magni accusantium architecto possimus.</p>
+                            <p class="mb-20 color-mid">Subscribe in our newslater. You can trust us, We never spam you!</p>
 
                     <!-- error message -->
                     @if ($errors->any())
