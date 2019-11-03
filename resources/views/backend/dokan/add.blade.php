@@ -22,12 +22,7 @@
                 <li class="nav-item">
                     <a href="#">Forms</a>
                 </li>
-                <li class="separator">
-                    <i class="flaticon-right-arrow"></i>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Basic Form</a>
-                </li>
+                
             </ul>
         </div>
         <div class="row">
@@ -62,9 +57,9 @@
                                  @csrf
                                 <div class="form-group">
                                     <label for="text">Add Shop Name</label>
-                                    <input type="text" class="form-control" name="dokan_name" id="text" placeholder="Enter Dokan Name">
+                                    <input type="text" class="form-control" name="dokan_name" id="text" placeholder="Enter Shop Name">
                                     <label for="text">Add Shop Description</label>
-                                    <input type="text" class="form-control" name="dokan_description" id="text" placeholder="Enter  Dokan Description">
+                                    <input type="text" class="form-control" name="dokan_description" id="text" placeholder="Enter Shop  Description">
                                     <label for="text">Choose Shop Image</label>
                                    <input type="file" class="form-control" name="dokan_image">    
                                 </div>

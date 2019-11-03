@@ -48,8 +48,8 @@
                                 <div class="pr-md-10">
                                     <div class="rating mb-10">
                                         <span class="rating-reviews">
-                                            <span class="rating-count">From  ➤  </span> 
-                                            {{ ($product->Dokan->dokan_name) ? "" : "" }} 
+                                            <span class="rating-count">From  ➤ {{ ($product->Dokan->dokan_name) }}  </span> 
+                                            {{-- ? "" : ""  --}}
                                         </span>
                                     </div>
                                   
@@ -57,7 +57,7 @@
                     <a href="#">{{ $product->product_name }}</a>
                 </h3>
                                     <ul class="deal-meta list-inline mb-10 color-mid">
-                                    <li><i class="ico fa fa-map-marker mr-10"> <span> </span>          {{ $product->Area->area_name }}</i></li>
+                                    <li><i class="ico fa fa-map-marker mr-10"> <span> </span>{{ $product->Area->area_name }}</i></li>
                                     <li><i class="ico fa fa-folder-open mr-10"></i>{{ $product->Category->category_name }}</li>
                                     </ul>
                                     <p class="text-muted mb-20">{!! str_limit($product->product_description, 50) !!}</p>
@@ -67,7 +67,7 @@
                                 <div class="coupon-hide"> {{$product->product_coupon}} </div>
                             
                                 <div class="deal-price pos-r mb-15">
-                                    <h3 class="price ptb-5 text-right"><span class="price-sale">${{ $product->product_prize }}</span>${{ $product->product_disscount_prize }}</h3>
+                                    <h3 class="price ptb-5 text-right"><span class="price-sale">৳ {{ $product->product_prize }}</span>৳{{ $product->product_disscount_prize }}</h3>
                                 </div>
                                 </div>
                             </div>
