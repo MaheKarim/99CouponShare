@@ -19,10 +19,10 @@
                                  @csrf
                                 <div class="form-group">
                                 <label for="text">Update Shop Name</label>
-                                <input type="text" class="form-control" name="dokan_name" id="dokan_name" value="{{ $dokans->dokan_name }}" placeholder="Enter Dokan Name">
+                                <input type="text" class="form-control" name="dokan_name" id="dokan_name" value="{{ $dokans->dokan_name }}" placeholder="Enter Shop Name">
                                 <input type="hidden" name="dokan_name_id"  value="{{ $dokans->id }}">    
                                 <label for="text">Update Shop Description</label>
-                                <input type="text" class="form-control" name="dokan_description" id="dokan_description" value="{{ $dokans->dokan_description }}" placeholder="Enter Dokan Description">
+                                <input type="text" class="form-control" name="dokan_description" id="dokan_description" value="{{ $dokans->dokan_description }}" placeholder="Enter Shop Description">
 
                                 </div>
                                 </div> 

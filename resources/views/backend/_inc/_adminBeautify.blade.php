@@ -48,7 +48,7 @@
                         </div>
                         <div class="col-7 col-stats">
                             <div class="numbers">
-                                <p class="card-category">Total Dokan</p>
+                                <p class="card-category">Total Shop</p>
                                 <h4 class="card-title"> {{ \App\Dokan::count() }} </h4>
                             </div>
                         </div>

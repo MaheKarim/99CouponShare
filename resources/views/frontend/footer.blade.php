@@ -16,19 +16,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="footer-col col-sm-6">
-                        <div class="footer-top-twitter">
-                            <h2 class="color-lighter">Twitter Feed</h2>
-                            <ul class="twitter-list">
-                                <li class="single-twitter">
-                                    <p class="color-light"><i class="ico fa fa-twitter"></i><a href="#">@masum_rana :</a> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore in reprehenderit.</p>
-                                </li>
-                                <li class="single-twitter">
-                                    <p class="color-light"><i class="ico fa fa-twitter"></i><a href="#">@masum_rana :</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione id corrupti iusto cupiditate omnis.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
             <div class="col-sm-12 col-md-5">
