@@ -7,6 +7,7 @@ use App\Dokan;
 use App\LogoChange;
 use App\Product;
 use App\ContactUs;
+use App\Settings;
 use Illuminate\Http\Request;
 use Artisan;
 
@@ -34,6 +35,7 @@ class FrontEndController extends Controller
         $data['dokans'] = Dokan::all();
         $data['products'] = Product::all();
         $data['categories'] = Category::all();
+        $data['settinga'] = Settings::all();
 
         return view('frontend.welcome', $data);
     }
@@ -42,6 +44,7 @@ class FrontEndController extends Controller
         $data = [ ];
          $data['logochange'] = LogoChange::all();
         // $data['logochanges'] = LogoChange::all();
+        $data['settinga'] = Settings::all();
         return view('frontend.contact',$data);
     }
 
@@ -50,14 +53,14 @@ class FrontEndController extends Controller
         $data['logochange'] = LogoChange::all();
         $data['dokans'] = Dokan::all();
         $data['products'] = Product::all();
-
+        $data['settinga'] = Settings::all();
         return view('frontend.alldelas', $data);  
     }
 
     public function showHome($id){
         $data = [' '];
         $data['products_cat'] = Product::where('category_name_id', $id)->get();
-
+        $data['settinga'] = Settings::all();
          return view('frontend._inc.allproducts', $data);
     }
 
@@ -65,7 +68,7 @@ class FrontEndController extends Controller
 
         $data=[' '];
         $data['logochange'] = LogoChange::all();
-        
+        $data['settinga'] = Settings::all();
         return view('frontend.about-us', $data);
     }
 
@@ -73,7 +76,7 @@ class FrontEndController extends Controller
 
         $data = [' '];
         $data['logochange'] = LogoChange::all();
-        
+        $data['settinga'] = Settings::all();
         return view('frontend.contactwith', $data);
     }
 
@@ -81,7 +84,7 @@ class FrontEndController extends Controller
         $data = [' '];
         $data['logochange'] = LogoChange::all();
         $data['products'] = Product::where('category_name_id', $id)->get();
-        
+        $data['settinga'] = Settings::all();
         return view('frontend.categorywise', $data);
     }
 
@@ -89,7 +92,7 @@ class FrontEndController extends Controller
         $data = [' '];
         $data['logochange'] = LogoChange::all();
         $data['products'] = Product::where('area_name_id', $id)->get();
-
+        $data['settinga'] = Settings::all();
         return view('frontend.areawise', $data);
     }
 
@@ -97,7 +100,7 @@ class FrontEndController extends Controller
         $data = [' '];
         $data['logochange'] = LogoChange::all();
         $data['products'] = Product::all();
-
+        $data['settinga'] = Settings::all();
         return view('frontend.view_all_products', $data);
     }
 
@@ -105,6 +108,7 @@ class FrontEndController extends Controller
         $data = [' '];
         $data['logochange'] = LogoChange::all();
         $data['products'] = Product::where('dokan_name_id', $id)->get();
+        $data['settinga'] = Settings::all();
         return view('frontend.dokanHaveProduct', $data);
     }
 

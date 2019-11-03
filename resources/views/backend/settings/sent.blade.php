@@ -56,10 +56,10 @@
                             <div class="form-group">
                                 <label for="text">Add Footer Text</label>
                                 <input type="text" value="{{ old('footer_text') }}" class="form-control" name="footer_text" id="text" placeholder="Enter Footer">
-                                <label for="text">Site Email</label>
+                                {{-- <label for="text">Site Email</label>
                                 <input type="text" value="{{ old('site_mail') }}" class="form-control" name="site_mail" id="text" placeholder="Enter Mail">
                                 <label for="text">Site PHN Number</label>
-                                <input type="text" class="form-control" name="site_phn_number" id="text" placeholder="Enter Site PHN Number">
+                                <input type="text" class="form-control" name="site_phn_number" id="text" placeholder="Enter Site PHN Number"> --}}
                                 </div>
                             </div> 
                         </div>
@@ -78,8 +78,7 @@
                       <tr>
                      
                         <th scope="col">Site Footer Text</th>
-                        <th scope="col">Site Mail</th>
-                        <th scope="col">Site PHN Number</th>
+                        
                       </tr>
                     </thead>
                     <tbody>
@@ -87,8 +86,7 @@
                       @foreach ($settinga as $setting)
                       <tr>
                         <td>{{ $setting->footer_text }}</td>
-                        <td>{{ $setting->site_mail }}</td>
-                        <td>{{ $setting->site_phn_number }}</td>
+                       
                       </tr>
                       @endforeach
                     </tbody>

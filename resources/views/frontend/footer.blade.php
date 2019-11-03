@@ -8,7 +8,12 @@
                             {{-- @foreach ($logochanges as $logochange) --}}
                             <img class="mb-40" src="{{ asset('storage') }}/{{ $logochange->logo }}" width="250" alt="">
                             {{-- @endforeach --}}
-                            <p class="color-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolores quidem mollitia id ipsa nisi necessitatibus iure repudiandae aperiam, odit ipsam dolor fugiat corporis nesciunt illo nemo minus.</p>
+                            <p class="color-light">
+                             @foreach ($settinga as $setting)
+                              {{ $setting->footer_text }}
+                            @endforeach 
+                            
+                            </p>
                         </div>
                     </div>
                     <div class="footer-col col-sm-6">

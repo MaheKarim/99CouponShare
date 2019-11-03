@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
 use Illuminate\Http\Request;
 use App\LogoChange;
+use App\Settings;
 
 class LoginController extends Controller
 {
@@ -49,7 +50,7 @@ class LoginController extends Controller
     {
         $data = [ ];
         $data['logochange'] = LogoChange::all();
-
+        $data['settinga'] = Settings::all();
         return view('auth.login', $data);
     }
    
