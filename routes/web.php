@@ -37,9 +37,7 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     // About Category
     Route::get('/add/category','CategoryController@index')->name('addCategory');
     Route::post('/store-category','CategoryController@store');
-
     Route::get('/show/category','CategoryController@show')->name('showCategory');
-
     Route::get('/category/edit/{category}','CategoryController@edit')->name('editCategory');
     Route::post('/update-category','CategoryController@update')->name('updateCategory');
     Route::get('/delete/category/{id}','CategoryController@delete')->name('deleteCategory');
