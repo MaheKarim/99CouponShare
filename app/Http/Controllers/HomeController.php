@@ -62,4 +62,9 @@ class HomeController extends Controller
         return view('404');
      }
 
+     public function seeAgentList(){
+
+        
+     }
+
 }

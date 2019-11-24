@@ -40,7 +40,7 @@
 		<!-- End Sidebar -->
 		<div class="main-panel">
 			<div class="content">
-		@yield('content')
+		    @yield('content')
 		
 			</div>
 		</div>

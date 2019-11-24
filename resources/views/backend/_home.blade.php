@@ -12,7 +12,7 @@
 							</div>
 							@admin
 							<div class="ml-md-auto py-2 py-md-0">
-								<a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
+								<a href="{{ url('/see/agent') }}" class="btn btn-white btn-border btn-round mr-2">Manage</a>
 							<a href="{{ url('/register') }}" class="btn btn-secondary btn-round">Add Agent</a>
 							</div>
 							@endadmin
