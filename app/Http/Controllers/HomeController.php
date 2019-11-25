@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Auth;
 use App\LogoChange;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -64,7 +65,10 @@ class HomeController extends Controller
 
      public function seeAgentList(){
 
-        
+        $data = [ ];
+        $data['users'] = User::where('user_role_id' , 2)->get();
+
+        return view('backend.settings.agentlist', $data);
      }
 
 }
