@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Category;
-use Illuminate\Http\Request;
+use App\Product;
+use App\Dokan;
 use App\LogoChange;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
+
 class CategoryController extends Controller
 {
     public function index(){
@@ -33,7 +36,7 @@ class CategoryController extends Controller
 
     public function show(){
         $data = [ ];
-        $data['categories'] = Category::paginate(2);
+        $data['categories'] = Category::paginate(5);
         $data['logochange'] = LogoChange::find(6);
 
         return view('backend.category.show', $data);
@@ -62,6 +65,18 @@ class CategoryController extends Controller
     }
 
     public function delete($id){
+
+        if($id == 1){
+            session()->flash('success','Category != Deleted Successfully');
+            return redirect(route('showCategory')); 
+        }
+        $products = Product::where('category_name_id', $id)->get();
+        foreach ($products as $product) {
+            Product::find($product->id)->update([
+                'category_name_id' => 1
+            ]);
+        }
+
         $categories = Category::find($id);
         $categories->delete();
 
