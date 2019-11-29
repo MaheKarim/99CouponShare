@@ -11,6 +11,7 @@ class Product extends Model
 {
     use Searchable;
     protected $tables = 'products';
+    protected $fillable = ['category_name_id'];
 
     public function Category(){
         return $this->belongsTo('App\Category','category_name_id' ,'id');
