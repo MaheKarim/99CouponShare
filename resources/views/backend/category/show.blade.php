@@ -14,7 +14,7 @@
                     <div class="card-header">
                         <div class="d-flex align-items-center">
                           
-                        <a href="{{ url('/add/category') }}" class="btn btn-primary btn-round ml-auto">
+                        <a href="{{ route('create-category') }}" class="btn btn-primary btn-round ml-auto">
                                 <i class="fa fa-plus"></i>
                                 Add Category
                             </a>
@@ -36,6 +36,7 @@
                                 <thead>
                                     <tr>
                                         <th>Category Name</th>
+                                        <th> Category Description </th>
                                         <th>Created At</th>
                                         <th>Updated At</th>
                                         <th style="width: 10%">Action</th>
@@ -45,6 +46,7 @@
                                    @foreach ($categories as $category) 
                                     <tr>
                                     <td>{{ $category->category_name }}</td>
+                                    <td>{{ $category->category_description }}</td>
                                     <td>{{ $category->created_at }}</td>
                                     <td>{{ $category->updated_at }}</td>
                                         <td>
@@ -61,6 +63,7 @@
                                      @endforeach
                                 </tbody>
                             </table>
+                            <?php echo $categories->links(); ?>
                         </div>
                     </div>
                 </div>

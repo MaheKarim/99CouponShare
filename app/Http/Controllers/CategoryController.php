@@ -20,17 +20,20 @@ class CategoryController extends Controller
             'category_name' => 'required|min:3|max:120',
          ]);
          //  data insert
-         $areas = new Category();
-         $areas->category_name = $request->category_name;
-         $areas->save();
+         $categories = new Category();
+         $categories->category_name = $request->category_name;
+         $categories->category_description = $request->category_description;
+         $categories->save();
          // flash message 
-         session()->flash('success','Category Created successfully!');
+
+
+         session()->flash('success','Category Created Successfully!');
          return redirect(route('showCategory'));
     }
 
     public function show(){
         $data = [ ];
-        $data['categories'] = Category::all();
+        $data['categories'] = Category::paginate(2);
         $data['logochange'] = LogoChange::find(6);
 
         return view('backend.category.show', $data);
@@ -48,8 +51,10 @@ class CategoryController extends Controller
             'category_name' => 'required|min:3',
          ]);
          // update work
+
          $categories = Category::findOrfail($request)->first();
          $categories->category_name = $request->category_name;
+         $categories->category_description = $request->category_description;
          $categories->save();
 
          session()->flash('success','Successfully Updated!');

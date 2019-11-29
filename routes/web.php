@@ -35,7 +35,8 @@ Route::get('/user/profile','UserController@index')->name('userprofile');
 
 Route::middleware(['adminRouteOnly'])->group(function () {
     // About Category
-    Route::get('/add/category','CategoryController@index')->name('addCategory');
+    Route::get('/add/category','CategoryController@index')->name('create-category');
+ //  Route::get('create-category','CategoryController@index');
     Route::post('/store-category','CategoryController@store');
     Route::get('/show/category','CategoryController@show')->name('showCategory');
     Route::get('/category/edit/{category}','CategoryController@edit')->name('editCategory');

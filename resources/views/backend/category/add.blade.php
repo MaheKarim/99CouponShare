@@ -59,8 +59,12 @@
                             <div class="form-group">
                                 <label for="text">Add Category Name</label>
                                 <input type="text" class="form-control" name="category_name" id="text" placeholder="Enter Category Name">
-                                </div>
-                            </div> 
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Add Category Description</label>
+                                <input type="text" class="form-control" name="category_description" id="text" placeholder="Enter Category Description">
+                            </div>
+                         
                         </div>
                     </div>
                     <div class="card-action">
