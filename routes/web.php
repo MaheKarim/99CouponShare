@@ -2,8 +2,9 @@
     // Storage Link
     Route::get('/install', 'FrontEndController@install');
     Route::get('/down', 'FrontEndController@up');
-//  Route::get('/up', 'FrontEndController@down');
    // don't touch here
+
+// Front-end code start
 
 Route::get('/','FrontEndController@index')->name('frontendHome');
 
@@ -11,7 +12,7 @@ Route::get('/view/all/coupon','FrontEndController@allcoupon')->name('allcoupon')
 Route::get('/category/{id}','FrontEndController@showHome');
 Route::get('/area/{id}','FrontEndController@showAreaProducts')->name('allAreayShow');
 Route::get('/about-us','FrontEndController@aboutus')->name('aboutus');
-Route::get('/contact/with/us','FrontEndController@contactwithus')->name('contactwithus');
+Route::get('/contact/with-us','FrontEndController@contactwithus')->name('contactwithus');
 Route::get('/dokan/{id}','FrontEndController@dokanSeeProduct')->name('dokanHasProduct');
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -32,11 +33,11 @@ Route::prefix('api/v1.3')->group(function () {
 // User Controller
 Route::get('/user/profile','UserController@index')->name('userprofile');
 
+//  Backend Code Start
 
 Route::middleware(['adminRouteOnly'])->group(function () {
     // About Category
     Route::get('/add/category','CategoryController@index')->name('create-category');
- //  Route::get('create-category','CategoryController@index');
     Route::post('/store-category','CategoryController@store');
     Route::get('/show/category','CategoryController@show')->name('showCategory');
     Route::get('/category/edit/{category}','CategoryController@edit')->name('editCategory');
@@ -81,8 +82,6 @@ Route::middleware(['adminRouteOnly'])->group(function () {
     Route::get('/edit/products/{product}','ProductController@edit')->name('editProduct');
     Route::post('/update-product','ProductController@update')->name('updateProduct');
     Route::get('/delete-product/{id}','ProductController@delete')->name('deleteProduct');
-// Route::view('products','frontend/_inc/allproducts',['data'=>App\Product::all(), 'logochanges'=>App\LogoChange::all(),
-// 'catByUser' =>'All Products']);
     
 Route::get('index','SearchController@search');
 
