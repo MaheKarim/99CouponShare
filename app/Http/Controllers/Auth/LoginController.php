@@ -8,6 +8,7 @@ use Auth;
 use Illuminate\Http\Request;
 use App\LogoChange;
 use App\Settings;
+use App\Product;
 
 class LoginController extends Controller
 {
@@ -51,6 +52,7 @@ class LoginController extends Controller
         $data = [ ];
         $data['logochange'] = LogoChange::all();
         $data['settinga'] = Settings::all();
+        $data['products'] = Product::where('product_name', 1)->get();
         return view('auth.login', $data);
     }
    
