@@ -45,6 +45,7 @@ class FrontEndController extends Controller
          $data['logochange'] = LogoChange::all();
         // $data['logochanges'] = LogoChange::all();
         $data['settinga'] = Settings::all();
+        $data['products'] = Product::where('product_name')->get();
         return view('frontend.contact',$data);
     }
 
@@ -60,6 +61,7 @@ class FrontEndController extends Controller
     public function showHome($id){
         $data = [' '];
         $data['products_cat'] = Product::where('category_name_id', $id)->get();
+        $data['products'] = Product::all();
         $data['settinga'] = Settings::all();
          return view('frontend._inc.allproducts', $data);
     }
@@ -68,6 +70,7 @@ class FrontEndController extends Controller
 
         $data=[' '];
         $data['logochange'] = LogoChange::all();
+        $data['products'] = Product::where('product_name')->get();
         $data['settinga'] = Settings::all();
         return view('frontend.about-us', $data);
     }
@@ -76,6 +79,7 @@ class FrontEndController extends Controller
 
         $data = [' '];
         $data['logochange'] = LogoChange::all();
+        $data['products'] = Product::where('product_name')->get();
         $data['settinga'] = Settings::all();
         return view('frontend.contactwith', $data);
     }
@@ -85,6 +89,7 @@ class FrontEndController extends Controller
         $data['logochange'] = LogoChange::all();
         $data['products'] = Product::where('category_name_id', $id)->get();
         $data['settinga'] = Settings::all();
+        
         return view('frontend.categorywise', $data);
     }
 
@@ -92,6 +97,7 @@ class FrontEndController extends Controller
         $data = [' '];
         $data['logochange'] = LogoChange::all();
         $data['products'] = Product::where('area_name_id', $id)->get();
+        $data['products'] = Product::all();
         $data['settinga'] = Settings::all();
         return view('frontend.areawise', $data);
     }
@@ -108,6 +114,7 @@ class FrontEndController extends Controller
         $data = [' '];
         $data['logochange'] = LogoChange::all();
         $data['products'] = Product::where('dokan_name_id', $id)->get();
+        $data['products'] = Product::all();
         $data['settinga'] = Settings::all();
         return view('frontend.dokanHaveProduct', $data);
     }
