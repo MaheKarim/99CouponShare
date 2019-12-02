@@ -27,7 +27,7 @@
     @endif
 
 
-
+<!-- Marquee / Scroll code here -->
 
 <marquee behavior="scroll" direction="left">
    

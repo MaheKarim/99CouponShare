@@ -12,35 +12,24 @@
                         <figure class="deal-thumbnail embed-responsive embed-responsive-16by9" data-bg-img="{{ asset('storage') }}/{{ $product->product_image }}">
                                 <div class="label-discount left-20 top-15">-{{ $product->product_disscount_rate}}</div>
                                 <ul class="deal-actions top-15 right-20">
-                                    <li class="like-deal">
-                                        <span>
-                                              <i class="fa fa-heart"></i>
-                                        </span>
-                                    </li>
+                                    
                                     <li class="share-btn">
                                         <div class="share-tooltip fade">
                                             <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
                                             <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
-                                            <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
-                                            <a target="_blank" href="#"><i class="fa fa-pinterest"></i></a>
                                         </div>
                                         <span><i class="fa fa-share-alt"></i></span>
                                     </li>
-                                    <li>
-                                        <span>
-                        <i class="fa fa-camera"></i>
-                    </span>
-                                    </li>
                                 </ul>
                                 <div class="time-left bottom-15 right-20 font-md-14">
-                                    <span>
+                <span>
                     <i class="ico fa fa-clock-o mr-10"></i>
                     <span class="t-uppercase" data-countdown="{{ $product->availability_date }}"> </span>
                 </span>
                                 </div>
                                  @foreach ($dokans as $dokan)
                                 <div class="deal-store-logo">
-                                        <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->Dokan->dokan_image }}" />
+                                    <img style="width:100%;max-width:400px" src="{{ asset('storage') }}/{{ $product->Dokan->dokan_image }}" />
                                 </div>
                                   @endforeach
                             </figure>
@@ -49,13 +38,12 @@
                                     <div class="rating mb-10">
                                         <span class="rating-reviews">
                                             <span class="rating-count">From  ➤ {{ ($product->Dokan->dokan_name) }}  </span> 
-                                            {{-- ? "" : ""  --}}
                                         </span>
                                     </div>
                                   
-                                    <h3 class="deal-title mb-10">
-                    <a href="#">{{ $product->product_name }}</a>
-                </h3>
+                                    <h3 class="deal-title mb-10">          
+                    <a href="{{ route('productView', $product->id) }}">{{ $product->product_name }}</a>
+                                    </h3>
                                     <ul class="deal-meta list-inline mb-10 color-mid">
                                     <li><i class="ico fa fa-map-marker mr-10"> <span> </span>{{ $product->Area->area_name }}</i></li>
                                     <li><i class="ico fa fa-folder-open mr-10"></i>{{ $product->Category->category_name }}</li>
@@ -73,7 +61,6 @@
                             </div>
                         </div>
                     </div>
-            
                  <!--- Product For ach End Here -->
                  @endforeach
         </div>

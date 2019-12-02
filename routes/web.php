@@ -5,7 +5,6 @@
    // don't touch here
 
 // Front-end code start
-
 Route::get('/','FrontEndController@index')->name('frontendHome');
 
 Route::get('/view/all/coupon','FrontEndController@allcoupon')->name('allcoupon');
@@ -13,7 +12,12 @@ Route::get('/category/{id}','FrontEndController@showHome');
 Route::get('/area/{id}','FrontEndController@showAreaProducts')->name('allAreayShow');
 Route::get('/about-us','FrontEndController@aboutus')->name('aboutus');
 Route::get('/contact/with-us','FrontEndController@contactwithus')->name('contactwithus');
+
+// Dokan To Product
 Route::get('/dokan/{id}','FrontEndController@dokanSeeProduct')->name('dokanHasProduct');
+
+// Product View
+Route::get('/product/{id}','FrontEndController@productSee')->name('productView');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

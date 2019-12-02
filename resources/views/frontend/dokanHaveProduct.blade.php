@@ -27,8 +27,8 @@
                             </li>
                             <li>
                                 <span>
-                <i class="fa fa-camera"></i>
-            </span>
+                               <i class="fa fa-camera"></i>
+                                </span>
                             </li>
                         </ul>
                         <div class="time-left bottom-15 right-20 font-md-14">
@@ -45,11 +45,8 @@
                     </figure>
                     <div class="bg-white pt-20 pl-20 pr-15">
                         <div class="pr-md-10">
-                           
-                                
                             
                             <div class="rating mb-10">
-                               
                                 <span class="rating-reviews">
                                     <span class="rating-count">From  ➤  </span> 
                                     {{ $product->Dokan->dokan_name }} 
@@ -57,8 +54,8 @@
                             </div>
                           
                             <h3 class="deal-title mb-10">
-            <a href="#">{{ $product->product_name }}</a>
-        </h3>
+                          <a href="#">{{ $product->product_name }}</a>
+                           </h3>
                             <ul class="deal-meta list-inline mb-10 color-mid">
                             <li><i class="ico fa fa-map-marker mr-10"> <span> </span>          {{ $product->Area->area_name }}</i></li>
                             <li><i class="ico fa fa-folder-open mr-10"></i>{{ $product->Category->category_name }}</li>
@@ -76,7 +73,6 @@
                     </div>
                 </div>
             </div>
-    
          <!--- Product For ach End Here -->
          @endforeach
 </div>
