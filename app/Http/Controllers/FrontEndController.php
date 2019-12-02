@@ -129,7 +129,8 @@ class FrontEndController extends Controller
 
         $data = [' '];
         $data['logochange'] = LogoChange::all();
-        $data['products']   = Product::findOrFail($id);
+        $data['productDetails']   = Product::where('id', $id)->first();
+        $data['products']   = Product::all();
         $data['settinga']   = Settings::all();
         return view('frontend.only_product', $data);
 
