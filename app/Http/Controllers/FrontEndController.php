@@ -33,7 +33,7 @@ class FrontEndController extends Controller
         $data = [ ];
         $data['logochange'] = LogoChange::all();
         $data['dokans']     = Dokan::all();
-        $data['products']   = Product::all();
+        $data['products']   = Product::paginate(3);
         $data['categories'] = Category::all();
         $data['settinga']   = Settings::all();
 
